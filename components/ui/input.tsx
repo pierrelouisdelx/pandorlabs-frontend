@@ -27,7 +27,7 @@ import { EyeIcon, EyeOffIcon } from 'lucide-react'
 // export { Input }
 
 const inputVariants = cva(
-  'flex border w-full border-gray/20 bg-white/5 p-4 text-base text-white backdrop-blur-md transition focus:border-green-100/50 placeholder:text-gray focus-visible:outline-hidden disabled:cursor-not-allowed disabled:opacity-50',
+  'flex border w-full rounded-full border-gray/20 bg-white/5 px-6 py-3.5 text-base text-white backdrop-blur-md transition-all duration-300 focus:border-green-light/50 focus:shadow-lg focus:shadow-green-light/10 placeholder:text-gray focus-visible:outline-hidden disabled:cursor-not-allowed disabled:opacity-50 hover:border-gray/30',
   {
     variants: {
       variant: {

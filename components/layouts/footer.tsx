@@ -47,7 +47,7 @@ export default function Footer() {
         </div>
         <div className="flex flex-col items-center gap-5 border-t border-white/30 py-7 sm:flex-row sm:justify-between">
           <p className="order-2 text-center font-semibold sm:order-0 md:text-left">
-            © {new Date().getFullYear()}&nbsp;InfynixAI, Inc. All rights
+            © {new Date().getFullYear()}&nbsp;PandorLabs, Inc. All rights
             reserved.
           </p>
           <div className="order-1 flex items-center gap-5 sm:order-0">

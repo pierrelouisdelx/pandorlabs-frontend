@@ -75,7 +75,7 @@ export default function NotFound() {
                     },{
                         "@type": "ListItem",
                         "position": 2,
-                        "name": "404 | InfynixAI",
+                        "name": "404 | PandorLabs",
                         "item": "${process.env.NEXT_PUBLIC_APP_URL}/not-found"
                     }]
                 }

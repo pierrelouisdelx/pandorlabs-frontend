@@ -1,36 +1,41 @@
-import FeaturesCarousel from '@/components/custom/features-carousel'
-import HeroSectionTyper from '@/components/custom/hero-section-typer'
 import SectionHeading from '@/components/custom/section-heading'
-import SubcribeSection from '@/components/custom/subcribe-section'
-import { PlayIcon } from 'lucide-react'
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from '@/components/ui/accordion'
+import StatsCard from '@/components/custom/stats-card'
+import ProcessStep from '@/components/custom/process-step'
+import UseCaseCard from '@/components/custom/use-case-card'
+import TechFeatureCard from '@/components/custom/tech-feature-card'
+import TerminalMock from '@/components/custom/terminal-mock'
+import DashboardPreview from '@/components/custom/dashboard-preview'
+import TrustBadge from '@/components/custom/trust-badge'
 import { buttonVariants } from '@/components/ui/button'
-import {
-  Dialog,
-  DialogContent,
-  DialogDescription,
-  DialogTitle,
-  DialogTrigger,
-} from '@/components/ui/dialog'
+import { Input } from '@/components/ui/input'
 import helper from '@/lib/helper'
 import { Metadata } from 'next'
 import Image from 'next/image'
 import Link from 'next/link'
+import {
+  Shield,
+  Target,
+  Search,
+  Users,
+  Scale,
+  Radio,
+  Bot,
+  Lock,
+  Zap,
+  Award,
+  CheckCircle2,
+  Activity,
+} from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: 'PandorLabs | AI Powered Web Scraping Agents Solution',
+  title: 'PandorLabs | Market Intelligence, On Demand',
   description:
-    'AI-powered web scraping agents that extract intelligence from the unstructured, dynamic, and hidden corners of the web.',
+    'Access competitor data, pricing trends, and market insights on demand. API-delivered intelligence that powers strategic decisions.',
   openGraph: {
     ...helper.openGraphData,
-    title: 'PandorLabs | AI Powered Web Scraping Agents Solution',
+    title: 'PandorLabs | Market Intelligence, On Demand',
     description:
-      'AI-powered web scraping agents that extract intelligence from the unstructured, dynamic, and hidden corners of the web.',
+      'Access competitor data, pricing trends, and market insights on demand. API-delivered intelligence that powers strategic decisions.',
     url: process.env.NEXT_PUBLIC_APP_URL,
     type: 'website',
   },
@@ -38,460 +43,424 @@ export const metadata: Metadata = {
     canonical: process.env.NEXT_PUBLIC_APP_URL,
   },
 }
+
 export default function Home() {
   return (
     <>
+      {/* Hero Section */}
       <div className="relative -mt-24 bg-[url(/images/hero-section.png)] bg-cover bg-center bg-no-repeat pt-24">
         <span className="from-primary to-primary/20 absolute inset-0 z-5 bg-linear-to-t"></span>
-        <div className="cursor-effect-section relative z-5 container pt-20">
-          <div className="mb-10 text-center">
+        <div className="cursor-effect-section relative z-5 container py-20 lg:py-32">
+          <div className="mx-auto max-w-4xl text-center">
             <h1 className="relative mb-5 text-[30px]/9 font-semibold tracking-wider sm:text-4xl lg:text-6xl/[80px]">
-              Leading&nbsp;
-              <span className="relative mr-2 animate-pulse">
-                &nbsp;AI&nbsp;
-                <span className="to-green-light absolute inset-x-0 top-1.5 h-0.5 w-full bg-linear-to-r from-green-100"></span>
-                <span className="to-green-light absolute inset-x-0 bottom-1.5 h-0.5 w-full bg-linear-to-r from-green-100"></span>
-                <span className="to-green-light absolute inset-y-0 right-1.5 h-full w-0.5 bg-linear-to-r from-green-100"></span>
-                <span className="to-green-light absolute inset-y-0 left-1.5 h-full w-0.5 bg-linear-to-r from-green-100"></span>
+              Market Intelligence, <br />
+              <span className="to-green-light bg-linear-to-l from-green-100 bg-clip-text text-transparent">
+                On Demand
               </span>
-              Content Platform <br />
-              <HeroSectionTyper />
             </h1>
-            <p className="text-gray mx-auto max-w-xl text-lg">
-              Your go-to platform for Image Generator, Audio Generator and Video
-              Generator. We offer a wide range of AI-powered tools to help you
-              boost your online solutions.
+            <p className="text-gray mx-auto mb-8 max-w-2xl text-lg">
+              Access competitor data, pricing trends, and market insights on
+              demand. API-delivered intelligence that powers strategic
+              decisions.
+            </p>
+
+            {/* Input Field */}
+            <div className="mx-auto mb-10 max-w-2xl">
+              <div className="flex gap-3">
+                <Input
+                  type="text"
+                  placeholder="Describe data extraction requirements"
+                  className="flex-1"
+                />
+                <button className={buttonVariants()}>Get Started</button>
+              </div>
+            </div>
+
+            {/* Trust Badges */}
+            <p className="text-center text-lg font-semibold">
+              Trusted by Industry Leaders
+            </p>
+            <div className="mt-10 flex flex-wrap items-center justify-center gap-10">
+              <Image
+                src="/images/companies/avian.svg"
+                alt="SIEMENS"
+                width={150}
+                height={60}
+              />
+              <Image
+                src="/images/companies/nvidia.svg"
+                alt="NVIDIA"
+                width={150}
+                height={60}
+              />
+              <Image
+                src="/images/companies/siemens-healthineers.svg"
+                alt="SIEMENS Healthineers"
+                width={150}
+                height={60}
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Vision Section */}
+      <div className="container py-16 lg:py-20">
+        <div className="mb-10 text-center">
+          <p className="text-gray mb-3 text-sm tracking-wider uppercase">
+            OUR VISION
+          </p>
+          <h2 className="mb-6 text-[26px]/8 font-semibold sm:text-3xl lg:text-5xl/[60px]">
+            Pioneering the Next Frontier of{' '}
+            <span className="to-green-light bg-linear-to-l from-green-100 bg-clip-text text-transparent">
+              Web Intelligence
+            </span>
+          </h2>
+        </div>
+
+        <div className="text-gray mx-auto mb-12 max-w-4xl space-y-4 text-center">
+          <p>
+            The web is vast, chaotic, and constantly evolving. Most data
+            extraction tools fail when faced with dynamic JavaScript,
+            authentication flows, anti-bot defenses, or legacy systems locked
+            behind outdated interfaces.
+          </p>
+          <p className="text-lg font-semibold text-white">
+            PandorLabs exists to solve the impossible cases.
+          </p>
+          <p>
+            We don't scrape static HTML—we navigate complex multi-step
+            workflows, handle real-time data streams, and extract intelligence
+            from sources others can't reach.
+          </p>
+          <p>
+            Whether it's monitoring dark web marketplaces, extracting insights
+            from proprietary databases, or building real-time surveillance
+            systems for threat intelligence, we engineer custom agents that
+            adapt, learn, and deliver.
+          </p>
+        </div>
+
+        {/* Stats Cards */}
+        <div className="grid gap-6 md:grid-cols-3">
+          <StatsCard value="99.9%" label="Uptime SLA" />
+          <StatsCard value="<2s" label="Avg Response" />
+          <StatsCard value="24/7" label="Monitoring" />
+        </div>
+      </div>
+
+      {/* How It Works Section */}
+      <div className="bg-white/5 py-16 lg:py-20">
+        <div className="container">
+          <div className="mb-12 text-center">
+            <p className="text-gray mb-3 text-sm tracking-wider uppercase">
+              HOW IT WORKS
+            </p>
+            <h2 className="mb-4 text-[26px]/8 font-semibold sm:text-3xl lg:text-5xl/[60px]">
+              From Question to Dataset —{' '}
+              <span className="to-green-light bg-linear-to-l from-green-100 bg-clip-text text-transparent">
+                in Minutes
+              </span>
+            </h2>
+            <p className="text-gray mx-auto max-w-2xl">
+              Our streamlined process gets you from request to delivery faster
+              than traditional data vendors.
             </p>
           </div>
-          <div className="mb-10 flex flex-col items-center justify-center gap-2.5">
-            <div className="inline-flex items-center justify-center -space-x-2">
-              <span className="size-8 overflow-hidden rounded-full border-2 border-white">
-                <Image
-                  src="/images/profile1.png"
-                  alt="avatar"
-                  width="30"
-                  height="30"
-                  className="size-full object-cover"
-                />
-              </span>
-              <span className="size-8 overflow-hidden rounded-full border-2 border-white">
-                <Image
-                  src="/images/profile2.png"
-                  alt="avatar"
-                  width="30"
-                  height="30"
-                  className="size-full object-cover"
-                />
-              </span>
-              <span className="size-8 overflow-hidden rounded-full border-2 border-white">
-                <Image
-                  src="/images/profile3.png"
-                  alt="avatar"
-                  width="30"
-                  height="30"
-                  className="size-full object-cover"
-                />
-              </span>
-              <span className="size-8 overflow-hidden rounded-full border-2 border-white">
-                <Image
-                  src="/images/profile1.png"
-                  alt="avatar"
-                  width="30"
-                  height="30"
-                  className="size-full object-cover"
-                />
-              </span>
-            </div>
-            <div className="flex flex-col items-center">
-              <span className="text-2xl">1.3 M+</span>
-              Trusted by users worldwide
-            </div>
-          </div>
-          <div className="flex flex-wrap items-center justify-center gap-5">
-            <Link href="/sign-in" className={buttonVariants()}>
-              Get 6 months free
-            </Link>
 
-            <Dialog>
-              <DialogTrigger asChild>
-                <button
-                  type="button"
-                  className="play bg-primary z-10 inline-flex items-center gap-2.5"
-                >
-                  <PlayIcon className="play size-11 text-green-100" />
-                  Watch video
-                </button>
-              </DialogTrigger>
-              <DialogContent className="max-w-3xl">
-                <DialogTitle />
-                <DialogDescription />
-                <iframe
-                  className="h-full min-h-60 sm:min-h-96"
-                  width="100%"
-                  height="100%"
-                  src="https://www.youtube.com/embed/5wOhrU2V-SI?si=nACwTNGSSt8Im-1B"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                ></iframe>
-              </DialogContent>
-            </Dialog>
-          </div>
-        </div>
-
-        <div className="relative z-10 container pt-20 lg:pt-40">
-          <h2 className="text-center text-lg font-semibold uppercase">
-            Trusted by Industry Leaders
-          </h2>
-          <div className="mt-10 flex flex-wrap items-center justify-center gap-20">
-            <Image
-              src="/images/companies/avian.svg"
-              alt="SIEMENS"
-              width={195}
-              height={75}
+          <div className="grid gap-6 md:grid-cols-3">
+            <ProcessStep
+              number="01"
+              title="Tell Us What You Need"
+              description="Describe your data requirements—structured or unstructured, real-time or historical, public or gated. No data source is too complex."
             />
-            <Image
-              src="/images/companies/nvidia.svg"
-              alt="NVIDIA"
-              width={195}
-              height={75}
+            <ProcessStep
+              number="02"
+              title="We Build the Agent"
+              description="Our engineers design custom AI-powered scraping agents tailored to your use case, handling auth flows, JavaScript rendering, and anti-bot evasion."
             />
-            <Image
-              src="/images/companies/siemens-healthineers.svg"
-              alt="SIEMENS"
-              width={195}
-              height={75}
+            <ProcessStep
+              number="03"
+              title="You Get Clean Data"
+              description="Receive structured, validated datasets via API, webhook, or direct database integration. Real-time or batch—your choice."
             />
           </div>
-        </div>
-      </div>
 
-      <div className="overflow-hidden py-16 lg:py-20">
-        <div className="container mb-7 flex gap-10 sm:mb-10 sm:pr-36 lg:mb-14">
-          <SectionHeading
-            className="mb-0! text-left"
-            descriptionClassName="mx-0"
-            title={
-              <>
-                Discover Our
-                <span>&nbsp;Key Features</span>
-              </>
-            }
-            description="Experience cutting-edge AI tools designed for seamless Image Generator, Audio Generator and Video Generator."
-          />
-        </div>
-        <FeaturesCarousel />
-      </div>
-
-      <SubcribeSection />
-
-      <div className="bg-[url(/images/tastimonial-bg.png)] bg-cover bg-center bg-no-repeat py-16 lg:py-20">
-        <div className="container">
-          <SectionHeading
-            title={
-              <>
-                What Our{' '}
-                <span className="to-green-light bg-linear-to-l from-green-100 bg-clip-text text-transparent">
-                  Users Say
-                </span>
-              </>
-            }
-            description="Discover how our AI tools have transformed workflows, inspired creativity, and delivered exceptional results for users worldwide."
-          />
-          <div className="grid gap-4 md:grid-cols-3 xl:gap-[30px]">
-            <div className="flex flex-col gap-4 xl:gap-[30px]">
-              <div className="border-gray/50 hover:bg-gray/0 border bg-linear-to-tr from-[#000000]/30 to-green-100/0 p-5 backdrop-blur-xs transition-all duration-500 hover:border-green-100/25 hover:from-green-100/30 hover:via-transparent hover:to-green-100/20">
-                <div className="mb-5 size-16 overflow-hidden">
-                  <Image
-                    src="/images/men-profile.png"
-                    alt="avatar"
-                    width={64}
-                    height={64}
-                    className="h-full w-full object-cover"
-                  />
-                </div>
-                <div className="pb-3">
-                  InfynixAI&apos;s AI tools have streamlined our content
-                  creation process, boosting efficiency and creativity. The
-                  results are outstanding!
-                </div>
-                <div className="border-gray/30 border-t pt-3">
-                  <h3 className="mb-0.5 text-lg/6 font-medium">John Carter</h3>
-                  <p className="text-gray text-xs">- Marketing Manager</p>
-                </div>
-              </div>
-              <div className="border-gray/50 hover:bg-gray/0 border bg-linear-to-tr from-[#000000]/30 to-green-100/0 p-5 backdrop-blur-xs transition-all duration-500 hover:border-green-100/25 hover:from-green-100/30 hover:via-transparent hover:to-green-100/20">
-                <div className="mb-5 size-16 overflow-hidden">
-                  <Image
-                    src="/images/men-profile.png"
-                    alt="avatar"
-                    width={64}
-                    height={64}
-                    className="h-full w-full object-cover"
-                  />
-                </div>
-                <div className="pb-3">
-                  Using InfynixAI’s image generation tools has transformed how
-                  we create visuals for our products. The quality and speed are
-                  unmatched!
-                </div>
-                <div className="border-gray/30 border-t pt-3">
-                  <h3 className="mb-0.5 text-lg/6 font-medium">
-                    Sarah Williams
-                  </h3>
-                  <p className="text-gray text-xs">- Product Designer</p>
-                </div>
-              </div>
-              <div className="border-gray/50 hover:bg-gray/0 border bg-linear-to-tr from-[#000000]/30 to-green-100/0 p-5 backdrop-blur-xs transition-all duration-500 hover:border-green-100/25 hover:from-green-100/30 hover:via-transparent hover:to-green-100/20">
-                <div className="mb-5 size-16 overflow-hidden">
-                  <Image
-                    src="/images/men-profile.png"
-                    alt="avatar"
-                    width={64}
-                    height={64}
-                    className="h-full w-full object-cover"
-                  />
-                </div>
-                <div className="pb-3">
-                  Our team saves hours each week thanks to InfynixAI&apos;s
-                  AI-driven solutions. It has been a game-changer for our
-                  business operations.
-                </div>
-                <div className="border-gray/30 border-t pt-3">
-                  <h3 className="mb-0.5 text-lg/6 font-medium">Michael Lee</h3>
-                  <p className="text-gray text-xs">- CEO</p>
-                </div>
-              </div>
-            </div>
-
-            <div className="flex flex-col gap-4 xl:gap-[30px]">
-              <div className="border-gray/50 hover:bg-gray/0 border bg-linear-to-tr from-[#000000]/30 to-green-100/0 p-5 backdrop-blur-xs transition-all duration-500 hover:border-green-100/25 hover:from-green-100/30 hover:via-transparent hover:to-green-100/20">
-                <div className="mb-5 size-16 overflow-hidden">
-                  <Image
-                    src="/images/men-profile.png"
-                    alt="avatar"
-                    width={64}
-                    height={64}
-                    className="h-full w-full object-cover"
-                  />
-                </div>
-                <div className="pb-3">
-                  The audio generation feature helped us produce engaging
-                  voiceovers for our social media campaigns in record time. It’s
-                  a must-have tool!
-                </div>
-                <div className="border-gray/30 border-t pt-3">
-                  <h3 className="mb-0.5 text-lg/6 font-medium">Emma Clark</h3>
-                  <p className="text-gray text-xs">- Social Media Strategist</p>
-                </div>
-              </div>
-              <div className="border-gray/50 hover:bg-gray/0 border bg-linear-to-tr from-[#000000]/30 to-green-100/0 p-5 backdrop-blur-xs transition-all duration-500 hover:border-green-100/25 hover:from-green-100/30 hover:via-transparent hover:to-green-100/20">
-                <div className="mb-5 size-16 overflow-hidden">
-                  <Image
-                    src="/images/men-profile.png"
-                    alt="avatar"
-                    width={64}
-                    height={64}
-                    className="h-full w-full object-cover"
-                  />
-                </div>
-                <div className="pb-3">
-                  InfynixAI has helped improve the quality of our content. The
-                  AI tools are intuitive and have made content creation more
-                  effective.
-                </div>
-                <div className="border-gray/30 border-t pt-3">
-                  <h3 className="mb-0.5 text-lg/6 font-medium">David Nguyen</h3>
-                  <p className="text-gray text-xs">- Content Writer</p>
-                </div>
-              </div>
-              <div className="hidden grow place-content-center md:grid">
-                <Image
-                  src="/images/quot.svg"
-                  alt="quot"
-                  width={80}
-                  height={71}
-                  className="w-20 shrink-0 animate-bounce"
-                />
-              </div>
-            </div>
-            <div className="flex flex-col gap-4 xl:gap-[30px]">
-              <div className="border-gray/50 hover:bg-gray/0 border bg-linear-to-tr from-[#000000]/30 to-green-100/0 p-5 backdrop-blur-xs transition-all duration-500 hover:border-green-100/25 hover:from-green-100/30 hover:via-transparent hover:to-green-100/20">
-                <div className="mb-5 size-16 overflow-hidden">
-                  <Image
-                    src="/images/men-profile.png"
-                    alt="avatar"
-                    width={64}
-                    height={64}
-                    className="h-full w-full object-cover"
-                  />
-                </div>
-                <div className="pb-3">
-                  The video generation tool has allowed us to create
-                  professional videos without the need for extensive editing.
-                  Highly recommended!
-                </div>
-                <div className="border-gray/30 border-t pt-3">
-                  <h3 className="mb-0.5 text-lg/6 font-medium">Olivia Brown</h3>
-                  <p className="text-gray text-xs">- Creative Director</p>
-                </div>
-              </div>
-              <div className="border-gray/50 hover:bg-gray/0 border bg-linear-to-tr from-[#000000]/30 to-green-100/0 p-5 backdrop-blur-xs transition-all duration-500 hover:border-green-100/25 hover:from-green-100/30 hover:via-transparent hover:to-green-100/20">
-                <div className="mb-5 size-16 overflow-hidden">
-                  <Image
-                    src="/images/men-profile.png"
-                    alt="avatar"
-                    width={64}
-                    height={64}
-                    className="h-full w-full object-cover"
-                  />
-                </div>
-                <div className="pb-3">
-                  InfynixAI has provided us with creative freedom we didn’t know
-                  was possible. Their AI tools are powerful and easy to use.
-                </div>
-                <div className="border-gray/30 border-t pt-3">
-                  <h3 className="mb-0.5 text-lg/6 font-medium">
-                    James Thompson
-                  </h3>
-                  <p className="text-gray text-xs">- Founder</p>
-                </div>
-              </div>
-              <div className="border-gray/50 hover:bg-gray/0 border bg-linear-to-tr from-[#000000]/30 to-green-100/0 p-5 backdrop-blur-xs transition-all duration-500 hover:border-green-100/25 hover:from-green-100/30 hover:via-transparent hover:to-green-100/20">
-                <div className="mb-5 size-16 overflow-hidden">
-                  <Image
-                    src="/images/men-profile.png"
-                    alt="avatar"
-                    width={64}
-                    height={64}
-                    className="h-full w-full object-cover"
-                  />
-                </div>
-                <div className="pb-3">
-                  The AI-driven content optimization features have helped us
-                  boost our engagement rates. InfynixAI is a must for any
-                  marketer!
-                </div>
-                <div className="border-gray/30 border-t pt-3">
-                  <h3 className="mb-0.5 text-lg/6 font-medium">Sophia Davis</h3>
-                  <p className="text-gray text-xs">
-                    - Digital Marketing Expert
-                  </p>
-                </div>
-              </div>
-            </div>
+          {/* Timeline */}
+          <div className="text-gray mt-10 flex items-center justify-center gap-4">
+            <span className="rounded-full bg-white/5 px-4 py-2 font-medium transition-all duration-300 hover:bg-white/10">
+              Start
+            </span>
+            <div className="bg-green-light/30 shadow-green-light/20 h-1 w-20 rounded-full shadow-lg"></div>
+            <span className="to-green-light bg-green-light/10 animate-pulse rounded-full bg-linear-to-l from-green-100 bg-clip-text px-5 py-2.5 font-semibold text-transparent">
+              Minutes, not weeks
+            </span>
+            <div className="bg-green-light/30 shadow-green-light/20 h-1 w-20 rounded-full shadow-lg"></div>
+            <span className="rounded-full bg-white/5 px-4 py-2 font-medium transition-all duration-300 hover:bg-white/10">
+              Data Delivered
+            </span>
           </div>
         </div>
       </div>
 
-      <div>
-        <SectionHeading
-          className="container"
-          title={
-            <>
-              Affordable
-              <span>&nbsp;Pricing Plans&nbsp;</span>
-              for All Needs
-            </>
-          }
-          description="Choose the perfect plan for your business. Whether you're an individual or a large enterprise, our pricing options are designed to fit your requirements."
-        />
-      </div>
-
+      {/* Use Cases Section */}
       <div className="container py-16 lg:py-20">
-        <div className="border-gray/50 relative border bg-[url(/images/faq-bg.png)] bg-cover bg-center bg-no-repeat px-5 py-10 lg:p-20">
-          <SectionHeading
-            className="text-left"
-            title={
-              <>
-                Frequently Asked<span>&nbsp;Questions</span>
-              </>
-            }
-          />
-          <Accordion
-            type="single"
-            collapsible
-            className="grid gap-4 md:grid-cols-2 xl:gap-[30px]"
-          >
-            <div className="space-y-4 xl:space-y-[30px]">
-              <AccordionItem value="item-1">
-                <AccordionTrigger>
-                  What is AI-powered image generation?
-                </AccordionTrigger>
-                <AccordionContent>
-                  AI-powered image generation allows you to create high-quality
-                  visuals using artificial intelligence, turning text
-                  descriptions into images quickly and accurately.
-                </AccordionContent>
-              </AccordionItem>
+        <div className="mb-12 text-center">
+          <p className="text-gray mb-3 text-sm tracking-wider uppercase">
+            LIMITLESS APPLICATIONS
+          </p>
+          <h2 className="mb-4 text-[26px]/8 font-semibold sm:text-3xl lg:text-5xl/[60px]">
+            One Engine.{' '}
+            <span className="to-green-light bg-linear-to-l from-green-100 bg-clip-text text-transparent">
+              Infinite Use Cases
+            </span>
+          </h2>
+          <p className="text-gray mx-auto max-w-2xl">
+            Our adaptive scraping infrastructure powers diverse applications
+            across industries.
+          </p>
+        </div>
 
-              <AccordionItem value="item-2">
-                <AccordionTrigger>
-                  How does audio generation work in your platform?
-                </AccordionTrigger>
-                <AccordionContent>
-                  Our AI audio generation tool converts written text into
-                  realistic voiceovers or narrations in multiple languages and
-                  tones, saving time and effort in content creation.
-                </AccordionContent>
-              </AccordionItem>
-              <AccordionItem value="item-3">
-                <AccordionTrigger>
-                  What makes your video generator unique?
-                </AccordionTrigger>
-                <AccordionContent>
-                  Our AI video generator helps you create professional-quality
-                  videos with minimal input. The tool automates editing,
-                  effects, and transitions to save you time while maintaining
-                  high standards.
-                </AccordionContent>
-              </AccordionItem>
-            </div>
-            <div className="space-y-4 xl:space-y-[30px]">
-              <AccordionItem value="item-4">
-                <AccordionTrigger>
-                  Can I customize the AI-generated content?
-                </AccordionTrigger>
-                <AccordionContent>
-                  Yes, our platform allows full customization of images, audio,
-                  and video outputs to match your brand&apos;s voice and style,
-                  giving you more control over the results.
-                </AccordionContent>
-              </AccordionItem>
-              <AccordionItem value="item-5">
-                <AccordionTrigger>
-                  What kind of support do you provide with the plans?
-                </AccordionTrigger>
-                <AccordionContent>
-                  Our pricing plans come with varying levels of support: basic
-                  community support for the free plan, and priority or dedicated
-                  support for professional and enterprise users.
-                </AccordionContent>
-              </AccordionItem>
-            </div>
-          </Accordion>
+        <div className="mb-10 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+          <UseCaseCard
+            icon={Shield}
+            title="Threat Intelligence"
+            description="Monitor dark web forums, paste sites, and underground marketplaces for leaked credentials, ransomware chatter, and emerging threats."
+          />
+          <UseCaseCard
+            icon={Search}
+            title="Market Research"
+            description="Extract pricing data, product catalogs, and competitor intelligence from e-commerce platforms and business directories."
+          />
+          <UseCaseCard
+            icon={Users}
+            title="Lead Generation"
+            description="Build targeted prospect lists from LinkedIn, company websites, and professional networks with validated contact information."
+          />
+          <UseCaseCard
+            icon={Target}
+            title="Brand Monitoring"
+            description="Track brand mentions, sentiment, and reputation across social media, review sites, and news outlets in real-time."
+          />
+          <UseCaseCard
+            icon={Scale}
+            title="Legal & Compliance"
+            description="Extract and monitor regulatory filings, court records, and compliance documents from government databases."
+          />
+          <UseCaseCard
+            icon={Radio}
+            title="Real-Time Surveillance"
+            description="Continuous monitoring of dynamic data sources with instant alerts when target patterns are detected."
+          />
+        </div>
+
+        <div className="text-center">
+          <p className="text-gray mb-4">
+            Don't see your use case? We build custom solutions.
+          </p>
+          <Link href="/contact" className={buttonVariants()}>
+            Tell us what you need →
+          </Link>
         </div>
       </div>
 
-      <div className="container">
-        <SectionHeading
-          title={
-            <>
-              Start Your Journey<span>&nbsp;Today</span>
-            </>
-          }
-          description="Unlock the power of AI for your business. Our tools are
-                        designed to streamline your workflow, enhance
-                        creativity, and drive results. Don't wait, start
-                        transforming your content now!"
-        />
-        <div className="flex items-center justify-center gap-5">
-          <Link href="/sign-up" className={buttonVariants()}>
-            Get Started
-          </Link>
-          <div className="group bg-gray/50 to-green-light relative flex items-center gap-0.5 overflow-hidden bg-linear-to-r from-green-100 p-0.5 hover:from-transparent hover:to-transparent">
-            <div className="to-green-light/20 absolute inset-0 h-full w-full animate-[spin_5s_linear_infinite] bg-linear-to-tr from-green-100 opacity-0 group-hover:opacity-100"></div>
-            <Link href="/about-us" className="bg-primary z-5 px-2.5 py-2">
-              Learn more
-            </Link>
+      {/* Technology Section */}
+      <div className="bg-white/5 py-16 lg:py-20">
+        <div className="container">
+          <div className="mb-12 text-center">
+            <p className="text-gray mb-3 text-sm tracking-wider uppercase">
+              TECHNOLOGY
+            </p>
+            <h2 className="mb-4 text-[26px]/8 font-semibold sm:text-3xl lg:text-5xl/[60px]">
+              AI-Powered Agents Built for{' '}
+              <span className="to-green-light bg-linear-to-l from-green-100 bg-clip-text text-transparent">
+                the Unknown
+              </span>
+            </h2>
+            <p className="text-gray mx-auto max-w-2xl">
+              Our proprietary technology stack combines cutting-edge AI with
+              battle-tested infrastructure.
+            </p>
+          </div>
+
+          <div className="mb-12 grid gap-8 md:grid-cols-3">
+            <TechFeatureCard
+              icon={Bot}
+              title="Adaptive AI Agents"
+              description="Self-healing scrapers that adapt to site changes, handle CAPTCHAs, and navigate complex multi-step workflows autonomously."
+            />
+            <TechFeatureCard
+              icon={Lock}
+              title="Enterprise Security"
+              description="Bank-grade encryption, rotating proxies, and compliance-ready infrastructure. SOC 2 Type II certified."
+            />
+            <TechFeatureCard
+              icon={Zap}
+              title="Scalable Architecture"
+              description="Distributed systems built to handle millions of requests per hour with sub-second latency. Auto-scaling and redundancy built-in."
+            />
+          </div>
+
+          {/* Terminal Display */}
+          <div className="mb-10">
+            <TerminalMock
+              lines={[
+                {
+                  text: 'Agent initialized: web_scraper_v3.2.1',
+                  type: 'success',
+                },
+                { text: 'Target identified: dynamic_spa_application' },
+                { text: 'Auth flow detected: oauth2_with_2fa' },
+                {
+                  text: 'Anti-bot bypass: cloudflare_challenge_solved',
+                  type: 'success',
+                },
+                {
+                  text: 'Data extraction: 10,247 records parsed',
+                  type: 'success',
+                },
+                {
+                  text: 'Status: Complete | Delivery: API endpoint',
+                  type: 'success',
+                },
+              ]}
+            />
+          </div>
+
+          {/* Tech Stats */}
+          <div className="grid gap-6 md:grid-cols-4">
+            <StatsCard value="99.7%" label="Success Rate" />
+            <StatsCard value="1.2s" label="Avg. Response" />
+            <StatsCard value="10K+" label="Sites Supported" />
+            <StatsCard value="50M+" label="Requests/Day" />
+          </div>
+        </div>
+      </div>
+
+      {/* Enterprise Section */}
+      <div className="container py-16 lg:py-20">
+        <div className="mb-12 text-center">
+          <p className="text-gray mb-3 text-sm tracking-wider uppercase">
+            FOR BUSINESSES AT SCALE
+          </p>
+          <h2 className="mb-4 text-[26px]/8 font-semibold sm:text-3xl lg:text-5xl/[60px]">
+            From Startups to{' '}
+            <span className="to-green-light bg-linear-to-l from-green-100 bg-clip-text text-transparent">
+              Fortune 500s
+            </span>
+          </h2>
+          <p className="text-gray mx-auto mb-12 max-w-2xl">
+            Whether you're a scrappy startup needing competitive intel or an
+            enterprise requiring real-time threat intelligence at scale, we've
+            got you covered.
+          </p>
+        </div>
+
+        <div className="grid gap-10 lg:grid-cols-2">
+          <div className="space-y-6">
+            <div className="group hover:border-green-light/50 hover:shadow-green-light/20 rounded-2xl border border-white/10 bg-white/5 p-7 backdrop-blur-sm transition-all duration-500 hover:-translate-y-1 hover:bg-white/10 hover:shadow-2xl">
+              <div className="mb-4 flex items-center gap-3">
+                <div className="bg-green-light/10 group-hover:bg-green-light/20 flex h-12 w-12 items-center justify-center rounded-2xl transition-all duration-300 group-hover:scale-110">
+                  <Award className="text-green-light h-6 w-6 transition-transform duration-300 group-hover:scale-110" />
+                </div>
+                <h3 className="group-hover:text-green-light text-lg font-semibold text-white transition-colors duration-300">
+                  Enterprise Solutions
+                </h3>
+              </div>
+              <p className="text-gray group-hover:text-gray/90 leading-relaxed transition-colors duration-300">
+                Dedicated infrastructure, SLAs, and white-glove onboarding for
+                Fortune 500 teams.
+              </p>
+            </div>
+
+            <div className="group hover:border-green-light/50 hover:shadow-green-light/20 rounded-2xl border border-white/10 bg-white/5 p-7 backdrop-blur-sm transition-all duration-500 hover:-translate-y-1 hover:bg-white/10 hover:shadow-2xl">
+              <div className="mb-4 flex items-center gap-3">
+                <div className="bg-green-light/10 group-hover:bg-green-light/20 flex h-12 w-12 items-center justify-center rounded-2xl transition-all duration-300 group-hover:scale-110">
+                  <Activity className="text-green-light h-6 w-6 transition-transform duration-300 group-hover:scale-110" />
+                </div>
+                <h3 className="group-hover:text-green-light text-lg font-semibold text-white transition-colors duration-300">
+                  24/7 Support
+                </h3>
+              </div>
+              <p className="text-gray group-hover:text-gray/90 leading-relaxed transition-colors duration-300">
+                Direct access to engineering team. Slack/Teams integration
+                available.
+              </p>
+            </div>
+
+            <div className="group hover:border-green-light/50 hover:shadow-green-light/20 rounded-2xl border border-white/10 bg-white/5 p-7 backdrop-blur-sm transition-all duration-500 hover:-translate-y-1 hover:bg-white/10 hover:shadow-2xl">
+              <div className="mb-4 flex items-center gap-3">
+                <div className="bg-green-light/10 group-hover:bg-green-light/20 flex h-12 w-12 items-center justify-center rounded-2xl transition-all duration-300 group-hover:scale-110">
+                  <CheckCircle2 className="text-green-light h-6 w-6 transition-transform duration-300 group-hover:scale-110" />
+                </div>
+                <h3 className="group-hover:text-green-light text-lg font-semibold text-white transition-colors duration-300">
+                  Custom Compliance
+                </h3>
+              </div>
+              <p className="text-gray group-hover:text-gray/90 leading-relaxed transition-colors duration-300">
+                GDPR, CCPA, HIPAA-ready deployments. On-premise hosting
+                available.
+              </p>
+            </div>
+
+            <div className="flex gap-4">
+              <Link href="/demo" className={buttonVariants()}>
+                Book a Demo
+              </Link>
+              <Link
+                href="/pricing"
+                className={buttonVariants({ variant: 'outline' })}
+              >
+                View Pricing
+              </Link>
+            </div>
+          </div>
+
+          {/* Dashboard Preview */}
+          <div>
+            <DashboardPreview />
+          </div>
+        </div>
+      </div>
+
+      {/* Final CTA Section */}
+      <div className="bg-white/5 py-16 lg:py-20">
+        <div className="container">
+          <div className="mx-auto max-w-3xl text-center">
+            <h2 className="mb-4 text-[26px]/8 font-semibold sm:text-3xl lg:text-5xl/[60px]">
+              Access the Web's{' '}
+              <span className="to-green-light bg-linear-to-l from-green-100 bg-clip-text text-transparent">
+                Hidden Intelligence
+              </span>
+            </h2>
+            <p className="text-gray mb-8 text-lg">
+              Stop settling for incomplete data. Start extracting intelligence
+              from anywhere on the web.
+            </p>
+
+            <div className="mb-8 flex flex-wrap items-center justify-center gap-4">
+              <Link href="/request" className={buttonVariants({ size: 'lg' })}>
+                Request Data
+              </Link>
+              <Link
+                href="/demo"
+                className={buttonVariants({ variant: 'outline', size: 'lg' })}
+              >
+                Book a Demo
+              </Link>
+            </div>
+
+            {/* Trust Badges */}
+            <div className="mb-4 flex flex-wrap items-center justify-center gap-4">
+              <TrustBadge icon={Shield} text="SOC 2 Type II Certified" />
+              <TrustBadge icon={CheckCircle2} text="GDPR Compliant" />
+              <TrustBadge icon={Activity} text="99.9% Uptime SLA" />
+            </div>
+
+            <p className="text-gray text-sm">
+              Trusted by NVIDIA, Siemens Healthineers, and industry-leading
+              research teams
+            </p>
           </div>
         </div>
       </div>
@@ -502,9 +471,9 @@ export default function Home() {
           __html: `{
                 "@context": "https://schema.org",
                 "@type": "WebSite",
-                "name": "Home | InfynixAI",
+                "name": "PandorLabs | Market Intelligence, On Demand",
                 "url": "${process.env.NEXT_PUBLIC_APP_URL}",
-                "description": "Enhance your service offerings and streamline processes with our intuitive AI SaaS template.",
+                "description": "Access competitor data, pricing trends, and market insights on demand. API-delivered intelligence that powers strategic decisions.",
                 "inLanguage": "en",
                 "image": "${process.env.NEXT_PUBLIC_APP_URL}/images/logo.svg",
                 "breadcrumb": {
