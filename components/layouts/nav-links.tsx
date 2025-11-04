@@ -2,6 +2,7 @@ import NavLink from '@/components/ui/nav-link'
 import { cn } from '@/lib/utils'
 import Image from 'next/image'
 import Link from 'next/link'
+import ProductsMenu from './products-menu'
 
 const NavLinks = ({ className }: any) => {
   return (
@@ -23,7 +24,10 @@ const NavLinks = ({ className }: any) => {
         </Link>
       </li>
       <span className="via-green-light/50 mb-4 block h-px w-full bg-linear-to-r from-white/5 to-white/5 lg:hidden"></span>
-      <li>
+      <li className="hidden lg:block">
+        <ProductsMenu />
+      </li>
+      <li className="lg:hidden">
         <NavLink href="/" className="nav-links">
           Products
         </NavLink>
