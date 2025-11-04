@@ -23,14 +23,14 @@ import Image from 'next/image'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'Home | InfynixAI',
+  title: 'PandorLabs | AI Powered Web Scraping Agents Solution',
   description:
-    'Enhance your service offerings and streamline processes with our intuitive AI SaaS template.',
+    'AI-powered web scraping agents that extract intelligence from the unstructured, dynamic, and hidden corners of the web.',
   openGraph: {
     ...helper.openGraphData,
-    title: 'Home | InfynixAI',
+    title: 'PandorLabs | AI Powered Web Scraping Agents Solution',
     description:
-      'Enhance your service offerings and streamline processes with our intuitive AI SaaS template.',
+      'AI-powered web scraping agents that extract intelligence from the unstructured, dynamic, and hidden corners of the web.',
     url: process.env.NEXT_PUBLIC_APP_URL,
     type: 'website',
   },
