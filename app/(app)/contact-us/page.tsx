@@ -1,8 +1,3 @@
-import IconFaceBook from '@/components/icons/icon-facebook'
-import IconInstagram from '@/components/icons/icon-instagram'
-import IconLinkedin from '@/components/icons/icon-linkedin'
-import IconSend from '@/components/icons/icon-send'
-import IconTwitter from '@/components/icons/icon-twitter'
 import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
 import { Textarea } from '@/components/ui/textarea'
@@ -84,45 +79,6 @@ export default function ContactUs() {
                 <ArrowUpRight className="ml-auto size-8 shrink-0 duration-300" />
               </Link>
             </div>
-            <div className="space-y-2 lg:space-y-3">
-              <h3 className="text-green-light/70 text-base tracking-[3px] uppercase">
-                Follow us
-              </h3>
-              <div className="border-gray/20 flex flex-wrap items-center gap-2.5 border-b pb-2.5 sm:gap-5 lg:pb-4">
-                <Link
-                  href="https://www.facebook.com/sharer/sharer.php?u=https://ai-saas-theme-html.vercel.app/"
-                  target="_blank"
-                  className="border-gray/10 hover:text-green border px-4 py-2 shadow-md sm:px-6 hover:[&_svg]:scale-90"
-                >
-                  <span className="sr-only">Facebook</span>
-                  <IconFaceBook className="size-7 shrink-0 duration-300" />
-                </Link>
-                <Link
-                  href="https://twitter.com/intent/tweet?url=https://ai-saas-theme-html.vercel.app/&text="
-                  target="_blank"
-                  className="border-gray/10 hover:text-green border px-4 py-2 shadow-md sm:px-6 hover:[&_svg]:scale-90"
-                >
-                  <span className="sr-only">Twitter</span>
-                  <IconTwitter className="size-7 shrink-0 duration-300" />
-                </Link>
-                <Link
-                  href="https://www.instagram.com/?url=https%3A%2F%2Fai-saas-theme-html.vercel.app%2F"
-                  target="_blank"
-                  className="border-gray/10 hover:text-green border px-4 py-2 shadow-md sm:px-6 hover:[&_svg]:scale-90"
-                >
-                  <span className="sr-only">Instagram</span>
-                  <IconInstagram className="size-7 shrink-0 duration-300" />
-                </Link>
-                <Link
-                  href="https://www.linkedin.com/shareArticle?mini=true&url=https://ai-saas-theme-html.vercel.app/"
-                  target="_blank"
-                  className="border-gray/10 hover:text-green border px-4 py-2 shadow-md sm:px-6 hover:[&_svg]:scale-90"
-                >
-                  <span className="sr-only">LinkedIn</span>
-                  <IconLinkedin className="size-7 shrink-0 duration-300" />
-                </Link>
-              </div>
-            </div>
           </div>
         </div>
         <div className="relative w-full grow bg-white/5 shadow-xl lg:-mt-10">
@@ -149,7 +105,7 @@ export default function ContactUs() {
               <div className="text-right">
                 <Button type="submit" className="hover:[&_svg]:-rotate-45">
                   Send Message
-                  <IconSend className="size-4 shrink-0 duration-300" />
+                  <Send className="size-4 shrink-0 duration-300" />
                 </Button>
               </div>
             </form>
