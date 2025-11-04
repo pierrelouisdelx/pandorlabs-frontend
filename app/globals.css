@@ -6,248 +6,248 @@
 @custom-variant hover (&:hover);
 
 @theme {
-    --font-*: initial;
-    --font-funnel-display: Funnel Display, serif;
+  --font-*: initial;
+  --font-funnel-display: Funnel Display, serif;
 
-    --color-*: initial;
-    --color-transparent: transparent;
-    --color-current: currentColor;
-    --color-white: #ffffff;
-    --color-black: #160041;
-    --color-black-dark: #1d1c2d;
-    --color-primary: #010a22;
-    --color-secondary: #38009b;
-    --color-green: #44f126;
-    --color-green-light: #46e695;
-    --color-green-100: #65ff4b;
-    --color-gray: #a9acac;
+  --color-*: initial;
+  --color-transparent: transparent;
+  --color-current: currentColor;
+  --color-white: #ffffff;
+  --color-black: #160041;
+  --color-black-dark: #1d1c2d;
+  --color-primary: #010a22;
+  --color-secondary: #38009b;
+  --color-green: #44f126;
+  --color-green-light: #46e695;
+  --color-green-100: #65ff4b;
+  --color-gray: #a9acac;
 
-    --breakpoint-*: initial;
-    --breakpoint-2xl: 1472px;
-    --breakpoint-xl: 1280px;
-    --breakpoint-lg: 1024px;
-    --breakpoint-md: 768px;
-    --breakpoint-sm: 640px;
+  --breakpoint-*: initial;
+  --breakpoint-2xl: 1472px;
+  --breakpoint-xl: 1280px;
+  --breakpoint-lg: 1024px;
+  --breakpoint-md: 768px;
+  --breakpoint-sm: 640px;
 
-    --animate-marquee: marquee 30s linear infinite;
-    --animate-marquee2: marquee2 20s linear infinite;
-    --animate-rounded: borderRotate 2s linear infinite;
-    --animate-right-left: rightLeft 30s linear infinite;
-    --animate-zoom-in-zoom-out: zoomInZoomOut 10s linear infinite;
-    --animate-move: move 10s linear infinite;
-    --animate-move2: move2 10s linear infinite;
-    --animate-accordion-down: accordion-down 0.2s ease-out;
-    --animate-accordion-up: accordion-up 0.2s ease-out;
+  --animate-marquee: marquee 30s linear infinite;
+  --animate-marquee2: marquee2 20s linear infinite;
+  --animate-rounded: borderRotate 2s linear infinite;
+  --animate-right-left: rightLeft 30s linear infinite;
+  --animate-zoom-in-zoom-out: zoomInZoomOut 10s linear infinite;
+  --animate-move: move 10s linear infinite;
+  --animate-move2: move2 10s linear infinite;
+  --animate-accordion-down: accordion-down 0.2s ease-out;
+  --animate-accordion-up: accordion-up 0.2s ease-out;
 }
 
 @layer base {
-    button:not(:disabled),
-    [role='button']:not(:disabled) {
-        cursor: pointer;
-    }
+  button:not(:disabled),
+  [role='button']:not(:disabled) {
+    cursor: pointer;
+  }
 
-    @keyframes accordion-down {
-        from {
-            height: 0;
-        }
-        to {
-            height: var(--radix-accordion-content-height);
-        }
+  @keyframes accordion-down {
+    from {
+      height: 0;
     }
+    to {
+      height: var(--radix-accordion-content-height);
+    }
+  }
 
-    @keyframes accordion-up {
-        from {
-            height: var(--radix-accordion-content-height);
-        }
-        to {
-            height: 0;
-        }
+  @keyframes accordion-up {
+    from {
+      height: var(--radix-accordion-content-height);
     }
-    @keyframes marquee {
-        0% {
-            transform: translateX(0%);
-        }
-        100% {
-            transform: translateX(-100%);
-        }
+    to {
+      height: 0;
     }
+  }
+  @keyframes marquee {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
 
-    @keyframes marquee2 {
-        0% {
-            transform: translateX(0%);
-        }
-        100% {
-            transform: translateX(100%);
-        }
+  @keyframes marquee2 {
+    0% {
+      transform: translateX(0%);
     }
+    100% {
+      transform: translateX(100%);
+    }
+  }
 
-    @keyframes borderRotate {
-        0% {
-            transform: rotate(0);
-        }
-        100% {
-            transform: rotate(360deg);
-        }
+  @keyframes borderRotate {
+    0% {
+      transform: rotate(0);
     }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
 
-    @keyframes rightLeft {
-        0% {
-            inset-inline-start: 0;
-        }
-        50% {
-            inset-inline-start: 100%;
-        }
-        100% {
-            inset-inline-start: 0;
-        }
+  @keyframes rightLeft {
+    0% {
+      inset-inline-start: 0;
     }
+    50% {
+      inset-inline-start: 100%;
+    }
+    100% {
+      inset-inline-start: 0;
+    }
+  }
 
-    @keyframes zoomInZoomOut {
-        0% {
-            transform: scale(1, 1);
-        }
-        50% {
-            transform: scale(1.5, 1.5);
-        }
-        100% {
-            transform: scale(1, 1);
-        }
+  @keyframes zoomInZoomOut {
+    0% {
+      transform: scale(1, 1);
     }
+    50% {
+      transform: scale(1.5, 1.5);
+    }
+    100% {
+      transform: scale(1, 1);
+    }
+  }
 
-    @keyframes move {
-        0% {
-            offset-distance: 0%;
-        }
-        100% {
-            offset-distance: 100%;
-        }
+  @keyframes move {
+    0% {
+      offset-distance: 0%;
     }
+    100% {
+      offset-distance: 100%;
+    }
+  }
 
-    @keyframes move2 {
-        100% {
-            offset-distance: 0%;
-        }
-        0% {
-            offset-distance: 100%;
-        }
+  @keyframes move2 {
+    100% {
+      offset-distance: 0%;
     }
+    0% {
+      offset-distance: 100%;
+    }
+  }
 }
 
 @utility container {
-    margin-inline: auto;
-    padding-inline: 1rem;
+  margin-inline: auto;
+  padding-inline: 1rem;
 }
 
 @utility prose {
-    * {
-        color: var(--color-gray);
-        font-size: 16px;
-        line-height: 24px;
-    }
+  * {
+    color: var(--color-gray);
+    font-size: 16px;
+    line-height: 24px;
+  }
 
-    :where(h1, h2, h3, h4, h5, h6) {
-        @apply font-semibold text-white;
-    }
-    h2 {
-        @apply mt-7 mb-4.5 text-[28px]/8 tracking-[1.4px];
-    }
-    h4 {
-        @apply mt-0 text-xl/8 tracking-[0.5px];
-    }
-    ol,
-    ul {
-        @apply ps-7;
-    }
-    ol > li {
-        @apply mt-0 mb-2 ps-0 marker:text-[22px]/5 marker:font-semibold marker:text-white;
-    }
-    ul > li {
-        @apply mt-0 mb-2 ps-0 leading-5 font-normal marker:text-base/5;
-    }
-    a {
-        @apply text-green-light leading-5 no-underline transition hover:underline;
-    }
+  :where(h1, h2, h3, h4, h5, h6) {
+    @apply font-semibold text-white;
+  }
+  h2 {
+    @apply mt-7 mb-4.5 text-[28px]/8 tracking-[1.4px];
+  }
+  h4 {
+    @apply mt-0 text-xl/8 tracking-[0.5px];
+  }
+  ol,
+  ul {
+    @apply ps-7;
+  }
+  ol > li {
+    @apply mt-0 mb-2 ps-0 marker:text-[22px]/5 marker:font-semibold marker:text-white;
+  }
+  ul > li {
+    @apply mt-0 mb-2 ps-0 leading-5 font-normal marker:text-base/5;
+  }
+  a {
+    @apply text-green-light leading-5 no-underline transition hover:underline;
+  }
 }
 
 @layer components {
-    .nav-links {
-        @apply hover:text-green relative inline-flex font-medium text-white transition lg:py-9;
-        &.active {
-            @apply text-green;
-        }
+  .nav-links {
+    @apply hover:text-green relative inline-flex font-medium text-white transition;
+    &.active {
+      @apply text-green;
     }
+  }
 }
 
 header.scrolled {
-    @apply bg-primary shadow-[0_0_10px_0_rgba(255,255,255,0.1)] duration-500;
+  @apply bg-primary shadow-[0_0_10px_0_rgba(255,255,255,0.1)] duration-500;
 }
 .glow {
-    offset-path: rect(0% auto 100% auto);
+  offset-path: rect(0% auto 100% auto);
 }
 @keyframes spin {
-    to {
-        transform: rotate(360deg);
-    }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 .stroke-solid {
-    stroke-dasharray: 300;
-    stroke-width: 1px;
-    transition:
-        stroke-dashoffset 1s ease,
-        opacity 1s ease;
+  stroke-dasharray: 300;
+  stroke-width: 1px;
+  transition:
+    stroke-dashoffset 1s ease,
+    opacity 1s ease;
 }
 .play:hover {
-    .stroke-solid {
-        opacity: 1;
-        stroke-dashoffset: 300;
-    }
+  .stroke-solid {
+    opacity: 1;
+    stroke-dashoffset: 300;
+  }
 }
 /* text border */
 .border-webkit {
-    -webkit-text-stroke: 1px #44f126;
+  -webkit-text-stroke: 1px #44f126;
 }
 /* Wave text animation */
 .wave-animation {
-    animation: wavs 4s ease-in-out infinite;
+  animation: wavs 4s ease-in-out infinite;
 }
 @keyframes wavs {
-    0%,
-    100% {
-        clip-path: polygon(
-            0% 45%,
-            16% 44%,
-            33% 50%,
-            54% 60%,
-            70% 61%,
-            84% 59%,
-            100% 52%,
-            100% 100%,
-            0% 100%
-        );
-    }
-    50% {
-        clip-path: polygon(
-            0% 60%,
-            15% 65%,
-            34% 66%,
-            51% 62%,
-            67% 50%,
-            84% 45%,
-            100% 46%,
-            100% 100%,
-            0% 100%
-        );
-    }
+  0%,
+  100% {
+    clip-path: polygon(
+      0% 45%,
+      16% 44%,
+      33% 50%,
+      54% 60%,
+      70% 61%,
+      84% 59%,
+      100% 52%,
+      100% 100%,
+      0% 100%
+    );
+  }
+  50% {
+    clip-path: polygon(
+      0% 60%,
+      15% 65%,
+      34% 66%,
+      51% 62%,
+      67% 50%,
+      84% 45%,
+      100% 46%,
+      100% 100%,
+      0% 100%
+    );
+  }
 }
 /* home page text animation */
 .home-text .letter {
-    @apply to-green-light inline-block origin-bottom-left bg-linear-to-l from-green-100 bg-clip-text text-transparent;
+  @apply to-green-light inline-block origin-bottom-left bg-linear-to-l from-green-100 bg-clip-text text-transparent;
 }
 
 .plans-features-table thead th {
-    @apply px-5 py-4 text-xl font-medium lg:text-2xl;
+  @apply px-5 py-4 text-xl font-medium lg:text-2xl;
 }
 .plans-features-table tbody td {
-    @apply text-gray px-5 py-4 text-center font-normal first:px-10 first:text-left first:text-white;
+  @apply text-gray px-5 py-4 text-center font-normal first:px-10 first:text-left first:text-white;
 }
