@@ -25,7 +25,7 @@ const NavLinks = ({ className }: any) => {
       <span className="via-green-light/50 mb-4 block h-px w-full bg-linear-to-r from-white/5 to-white/5 lg:hidden"></span>
       <li>
         <NavLink href="/" className="nav-links">
-          Home
+          Products
         </NavLink>
       </li>
       <li>

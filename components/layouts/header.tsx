@@ -27,7 +27,9 @@ export default function Header() {
     <header className="sticky top-5 z-50 container flex items-center justify-center">
       <div className="flex w-full items-center justify-between gap-5 rounded-full bg-white/10 px-10 py-2 shadow-[0_0_10px_0_rgba(255,255,255,0.1)] backdrop-blur-lg">
         <Logo />
-        <NavLinks className="hidden lg:flex" />
+        <div className="flex-1 flex justify-center">
+          <NavLinks className="hidden lg:flex" />
+        </div>
         <div className="flex gap-3.5">
           <Link
             href="/contact-us"

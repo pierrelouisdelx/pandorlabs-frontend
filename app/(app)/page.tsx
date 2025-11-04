@@ -138,142 +138,28 @@ export default function Home() {
         </div>
 
         <div className="relative z-10 container pt-20 lg:pt-40">
-          <h2 className="text-center text-lg font-semibold">
-            Proudly partnered with leading companies
+          <h2 className="text-center text-lg font-semibold uppercase">
+            Trusted by Industry Leaders
           </h2>
-          <div className="relative mx-auto max-w-5xl overflow-hidden py-10 lg:py-14">
-            <span className="from-primary absolute inset-y-0 left-0 z-10 w-20 bg-linear-to-r to-transparent"></span>
-            <span className="from-primary absolute inset-y-0 right-0 z-10 w-20 bg-linear-to-l to-transparent"></span>
-
-            <div className="flex animate-[marquee_4s_linear_infinite] gap-20 text-sm font-medium whitespace-nowrap text-black sm:animate-[marquee_40s_linear_infinite] sm:text-xl">
-              <Image
-                src="/images/lorem-logo1.svg"
-                alt="logo"
-                width={128}
-                height={34}
-                className="w-32 duration-300 hover:scale-110"
-              />
-
-              <Image
-                src="/images/lorem-logo2.svg"
-                alt="logo"
-                width={128}
-                height={34}
-                className="w-32 duration-300 hover:scale-110"
-              />
-              <Image
-                src="/images/lorem-logo3.svg"
-                alt="logo"
-                width={128}
-                height={34}
-                className="w-32 duration-300 hover:scale-110"
-              />
-              <Image
-                src="/images/lorem-logo4.svg"
-                alt="logo"
-                width={128}
-                height={34}
-                className="w-32 duration-300 hover:scale-110"
-              />
-              <Image
-                src="/images/lorem-logo5.svg"
-                alt="logo"
-                width={128}
-                height={34}
-                className="w-32 duration-300 hover:scale-110"
-              />
-              <Image
-                src="/images/lorem-logo6.svg"
-                alt="logo"
-                width={128}
-                height={34}
-                className="w-32 duration-300 hover:scale-110"
-              />
-              <Image
-                src="/images/lorem-logo1.svg"
-                alt="logo"
-                width={128}
-                height={34}
-                className="w-32 duration-300 hover:scale-110"
-              />
-              <Image
-                src="/images/lorem-logo2.svg"
-                alt="logo"
-                width={128}
-                height={34}
-                className="w-32 duration-300 hover:scale-110"
-              />
-              <Image
-                src="/images/lorem-logo3.svg"
-                alt="logo"
-                width={128}
-                height={34}
-                className="w-32 duration-300 hover:scale-110"
-              />
-              <Image
-                src="/images/lorem-logo4.svg"
-                alt="logo"
-                width={128}
-                height={34}
-                className="w-32 duration-300 hover:scale-110"
-              />
-              <Image
-                src="/images/lorem-logo5.svg"
-                alt="logo"
-                width={128}
-                height={34}
-                className="w-32 duration-300 hover:scale-110"
-              />
-              <Image
-                src="/images/lorem-logo6.svg"
-                alt="logo"
-                width={128}
-                height={34}
-                className="w-32 duration-300 hover:scale-110"
-              />
-              <Image
-                src="/images/lorem-logo1.svg"
-                alt="logo"
-                width={128}
-                height={34}
-                className="w-32 duration-300 hover:scale-110"
-              />
-              <Image
-                src="/images/lorem-logo2.svg"
-                alt="logo"
-                width={128}
-                height={34}
-                className="w-32 duration-300 hover:scale-110"
-              />
-              <Image
-                src="/images/lorem-logo3.svg"
-                alt="logo"
-                width={128}
-                height={34}
-                className="w-32 duration-300 hover:scale-110"
-              />
-              <Image
-                src="/images/lorem-logo4.svg"
-                alt="logo"
-                width={128}
-                height={34}
-                className="w-32 duration-300 hover:scale-110"
-              />
-              <Image
-                src="/images/lorem-logo5.svg"
-                alt="logo"
-                width={128}
-                height={34}
-                className="w-32 duration-300 hover:scale-110"
-              />
-              <Image
-                src="/images/lorem-logo6.svg"
-                alt="logo"
-                width={128}
-                height={34}
-                className="w-32 duration-300 hover:scale-110"
-              />
-            </div>
+          <div className="mt-10 flex flex-wrap items-center justify-center gap-20">
+            <Image
+              src="/images/companies/avian.svg"
+              alt="SIEMENS"
+              width={195}
+              height={75}
+            />
+            <Image
+              src="/images/companies/nvidia.svg"
+              alt="NVIDIA"
+              width={195}
+              height={75}
+            />
+            <Image
+              src="/images/companies/siemens-healthineers.svg"
+              alt="SIEMENS"
+              width={195}
+              height={75}
+            />
           </div>
         </div>
       </div>
