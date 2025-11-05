@@ -345,11 +345,11 @@ export default function ShoppingMonitoringPage() {
             <h2 className="mb-4 text-[26px]/8 font-semibold sm:text-3xl lg:text-5xl/[60px]">
               Trusted by Teams That{' '}
               <span className="bg-gradient-to-r from-amber-200 via-amber-400 to-amber-500 bg-clip-text text-transparent">
-                Can't Afford to Wait
+                Can&apos;t Afford to Wait
               </span>
             </h2>
             <p className="text-gray mx-auto mb-8 max-w-2xl">
-              Whether you're a fast-growing brand or an enterprise retailer,
+              Whether you&apos;re a fast-growing brand or an enterprise retailer,
               competitive pricing intelligence is mission-critical—and it needs
               to be instant.
             </p>
@@ -497,9 +497,9 @@ export default function ShoppingMonitoringPage() {
                 </p>
               </div>
               <p className="text-gray leading-relaxed">
-                "We increased our profit margins by 18% in the first quarter
+                &quot;We increased our profit margins by 18% in the first quarter
                 using PandoraLabs. Real-time competitor tracking lets us price
-                optimally while protecting our brand positioning."
+                optimally while protecting our brand positioning.&quot;
               </p>
             </div>
 
@@ -512,9 +512,9 @@ export default function ShoppingMonitoringPage() {
                 <p className="text-gray/80 text-sm">Fortune 500 Retailer</p>
               </div>
               <p className="text-gray leading-relaxed">
-                "Before PandoraLabs, we had 5 analysts manually tracking prices.
+                &quot;Before PandoraLabs, we had 5 analysts manually tracking prices.
                 Now we monitor 50K+ SKUs in real-time and our team focuses on
-                strategy, not spreadsheets."
+                strategy, not spreadsheets.&quot;
               </p>
             </div>
 
@@ -527,9 +527,9 @@ export default function ShoppingMonitoringPage() {
                 <p className="text-gray/80 text-sm">DTC Fashion Brand</p>
               </div>
               <p className="text-gray leading-relaxed">
-                "The MAP violation alerts saved our brand. We caught
+                &quot;The MAP violation alerts saved our brand. We caught
                 unauthorized sellers within hours instead of weeks, protecting
-                millions in brand equity."
+                millions in brand equity.&quot;
               </p>
             </div>
           </div>

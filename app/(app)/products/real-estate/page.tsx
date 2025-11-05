@@ -52,7 +52,7 @@ export default function RealEstatePage() {
               <div className="text-gray mx-auto mb-12 max-w-4xl space-y-4 lg:mx-0">
                 <p>
                   Manual property research is slow, outdated comps miss market
-                  shifts, and opportunities vanish while you're still gathering
+                  shifts, and opportunities vanish while you&apos;re still gathering
                   data. Traditional real estate tools leave you flying blind in
                   fast-moving markets.
                 </p>
@@ -359,7 +359,7 @@ export default function RealEstatePage() {
               </span>
             </h2>
             <p className="text-gray mx-auto mb-12 max-w-2xl">
-              Whether you're a PropTech startup or a national brokerage, we
+              Whether you&apos;re a PropTech startup or a national brokerage, we
               provide the infrastructure and support for mission-critical real
               estate applications.
             </p>

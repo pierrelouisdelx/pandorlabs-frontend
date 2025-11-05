@@ -116,7 +116,7 @@ export default function Home() {
                   Every day, critical business intelligence is locked away on
                   competitor websites, industry forums, and market databases.
                   Your team spends weeks manually collecting data, only to find
-                  it's outdated by the time they analyze it.
+                  it&apos;s outdated by the time they analyze it.
                 </p>
                 <p className="text-lg font-semibold text-white">
                   What if you could access any data source instantly—with the
@@ -264,7 +264,7 @@ export default function Home() {
 
           <div className="text-center">
             <p className="text-gray mb-4">
-              Don't see your use case? Our AI agents can handle custom data
+              Don&apos;t see your use case? Our AI agents can handle custom data
               extraction from any source.
             </p>
             <Link href="/contact" className={buttonVariants()}>
@@ -289,7 +289,7 @@ export default function Home() {
               </span>
             </h2>
             <p className="text-gray mx-auto max-w-2xl">
-              When your strategy depends on accurate data, you can't afford
+              When your strategy depends on accurate data, you can&apos;t afford
               downtime, errors, or security risks. PandoraLabs is built to
               enterprise standards because your decisions deserve enterprise
               reliability.
@@ -335,11 +335,11 @@ export default function Home() {
             <h2 className="mb-4 text-[26px]/8 font-semibold sm:text-3xl lg:text-5xl/[60px]">
               Trusted by Teams That{' '}
               <span className="to-green-light bg-linear-to-l from-green-100 bg-clip-text text-transparent">
-                Can't Afford to Wait
+                Can&apos;t Afford to Wait
               </span>
             </h2>
             <p className="text-gray mx-auto mb-8 max-w-2xl">
-              Whether you're a startup racing to understand your market or a
+              Whether you&apos;re a startup racing to understand your market or a
               Fortune 500 making billion-dollar decisions, you need intelligence
               you can trust—fast.
             </p>
@@ -358,9 +358,9 @@ export default function Home() {
                 </p>
               </div>
               <p className="text-gray leading-relaxed">
-                "We replaced 3 full-time analysts with PandoraLabs. Now we get
+                &quot;We replaced 3 full-time analysts with PandoraLabs. Now we get
                 better data, faster—and our team focuses on insights, not
-                spreadsheets."
+                spreadsheets.&quot;
               </p>
             </div>
 
@@ -373,9 +373,9 @@ export default function Home() {
                 <p className="text-gray/80 text-sm">Series B SaaS Company</p>
               </div>
               <p className="text-gray leading-relaxed">
-                "Before PandoraLabs, competitive research took weeks. Now we
+                &quot;Before PandoraLabs, competitive research took weeks. Now we
                 have real-time market intelligence that informs every product
-                decision."
+                decision.&quot;
               </p>
             </div>
 
@@ -388,8 +388,8 @@ export default function Home() {
                 <p className="text-gray/80 text-sm">$2B Investment Fund</p>
               </div>
               <p className="text-gray leading-relaxed">
-                "PandoraLabs gives us market data our competitors don't have
-                access to. It's like having insider knowledge—legally."
+                &quot;PandoraLabs gives us market data our competitors don&apos;t have
+                access to. It&apos;s like having insider knowledge—legally.&quot;
               </p>
             </div>
           </div>

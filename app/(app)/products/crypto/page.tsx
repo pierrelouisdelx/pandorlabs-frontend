@@ -173,7 +173,7 @@ export default function CryptoDataPage() {
               </span>
             </h2>
             <p className="text-gray mx-auto max-w-2xl">
-              When milliseconds matter and downtime isn't an option, you need
+              When milliseconds matter and downtime isn&apos;t an option, you need
               infrastructure built to financial industry standards.
             </p>
           </div>
@@ -334,9 +334,9 @@ export default function CryptoDataPage() {
                 <p className="text-gray/80 text-sm">Major Crypto Exchange</p>
               </div>
               <p className="text-gray leading-relaxed">
-                "The API reliability and data quality are unmatched. We've built
+                &quot;The API reliability and data quality are unmatched. We&apos;ve built
                 our entire trading infrastructure on this data with zero
-                regrets."
+                regrets.&quot;
               </p>
             </div>
 
@@ -349,9 +349,9 @@ export default function CryptoDataPage() {
                 <p className="text-gray/80 text-sm">Hedge Fund</p>
               </div>
               <p className="text-gray leading-relaxed">
-                "Sub-50ms latency is critical for our trading strategies. This
+                &quot;Sub-50ms latency is critical for our trading strategies. This
                 API delivers consistently and has become essential to our
-                operations."
+                operations.&quot;
               </p>
             </div>
 
@@ -362,9 +362,9 @@ export default function CryptoDataPage() {
                 <p className="text-gray/80 text-sm">Portfolio Analytics</p>
               </div>
               <p className="text-gray leading-relaxed">
-                "We needed multi-chain data that just works. The comprehensive
+                &quot;We needed multi-chain data that just works. The comprehensive
                 coverage and reliability let us focus on building great
-                products."
+                products.&quot;
               </p>
             </div>
           </div>

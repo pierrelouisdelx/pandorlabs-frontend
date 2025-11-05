@@ -390,7 +390,7 @@ export default function AIDataPage() {
               </span>
             </h2>
             <p className="text-gray mx-auto max-w-2xl">
-              When your AI models depend on training data quality, you can't
+              When your AI models depend on training data quality, you can&apos;t
               afford errors, bias, or legal risks. PandoraLabs datasets are
               built to production standards.
             </p>
@@ -474,9 +474,9 @@ export default function AIDataPage() {
                 <p className="text-gray/80 text-sm">University Medical Center</p>
               </div>
               <p className="text-gray leading-relaxed">
-                "PandoraLabs datasets reduced our model training time by 60%.
+                &quot;PandoraLabs datasets reduced our model training time by 60%.
                 The annotation quality is exceptional—better than our in-house
-                labeling."
+                labeling.&quot;
               </p>
             </div>
 
@@ -489,9 +489,9 @@ export default function AIDataPage() {
                 <p className="text-gray/80 text-sm">Series A Company</p>
               </div>
               <p className="text-gray leading-relaxed">
-                "We achieved production-ready models in 3 months instead of 12.
+                &quot;We achieved production-ready models in 3 months instead of 12.
                 Access to diverse, high-quality datasets was a game changer for
-                our launch."
+                our launch.&quot;
               </p>
             </div>
 
@@ -504,9 +504,9 @@ export default function AIDataPage() {
                 <p className="text-gray/80 text-sm">Fortune 500 Tech Company</p>
               </div>
               <p className="text-gray leading-relaxed">
-                "The custom labeling service delivered exactly what we needed.
+                &quot;The custom labeling service delivered exactly what we needed.
                 Domain experts annotated our specialized dataset with 99.5%
-                accuracy."
+                accuracy.&quot;
               </p>
             </div>
           </div>
@@ -593,12 +593,12 @@ export default function AIDataPage() {
                     <span className="text-white">(</span>
                   </div>
                   <div className="pl-4">
-                    <span className="text-green-400">"coco-detection"</span>
+                    <span className="text-green-400">&quot;coco-detection&quot;</span>
                     <span className="text-white">,</span>
                   </div>
                   <div className="pl-4">
                     <span className="text-white">split=</span>
-                    <span className="text-green-400">"train"</span>
+                    <span className="text-green-400">&quot;train&quot;</span>
                   </div>
                   <div>
                     <span className="text-white">)</span>

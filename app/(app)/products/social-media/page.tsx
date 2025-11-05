@@ -259,7 +259,7 @@ export default function SocialMediaPage() {
 
               <div className="text-gray mx-auto mb-12 max-w-4xl space-y-4 lg:mx-0">
                 <p>
-                  Manual social monitoring can't scale. By the time you compile
+                  Manual social monitoring can&apos;t scale. By the time you compile
                   brand mentions, analyze sentiment, and track competitors,
                   viral moments have passed and crises have escalated.
                 </p>
@@ -483,7 +483,7 @@ export default function SocialMediaPage() {
               </span>
             </h2>
             <p className="text-gray mx-auto mb-12 max-w-2xl">
-              Whether you're a social media agency or a global brand, we provide
+              Whether you&apos;re a social media agency or a global brand, we provide
               the infrastructure and support for mission-critical social
               intelligence.
             </p>
@@ -502,9 +502,9 @@ export default function SocialMediaPage() {
                 </p>
               </div>
               <p className="text-gray leading-relaxed">
-                "We replaced 5 social listening tools with PandoraLabs. Now we
+                &quot;We replaced 5 social listening tools with PandoraLabs. Now we
                 get better data, faster—and save $3K/month on tool
-                subscriptions."
+                subscriptions.&quot;
               </p>
             </div>
 
@@ -519,8 +519,8 @@ export default function SocialMediaPage() {
                 </p>
               </div>
               <p className="text-gray leading-relaxed">
-                "Real-time crisis detection saved our brand reputation during a
-                viral moment. We responded in minutes, not hours."
+                &quot;Real-time crisis detection saved our brand reputation during a
+                viral moment. We responded in minutes, not hours.&quot;
               </p>
             </div>
 
@@ -533,8 +533,8 @@ export default function SocialMediaPage() {
                 <p className="text-gray/80 text-sm">Series B Marketing SaaS</p>
               </div>
               <p className="text-gray leading-relaxed">
-                "PandoraLabs gives us social data our competitors don't have
-                access to. It's a competitive moat for our platform."
+                &quot;PandoraLabs gives us social data our competitors don&apos;t have
+                access to. It&apos;s a competitive moat for our platform.&quot;
               </p>
             </div>
           </div>

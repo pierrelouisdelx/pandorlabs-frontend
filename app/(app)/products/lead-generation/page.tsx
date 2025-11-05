@@ -381,7 +381,7 @@ export default function LeadGenerationPage() {
               <p className="text-gray group-hover:text-gray/90 text-sm leading-relaxed transition-colors duration-300">
                 All data sourced through compliant methods with consent tracking
                 and right-to-erasure support. Bank-level security that passes
-                your compliance team's review.
+                your compliance team&apos;s review.
               </p>
             </div>
 
@@ -394,7 +394,7 @@ export default function LeadGenerationPage() {
               </h3>
               <p className="text-gray group-hover:text-gray/90 text-sm leading-relaxed transition-colors duration-300">
                 95% email accuracy with continuous verification. AI-powered
-                scoring and enrichment ensures you're targeting the right
+                scoring and enrichment ensures you&apos;re targeting the right
                 prospects with the right data.
               </p>
             </div>
@@ -436,9 +436,9 @@ export default function LeadGenerationPage() {
                 <p className="text-gray/80 text-sm">SaaS Company, Series C</p>
               </div>
               <p className="text-gray leading-relaxed">
-                "Reduced cost-per-lead by 60% and increased pipeline velocity by
+                &quot;Reduced cost-per-lead by 60% and increased pipeline velocity by
                 40%. Our SDR team is now 3x more productive with verified
-                contacts."
+                contacts.&quot;
               </p>
             </div>
 
@@ -453,8 +453,8 @@ export default function LeadGenerationPage() {
                 </p>
               </div>
               <p className="text-gray leading-relaxed">
-                "We replaced 3 data vendors with PandoraLabs. Better accuracy,
-                lower costs, and our clients see 25% higher email open rates."
+                &quot;We replaced 3 data vendors with PandoraLabs. Better accuracy,
+                lower costs, and our clients see 25% higher email open rates.&quot;
               </p>
             </div>
 
@@ -467,8 +467,8 @@ export default function LeadGenerationPage() {
                 <p className="text-gray/80 text-sm">FinTech, Seed Stage</p>
               </div>
               <p className="text-gray leading-relaxed">
-                "Built a 50K contact database in weeks instead of months. The AI
-                scoring helps us focus on leads that actually convert."
+                &quot;Built a 50K contact database in weeks instead of months. The AI
+                scoring helps us focus on leads that actually convert.&quot;
               </p>
             </div>
           </div>
