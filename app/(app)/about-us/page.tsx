@@ -88,7 +88,7 @@ export default function AboutUs() {
               </p>
 
               <p className="text-gray text-center">
-                With over 10 years dedicated to web scraping and data extraction, we've mastered every layer of the modern web stack. From dynamic JavaScript applications to sophisticated anti-bot systems, our expertise in reverse engineering and AI-powered automation allows us to extract intelligence from sources others deem &ldquo;unscrappable.&rdquo; If it&apos;s on the web, we can reach it.
+                With over 10 years dedicated to web scraping and data extraction, we&apos;ve mastered every layer of the modern web stack. From dynamic JavaScript applications to sophisticated anti-bot systems, our expertise in reverse engineering and AI-powered automation allows us to extract intelligence from sources others deem &ldquo;unscrappable.&rdquo; If it&apos;s on the web, we can reach it.
               </p>
             </div>
           </div>
