@@ -13,7 +13,6 @@ import {
   Zap,
 } from 'lucide-react'
 
-import { FAQSection } from '../_components/faq-section'
 import { FeaturesGrid } from '../_components/features-grid'
 import { FinalCTASection } from '../_components/final-cta-section'
 import { ProductHero } from '../_components/product-hero'
@@ -224,114 +223,6 @@ const features = [
   },
 ]
 
-const pricingTiers = [
-  {
-    name: 'Starter',
-    price: '$299',
-    period: 'month',
-    description: 'Perfect for startups and small teams',
-    requests: '50,000 API calls/month',
-    features: [
-      'Multi-platform data access',
-      'Basic engagement metrics',
-      'Email support',
-      'API documentation',
-      '30-day data retention',
-    ],
-    cta: 'Start Free Trial',
-    highlighted: false,
-  },
-  {
-    name: 'Professional',
-    price: '$799',
-    period: 'month',
-    description: 'For growing businesses and agencies',
-    requests: '250,000 API calls/month',
-    features: [
-      'Everything in Starter',
-      'Real-time webhook notifications',
-      'Sentiment analysis',
-      'Historical data (12 months)',
-      'Priority support (24/7)',
-      'Advanced analytics dashboard',
-      'Custom data retention',
-    ],
-    cta: 'Start Trial',
-    highlighted: true,
-  },
-  {
-    name: 'Enterprise',
-    price: 'Custom',
-    period: 'year',
-    description: 'For large-scale operations',
-    requests: 'Unlimited API calls',
-    features: [
-      'Everything in Professional',
-      'Dedicated account manager',
-      'Custom SLA guarantees',
-      'White-label options',
-      'On-premise deployment',
-      'Bulk data exports',
-      'Custom integrations',
-    ],
-    cta: 'Contact Sales',
-    highlighted: false,
-  },
-]
-
-const faqs = [
-  {
-    question: 'What is a social media data API?',
-    answer:
-      'A social media data API is a programmatic interface that allows applications to access structured social media content, engagement metrics, and audience data from platforms like Instagram, TikTok, and Twitter. It enables automated data collection for analytics, monitoring, and research without manual scraping, delivering real-time posts, comments, hashtags, and user interactions through standardized endpoints.',
-  },
-  {
-    question: 'Which social media platforms does your API support?',
-    answer:
-      'Our Social Media Data API supports 10+ major platforms including Instagram, TikTok, Twitter/X, Facebook, LinkedIn, YouTube, Pinterest, Reddit, Snapchat, and Threads. All platforms share a unified data schema for consistent cross-platform analysis. Coverage includes posts, stories, reels, comments, engagement metrics, hashtag performance, and audience demographics where publicly available.',
-  },
-  {
-    question: 'How fresh is the social media data provided?',
-    answer:
-      'Our API delivers real-time data with sub-60-second latency for new posts, comments, and engagement updates. Real-time webhooks notify applications instantly when monitored keywords, hashtags, or accounts post new content. Historical data extends back 12 months for trend analysis. Data refresh rates vary by platform but typically update every 15-30 minutes for engagement metrics.',
-  },
-  {
-    question: 'What metrics and data points are included?',
-    answer:
-      'Our API provides 200+ data points per post including engagement metrics (likes, comments, shares, saves), reach and impressions, engagement rate, posting times, content type, hashtags, mentions, sentiment scores, author demographics, follower counts, growth trends, viral coefficient, share of voice, and competitive benchmarks. Custom metric aggregations available for enterprise clients.',
-  },
-  {
-    question: 'Is social media API data collection legal and compliant?',
-    answer:
-      "Yes. Our API collects only publicly available social media data in compliance with GDPR, CCPA, and each platform's terms of service. We do not access private accounts, direct messages, or restricted content. Data collection includes built-in anonymization, configurable retention policies, automatic PII detection, and transparent audit trails meeting regulatory requirements for financial services, healthcare, and government sectors.",
-  },
-  {
-    question: 'Can I track competitors and industry trends with your API?',
-    answer:
-      'Yes. Monitor competitor social media accounts, track their engagement rates, content strategies, posting frequency, hashtag usage, and audience growth. Set up keyword and hashtag tracking to identify emerging trends, analyze share of voice across your industry, benchmark performance against competitors, and receive alerts when competitors launch campaigns or experience viral content.',
-  },
-  {
-    question: 'How much does a social media data API cost?',
-    answer:
-      'Pricing starts at $299/month for 50,000 API calls covering basic engagement metrics. Professional plans ($799/month) include 250,000 calls with sentiment analysis and historical data. Enterprise plans offer custom pricing for unlimited calls, dedicated infrastructure, priority support, and advanced features like predictive analytics. All plans include real-time data access and multi-platform coverage.',
-  },
-  {
-    question: 'What are common use cases for social media APIs?',
-    answer:
-      'Social media APIs power brand monitoring, competitive intelligence, influencer marketing analytics, crisis management, trend forecasting, consumer sentiment analysis, market research, content performance optimization, lead generation, and customer service automation. Agencies use APIs for client reporting, researchers for academic studies, and enterprises for strategic decision-making based on social listening insights.',
-  },
-  {
-    question: 'What technical support and documentation is available?',
-    answer:
-      'All plans include comprehensive REST API documentation, interactive API playground, SDK libraries for major programming languages, code examples, integration guides, and video tutorials. Professional and Enterprise plans add dedicated technical support via email and Slack, onboarding consultation, custom integration assistance, and 24/7 emergency support with guaranteed response times under 2 hours.',
-  },
-  {
-    question: 'How do I access social media data through an API?',
-    answer:
-      'Access social media data by registering for an API key, choosing your subscription tier, and making HTTP requests to our REST endpoints. Use our SDKs for Python, JavaScript, PHP, or Ruby for quick integration, or call endpoints directly. Authenticate with your API key, specify platforms and data types needed, and receive structured JSON responses with real-time or historical social media data.',
-  },
-]
-
 export default function SocialMediaPage() {
   return (
     <div className="min-h-screen bg-[#0A0A0A]">
@@ -343,7 +234,6 @@ export default function SocialMediaPage() {
         accentColor={accentColor}
         accentGlow={accentGlow}
       />
-      <FAQSection faqs={faqs} accentColor={accentColor} />
       <FinalCTASection accentColor={accentColor} accentGlow={accentGlow} />
 
       <style jsx>{`

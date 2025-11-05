@@ -2,7 +2,6 @@
 
 import { Brain, Code2, Shield, Sparkles, TrendingUp, Zap } from 'lucide-react'
 
-import { FAQSection } from '../_components/faq-section'
 import { FeaturesGrid } from '../_components/features-grid'
 import { FinalCTASection } from '../_components/final-cta-section'
 import { ProductHero } from '../_components/product-hero'
@@ -155,61 +154,6 @@ export default function AIDataPage() {
         ]}
         accentColor={accentColor}
         accentGlow={accentGlow}
-      />
-      <FAQSection
-        faqs={[
-          {
-            question: 'What types of datasets do you offer?',
-            answer:
-              'We provide datasets across computer vision (image classification, object detection, segmentation), NLP (sentiment analysis, named entity recognition, translation), speech (ASR, TTS, voice classification), and multimodal AI. Categories include healthcare, retail, automotive, finance, and general-purpose.',
-          },
-          {
-            question: 'How do you ensure annotation quality?',
-            answer:
-              'All annotations undergo multi-stage quality control: initial labeling by trained annotators, peer review by second annotators, expert validation for specialized domains, and algorithmic consistency checks. We achieve 99% accuracy with inter-annotator agreement >95%.',
-          },
-          {
-            question: 'Can I request custom dataset creation?',
-            answer:
-              'Yes, Professional and Enterprise plans include custom labeling hours. Our annotation teams can label your proprietary data or source new data according to your specifications. We support all major annotation types: bounding boxes, polygons, keypoints, text spans, classifications, and more.',
-          },
-          {
-            question: 'What is your data sourcing and licensing approach?',
-            answer:
-              'All datasets are ethically sourced with proper consent and licensing. We maintain full data provenance documentation including source, collection method, consent status, and licensing terms. Commercial licenses allow unrestricted model training and deployment. Academic licenses require attribution.',
-          },
-          {
-            question: 'Do you provide synthetic data generation?',
-            answer:
-              'Yes, we use GANs, diffusion models, and rule-based generation to create synthetic data for edge cases, rare events, and privacy-sensitive scenarios. Synthetic data is validated to match real-world distributions and can be customized to your specific requirements.',
-          },
-          {
-            question: 'How are datasets delivered?',
-            answer:
-              'Datasets can be downloaded as ZIP archives, streamed via our API, or synced directly to your cloud storage (S3, GCS, Azure Blob). We support incremental updates, versioning, and delta downloads to minimize bandwidth. Enterprise clients can request on-premise deployment.',
-          },
-          {
-            question: 'What formats are supported?',
-            answer:
-              'Images: JPEG, PNG, TIFF, WebP. Annotations: COCO JSON, Pascal VOC XML, YOLO, CSV. Text: TXT, JSON, CSV, Parquet. Audio: WAV, MP3, FLAC. We can convert to custom formats on request. All datasets include metadata in standardized schemas.',
-          },
-          {
-            question: 'Can I preview datasets before purchasing?',
-            answer:
-              'Yes, all datasets include free preview samples (typically 100-1,000 examples) with full annotations. You can explore data distributions, annotation quality, and schema before committing. Research plan provides access to entire public datasets.',
-          },
-          {
-            question: 'Do you handle data privacy and GDPR compliance?',
-            answer:
-              'All datasets comply with GDPR, CCPA, and relevant data protection regulations. Personal data is anonymized or de-identified. We provide data processing agreements for enterprise clients and maintain audit trails for compliance reporting.',
-          },
-          {
-            question: 'What is your dataset versioning policy?',
-            answer:
-              'Datasets are immutably versioned (v1.0, v1.1, etc.). Updates include new samples, improved annotations, or schema changes. You can pin to specific versions for reproducibility. We maintain all versions for 24 months. API supports automatic updates or manual version selection.',
-          },
-        ]}
-        accentColor={accentColor}
       />
       <FinalCTASection accentColor={accentColor} accentGlow={accentGlow} />
 

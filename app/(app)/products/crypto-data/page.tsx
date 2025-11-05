@@ -2,7 +2,6 @@
 
 import { Bitcoin, Shield, TrendingUp, Zap } from 'lucide-react'
 
-import { FAQSection } from '../_components/faq-section'
 import { FeaturesGrid } from '../_components/features-grid'
 import { FinalCTASection } from '../_components/final-cta-section'
 import { ProductHero } from '../_components/product-hero'
@@ -139,63 +138,6 @@ export default function CryptoDataPage() {
         ]}
         accentColor={accentColor}
         accentGlow={accentGlow}
-      />
-
-      <FAQSection
-        faqs={[
-          {
-            question: 'Which cryptocurrency exchanges do you cover?',
-            answer:
-              'We aggregate data from 400+ exchanges including Binance, Coinbase, Kraken, Bybit, OKX, Huobi, KuCoin, and all major DEXs (Uniswap, PancakeSwap, SushiSwap). Coverage includes spot, futures, perpetuals, and options markets.',
-          },
-          {
-            question: 'What is the latency for real-time price feeds?',
-            answer:
-              'Our WebSocket connections deliver tick-by-tick updates with <50ms latency from exchange to your application. REST API responses average 35ms globally via our edge network. Enterprise clients can colocate for single-digit millisecond latency.',
-          },
-          {
-            question: 'Do you provide order book data?',
-            answer:
-              'Yes, Professional and Enterprise plans include full order book depth (up to 1,000 levels) with real-time updates. We provide snapshots and incremental updates via WebSocket for efficient bandwidth usage.',
-          },
-          {
-            question: 'How far back does your historical data go?',
-            answer:
-              'Historical trade data extends to 2010 for Bitcoin and to launch dates for all other cryptocurrencies. Professional plans get 5 years, Enterprise gets unlimited. Data includes OHLCV, trades, order books, and funding rates (for perpetuals).',
-          },
-          {
-            question:
-              'Can I access blockchain data in addition to market prices?',
-            answer:
-              'Yes, our multi-chain analytics cover Bitcoin, Ethereum, Solana, Polygon, BSC, and 50+ chains. Access transaction data, wallet balances, smart contract events, gas prices, and on-chain metrics through the same unified API.',
-          },
-          {
-            question: 'What authentication methods do you support?',
-            answer:
-              'We support API key authentication (HMAC-SHA256 signing), OAuth 2.0, and JWT tokens. Enterprise clients can implement IP whitelisting, mTLS certificates, and SSO integration for enhanced security.',
-          },
-          {
-            question: 'Do you offer data normalization across exchanges?',
-            answer:
-              'Absolutely. We normalize all data to consistent formats: standardized symbol naming (BTC-USD vs BTCUSD), unified timestamps (Unix milliseconds), and harmonized order book schemas. This eliminates integration complexity.',
-          },
-          {
-            question: 'What is your uptime SLA?',
-            answer:
-              'Professional plans have 99.9% uptime SLA, Enterprise plans get 99.99%. We maintain redundant infrastructure across multiple cloud regions with automatic failover. Historical uptime is 99.98% over the past 12 months.',
-          },
-          {
-            question: 'Can I backtest trading strategies with your data?',
-            answer:
-              'Yes, our historical data is tick-accurate and suitable for backtesting. Enterprise plans include a dedicated backtesting environment with low-latency access to historical order books and trade data. We support minute, hourly, and daily aggregations.',
-          },
-          {
-            question: 'Are you compliant with financial regulations?',
-            answer:
-              'We maintain compliance with GDPR, MiFID II (for EU), and provide data lineage documentation for SEC/CFTC reporting. Our data sourcing is transparent, and we offer audit trails for all API access. We work with institutional clients requiring regulatory oversight.',
-          },
-        ]}
-        accentColor={accentColor}
       />
       <FinalCTASection accentColor={accentColor} accentGlow={accentGlow} />
 

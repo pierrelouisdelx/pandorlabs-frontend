@@ -1,0 +1,167 @@
+'use client'
+
+import { useState, FormEvent } from 'react'
+import {
+  Dialog,
+  DialogContent,
+  DialogDescription,
+  DialogHeader,
+  DialogTitle,
+} from '@/components/ui/dialog'
+import { Input } from '@/components/ui/input'
+import { buttonVariants } from '@/components/ui/button'
+import { Mail, Building2, User, MessageSquare } from 'lucide-react'
+
+interface DemoRequestModalProps {
+  open: boolean
+  onOpenChange: (open: boolean) => void
+}
+
+export default function DemoRequestModal({
+  open,
+  onOpenChange,
+}: DemoRequestModalProps) {
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    company: '',
+    message: '',
+  })
+  const [isSubmitting, setIsSubmitting] = useState(false)
+
+  const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
+    e.preventDefault()
+    setIsSubmitting(true)
+
+    try {
+      // TODO: Implement actual demo request submission logic
+      console.log('Demo request submitted:', formData)
+
+      // Simulate API call
+      await new Promise((resolve) => setTimeout(resolve, 1000))
+
+      // Reset form and close modal
+      setFormData({ name: '', email: '', company: '', message: '' })
+      onOpenChange(false)
+
+      // You can add a success notification here
+      alert('Demo request submitted successfully! We will contact you soon.')
+    } catch (error) {
+      console.error('Error submitting demo request:', error)
+      alert('Failed to submit demo request. Please try again.')
+    } finally {
+      setIsSubmitting(false)
+    }
+  }
+
+  return (
+    <Dialog open={open} onOpenChange={onOpenChange}>
+      <DialogContent className="max-w-md border border-white/20 bg-gradient-to-br from-gray-900/95 via-primary/95 to-gray-900/95 p-6 shadow-2xl backdrop-blur-xl sm:max-w-lg">
+        <DialogHeader className="space-y-3">
+          <DialogTitle className="bg-gradient-to-r from-green-light via-green-100 to-green-light bg-clip-text text-2xl font-bold text-transparent">
+            Request a Demo
+          </DialogTitle>
+          <DialogDescription className="text-gray-300">
+            Fill out the form below and our team will get in touch with you to
+            schedule a personalized demo of our data extraction platform.
+          </DialogDescription>
+        </DialogHeader>
+
+        <form onSubmit={handleSubmit} className="mt-6 space-y-4">
+          <div className="space-y-2">
+            <label htmlFor="name" className="text-sm font-medium text-white">
+              Full Name <span className="text-red-400">*</span>
+            </label>
+            <Input
+              id="name"
+              type="text"
+              placeholder="John Doe"
+              required
+              value={formData.name}
+              onChange={(e) =>
+                setFormData({ ...formData, name: e.target.value })
+              }
+              iconLeft={<User className="size-5" />}
+              className="bg-white/5 text-white"
+            />
+          </div>
+
+          <div className="space-y-2">
+            <label htmlFor="email" className="text-sm font-medium text-white">
+              Work Email <span className="text-red-400">*</span>
+            </label>
+            <Input
+              id="email"
+              type="email"
+              placeholder="john@company.com"
+              required
+              value={formData.email}
+              onChange={(e) =>
+                setFormData({ ...formData, email: e.target.value })
+              }
+              iconLeft={<Mail className="size-5" />}
+              className="bg-white/5 text-white"
+            />
+          </div>
+
+          <div className="space-y-2">
+            <label htmlFor="company" className="text-sm font-medium text-white">
+              Company Name <span className="text-red-400">*</span>
+            </label>
+            <Input
+              id="company"
+              type="text"
+              placeholder="Acme Corporation"
+              required
+              value={formData.company}
+              onChange={(e) =>
+                setFormData({ ...formData, company: e.target.value })
+              }
+              iconLeft={<Building2 className="size-5" />}
+              className="bg-white/5 text-white"
+            />
+          </div>
+
+          <div className="space-y-2">
+            <label htmlFor="message" className="text-sm font-medium text-white">
+              Tell us about your needs (Optional)
+            </label>
+            <div className="relative">
+              <textarea
+                id="message"
+                placeholder="I'm interested in extracting data from..."
+                rows={4}
+                value={formData.message}
+                onChange={(e) =>
+                  setFormData({ ...formData, message: e.target.value })
+                }
+                className="flex w-full rounded-2xl border border-gray/20 bg-white/5 px-6 py-3.5 pl-12 text-base text-white backdrop-blur-md transition-all duration-300 placeholder:text-gray focus:border-green-light/50 focus:shadow-lg focus:shadow-green-light/10 focus-visible:outline-hidden disabled:cursor-not-allowed disabled:opacity-50 hover:border-gray/30"
+              />
+              <MessageSquare className="absolute left-4 top-4 size-5 text-white" />
+            </div>
+          </div>
+
+          <div className="flex gap-3 pt-4">
+            <button
+              type="button"
+              onClick={() => onOpenChange(false)}
+              className="flex-1 rounded-full border border-white/20 bg-white/5 px-6 py-3 text-sm font-medium text-white transition-all duration-300 hover:border-white/30 hover:bg-white/10"
+            >
+              Cancel
+            </button>
+            <button
+              type="submit"
+              disabled={isSubmitting}
+              className={buttonVariants({
+                className:
+                  'flex-1 disabled:cursor-not-allowed disabled:opacity-50',
+              })}
+            >
+              {isSubmitting ? 'Submitting...' : 'Request Demo'}
+            </button>
+          </div>
+        </form>
+      </DialogContent>
+    </Dialog>
+  )
+}

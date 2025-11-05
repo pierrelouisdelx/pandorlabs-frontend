@@ -8,7 +8,6 @@ import {
   Zap,
 } from 'lucide-react'
 
-import { FAQSection } from '../_components/faq-section'
 import { FeaturesGrid } from '../_components/features-grid'
 import { FinalCTASection } from '../_components/final-cta-section'
 import { ProductHero } from '../_components/product-hero'
@@ -134,63 +133,6 @@ export default function ShoppingMonitoringPage() {
         ]}
         accentColor={accentColor}
         accentGlow={accentGlow}
-      />
-
-      <FAQSection
-        faqs={[
-          {
-            question: 'Which e-commerce platforms do you monitor?',
-            answer:
-              'We monitor 50+ marketplaces including Amazon (all regions), eBay, Walmart, Shopify stores, WooCommerce, Etsy, AliExpress, and major regional platforms. Enterprise clients can request custom marketplace integrations.',
-          },
-          {
-            question:
-              'How accurate is your product matching across different sellers?',
-            answer:
-              'Our AI-powered matching achieves 98% accuracy using computer vision (image recognition), NLP (title/description analysis), and attribute matching (UPC, EAN, ASIN). False positives are under 2%, and you can manually review and adjust matches.',
-          },
-          {
-            question: 'How frequently are prices updated?',
-            answer:
-              'Professional plans update every 15 minutes. Starter plans update daily. Enterprise plans offer real-time monitoring with instant webhook notifications for price changes, stock updates, and new competitor listings.',
-          },
-          {
-            question: 'Can I track stock availability in addition to prices?',
-            answer:
-              'Yes, we monitor stock status (in stock, out of stock, low stock) alongside prices. You can set alerts for stock changes, back-in-stock notifications, and inventory trends across all monitored competitors.',
-          },
-          {
-            question: 'How does MAP violation detection work?',
-            answer:
-              'You define your MAP (Minimum Advertised Price) policies per product or product category. Our system continuously monitors all sellers and triggers alerts when listings violate your MAP rules. Reports include seller details, violation screenshots, and historical evidence.',
-          },
-          {
-            question: 'Can I monitor international marketplaces?',
-            answer:
-              'Yes, we support Amazon (US, UK, DE, FR, ES, IT, CA, JP, AU), eBay (25+ countries), and regional platforms in Europe, Asia, and Latin America. Prices are automatically converted to your preferred currency with real-time exchange rates.',
-          },
-          {
-            question: 'Do you provide historical price data?',
-            answer:
-              'Professional plans include 2 years of historical pricing. Enterprise plans get unlimited history. Historical data includes price points, stock status, seller changes, and promotional periods. Data is exportable in CSV or JSON formats.',
-          },
-          {
-            question: 'How do webhook notifications work?',
-            answer:
-              'Webhooks send HTTPS POST requests to your endpoint when monitored events occur (price change, stock update, new seller, MAP violation). Payloads include product details, old/new values, and timestamp. Webhooks are signed for security verification.',
-          },
-          {
-            question: 'Can I automate repricing based on competitor data?',
-            answer:
-              'While we provide the data, you implement repricing logic. Our API returns competitor prices in real-time, enabling you to build dynamic repricing algorithms. Enterprise plans include integration support for popular repricing tools.',
-          },
-          {
-            question: 'What is your data retention policy?',
-            answer:
-              'Historical data is retained for the duration specified in your plan (2 years for Professional, unlimited for Enterprise). After plan downgrade or cancellation, data is retained for 90 days before permanent deletion. Exports are recommended for long-term storage.',
-          },
-        ]}
-        accentColor={accentColor}
       />
       <FinalCTASection accentColor={accentColor} accentGlow={accentGlow} />
     </div>

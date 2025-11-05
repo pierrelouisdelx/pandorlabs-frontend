@@ -4,6 +4,7 @@ import { useState, FormEvent } from 'react'
 import { Input } from '@/components/ui/input'
 import { buttonVariants } from '@/components/ui/button'
 import { Sparkles } from 'lucide-react'
+import DemoRequestModal from './demo-request-modal'
 
 interface ExampleQuery {
   text: string
@@ -31,14 +32,14 @@ const exampleQueries: ExampleQuery[] = [
 
 export default function HeroSearchInput() {
   const [query, setQuery] = useState('')
+  const [isModalOpen, setIsModalOpen] = useState(false)
 
   const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault()
     if (query.trim()) {
-      // TODO: Implement actual submission logic
-      console.log('Submitting query:', query)
-      // For now, just log the query
-      // In production, this would navigate to a results page or open a modal
+      // Open the demo request modal
+      setIsModalOpen(true)
+      console.log('Opening demo request modal for query:', query)
     }
   }
 
@@ -54,42 +55,46 @@ export default function HeroSearchInput() {
   }
 
   return (
-    <div className="mx-auto max-w-2xl">
-      <form id="hero-search-form" onSubmit={handleSubmit} className="mb-6">
-        <div className="flex gap-3">
-          <Input
-            type="text"
-            placeholder="Describe data extraction requirements"
-            className="flex-1"
-            value={query}
-            onChange={(e) => setQuery(e.target.value)}
-          />
-          <button type="submit" className={buttonVariants()}>
-            Get Started
-          </button>
-        </div>
-      </form>
-
-      {/* Example Queries */}
-      <div className="space-y-3">
-        <div className="flex items-center justify-center gap-2 text-sm text-gray-400">
-          <Sparkles className="h-4 w-4" />
-          <span>Try an example:</span>
-        </div>
-        <div className="flex flex-wrap items-center justify-center gap-2">
-          {exampleQueries.map((example, index) => (
-            <button
-              key={index}
-              onClick={() => handleExampleClick(example.text)}
-              className="group relative rounded-full border border-white/10 bg-white/5 px-4 py-2 text-sm text-gray-300 transition-all hover:border-green-light/50 hover:bg-white/10 hover:text-white"
-            >
-              <span className="mr-2">{example.icon}</span>
-              {example.text}
-              <div className="absolute inset-0 rounded-full bg-linear-to-r from-green-100/0 via-green-light/10 to-green-100/0 opacity-0 transition-opacity group-hover:opacity-100" />
+    <>
+      <div className="mx-auto max-w-2xl">
+        <form id="hero-search-form" onSubmit={handleSubmit} className="mb-6">
+          <div className="flex gap-3">
+            <Input
+              type="text"
+              placeholder="Describe data extraction requirements"
+              className="flex-1"
+              value={query}
+              onChange={(e) => setQuery(e.target.value)}
+            />
+            <button type="submit" className={buttonVariants()}>
+              Get Started
             </button>
-          ))}
+          </div>
+        </form>
+
+        {/* Example Queries */}
+        <div className="mt-8 space-y-4">
+          <div className="flex items-center justify-center gap-2 text-sm text-white/70">
+            <Sparkles className="h-4 w-4 text-green-light/80" />
+            <span className="font-medium">Try an example:</span>
+          </div>
+          <div className="flex flex-wrap items-center justify-center gap-3">
+            {exampleQueries.map((example, index) => (
+              <button
+                key={index}
+                onClick={() => handleExampleClick(example.text)}
+                className="group relative overflow-hidden rounded-xl border border-white/20 bg-white/5 px-5 py-3 text-sm font-medium text-gray-200 shadow-lg backdrop-blur-sm transition-all duration-300 hover:scale-105 hover:border-green-light/60 hover:bg-white/10 hover:text-white hover:shadow-green-light/20"
+              >
+                <span className="relative z-10 mr-2 text-base">{example.icon}</span>
+                <span className="relative z-10">{example.text}</span>
+                <div className="absolute inset-0 bg-gradient-to-r from-green-100/0 via-green-light/20 to-green-100/0 opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
+              </button>
+            ))}
+          </div>
         </div>
       </div>
-    </div>
+
+      <DemoRequestModal open={isModalOpen} onOpenChange={setIsModalOpen} />
+    </>
   )
 }

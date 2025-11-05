@@ -1,3 +1,4 @@
+import Logo from './logo'
 import Image from 'next/image'
 import Link from 'next/link'
 
@@ -13,15 +14,9 @@ export default function Footer() {
             alt="round"
             className="absolute bottom-0 left-1/2 -z-1 w-[900px] -translate-x-1/2 animate-pulse opacity-80"
           />
-          <Link href="/" className="inline-flex">
-            <Image
-              src="/images/logo.svg"
-              alt="logo"
-              width={128}
-              height={26}
-              className="h-auto w-36"
-            />
-          </Link>
+          <div className="flex justify-center">
+            <Logo />
+          </div>
           <ul className="mt-10 flex flex-col items-center justify-center gap-5 sm:flex-row sm:gap-10">
             <li>
               <Link href="/about-us" className="hover:text-green">

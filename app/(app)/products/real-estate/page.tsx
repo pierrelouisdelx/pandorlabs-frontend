@@ -2,7 +2,6 @@
 
 import { Building2, Home, Shield, TrendingUp, Zap } from 'lucide-react'
 
-import { FAQSection } from '../_components/faq-section'
 import { FeaturesGrid } from '../_components/features-grid'
 import { FinalCTASection } from '../_components/final-cta-section'
 import { ProductHero } from '../_components/product-hero'
@@ -133,111 +132,6 @@ const features = [
   },
 ]
 
-const pricingTiers = [
-  {
-    name: 'Starter',
-    price: '$0',
-    period: 'month',
-    description: 'Perfect for developers getting started',
-    requests: '1,000 API calls/month',
-    features: [
-      'Basic property data',
-      'Standard API access',
-      'Email support',
-      'Community documentation',
-    ],
-    cta: 'Start Free',
-    highlighted: false,
-  },
-  {
-    name: 'Professional',
-    price: '$299',
-    period: 'month',
-    description: 'For growing PropTech applications',
-    requests: '100,000 API calls/month',
-    features: [
-      'Full property data access',
-      'Real-time market analytics',
-      'Priority support (24/7)',
-      'Custom webhooks',
-      'Historical data (10 years)',
-      'Advanced ML valuations',
-    ],
-    cta: 'Start Trial',
-    highlighted: true,
-  },
-  {
-    name: 'Enterprise',
-    price: 'Custom',
-    period: 'year',
-    description: 'For large-scale operations',
-    requests: 'Unlimited API calls',
-    features: [
-      'Everything in Professional',
-      'Dedicated account manager',
-      'Custom SLA guarantees',
-      'White-label options',
-      'On-premise deployment',
-      'Bulk data exports',
-    ],
-    cta: 'Contact Sales',
-    highlighted: false,
-  },
-]
-
-const faqs = [
-  {
-    question: 'What geographic regions does your API cover?',
-    answer:
-      'Our Real Estate Data API covers 50+ markets globally, including the United States (all 50 states), Canada, United Kingdom, Australia, and major European markets. We provide comprehensive property data for residential, commercial, and land sectors in each region.',
-  },
-  {
-    question: 'How frequently is the property data updated?',
-    answer:
-      'Property listings are updated every 15 minutes through direct MLS (Multiple Listing Service) integrations. Historical data, market trends, and analytics are refreshed daily. For enterprise clients, we offer real-time webhook notifications for specific property changes.',
-  },
-  {
-    question: 'What is the accuracy rate of your ML-powered valuations?',
-    answer:
-      'Our machine learning valuation models achieve 94% accuracy within 5% of actual sale prices. These models are trained on 20+ years of historical transaction data and continuously refined with new market data. Accuracy varies by property type and market liquidity.',
-  },
-  {
-    question: 'Do you offer historical property transaction data?',
-    answer:
-      'Yes, we provide access to 20+ years of historical property transactions, including sale prices, dates, buyer/seller information (where legally available), and property characteristics at the time of sale. Enterprise plans include unlimited historical data access.',
-  },
-  {
-    question: 'Is the API compliant with data privacy regulations?',
-    answer:
-      'Absolutely. We are fully GDPR, CCPA, and PIPEDA compliant. All personal data is anonymized or requires explicit consent. We maintain SOC 2 Type II certification and undergo regular third-party security audits. Data encryption is enforced both in transit (TLS 1.3) and at rest (AES-256).',
-  },
-  {
-    question: 'What authentication methods do you support?',
-    answer:
-      'We support API key authentication (for development), OAuth 2.0 (recommended for production), and JWT tokens. Enterprise clients can integrate with SSO providers (Okta, Auth0, Azure AD) and implement IP whitelisting for additional security.',
-  },
-  {
-    question: 'Can I get property images and floor plans?',
-    answer:
-      'Yes, our API provides access to high-resolution property images, virtual tours, and floor plans where available. Image URLs are CDN-optimized for fast loading. Enterprise plans include unlimited image downloads and bulk image processing capabilities.',
-  },
-  {
-    question: 'What are the API rate limits?',
-    answer:
-      'Rate limits vary by plan: Starter (10 requests/second), Professional (100 requests/second), Enterprise (negotiable). We use a sliding window algorithm for fair usage. Exceeding limits returns a 429 status code with retry-after headers.',
-  },
-  {
-    question: 'Do you provide webhook notifications for property changes?',
-    answer:
-      'Yes, Professional and Enterprise plans include webhook support. You can subscribe to events like price changes, status updates, new listings, and sold properties. Webhooks are delivered via HTTPS POST with payload signatures for security verification.',
-  },
-  {
-    question: 'Can I export bulk property data?',
-    answer:
-      'Enterprise clients have access to bulk data exports in CSV, JSON, or Parquet formats. Exports can be scheduled daily, weekly, or on-demand. We also support direct database replication for clients requiring real-time data warehousing.',
-  },
-]
-
 export default function RealEstatePage() {
   return (
     <div className="min-h-screen bg-[#0A0A0A]">
@@ -249,7 +143,6 @@ export default function RealEstatePage() {
         accentColor={accentColor}
         accentGlow={accentGlow}
       />
-      <FAQSection faqs={faqs} accentColor={accentColor} />
       <FinalCTASection accentColor={accentColor} accentGlow={accentGlow} />
 
       <style jsx>{`

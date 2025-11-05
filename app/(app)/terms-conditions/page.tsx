@@ -169,7 +169,7 @@ export default function TermsConditions() {
             </p>
             <p className="mb-2.5 leading-5! lg:mb-5">
               Email address: &nbsp;
-              <Link href="mailto:info@infynixai.com">info@infynixai.com</Link>
+              <Link href="mailto:info@pandorlabs.com">info@pandorlabs.com</Link>
             </p>
             <p className="mb-2.5 leading-5! lg:mb-5">
               Contact number: &nbsp;
