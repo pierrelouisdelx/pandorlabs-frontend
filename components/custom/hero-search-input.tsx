@@ -47,7 +47,9 @@ export default function HeroSearchInput() {
     setQuery(exampleText)
     // Auto-submit after setting the query
     setTimeout(() => {
-      const form = document.getElementById('hero-search-form') as HTMLFormElement
+      const form = document.getElementById(
+        'hero-search-form',
+      ) as HTMLFormElement
       if (form) {
         form.requestSubmit()
       }
@@ -58,10 +60,10 @@ export default function HeroSearchInput() {
     <>
       <div className="mx-auto max-w-2xl">
         <form id="hero-search-form" onSubmit={handleSubmit} className="mb-6">
-          <div className="flex gap-3">
+          <div className="flex flex-col gap-3 md:flex-row">
             <Input
               type="text"
-              placeholder="What business question can we help you answer today?"
+              placeholder="Search for market data..."
               className="flex-1"
               value={query}
               onChange={(e) => setQuery(e.target.value)}
@@ -73,9 +75,9 @@ export default function HeroSearchInput() {
         </form>
 
         {/* Example Queries */}
-        <div className="mt-8 space-y-4">
+        <div className="mt-8 hidden space-y-4 md:block">
           <div className="flex items-center justify-center gap-2 text-sm text-white/70">
-            <Sparkles className="h-4 w-4 text-green-light/80" />
+            <Sparkles className="text-green-light/80 h-4 w-4" />
             <span className="font-medium">Try an example:</span>
           </div>
           <div className="flex flex-wrap items-center justify-center gap-3">
@@ -83,11 +85,13 @@ export default function HeroSearchInput() {
               <button
                 key={index}
                 onClick={() => handleExampleClick(example.text)}
-                className="group relative overflow-hidden rounded-xl border border-white/20 bg-white/5 px-5 py-3 text-sm font-medium text-gray-200 shadow-lg backdrop-blur-sm transition-all duration-300 hover:scale-105 hover:border-green-light/60 hover:bg-white/10 hover:text-white hover:shadow-green-light/20"
+                className="group hover:border-green-light/60 hover:shadow-green-light/20 relative overflow-hidden rounded-xl border border-white/20 bg-white/5 px-5 py-3 text-sm font-medium text-gray-200 shadow-lg backdrop-blur-sm transition-all duration-300 hover:scale-105 hover:bg-white/10 hover:text-white"
               >
-                <span className="relative z-10 mr-2 text-base">{example.icon}</span>
+                <span className="relative z-10 mr-2 text-base">
+                  {example.icon}
+                </span>
                 <span className="relative z-10">{example.text}</span>
-                <div className="absolute inset-0 bg-gradient-to-r from-green-100/0 via-green-light/20 to-green-100/0 opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
+                <div className="via-green-light/20 absolute inset-0 bg-gradient-to-r from-green-100/0 to-green-100/0 opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
               </button>
             ))}
           </div>

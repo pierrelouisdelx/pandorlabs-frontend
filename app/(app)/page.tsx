@@ -69,24 +69,27 @@ export default function Home() {
               <p className="mb-8 text-center text-lg font-semibold text-white/90 uppercase">
                 Trusted by Industry Leaders
               </p>
-              <div className="flex flex-wrap items-center justify-center gap-12 lg:gap-16">
+              <div className="flex flex-wrap items-center justify-center gap-6 sm:gap-8 md:gap-12 lg:gap-16">
                 <Image
                   src="/images/companies/avian.svg"
                   alt="SIEMENS"
                   width={198}
                   height={79}
+                  className="h-auto w-24 sm:w-32 md:w-40 lg:w-48"
                 />
                 <Image
                   src="/images/companies/nvidia.svg"
                   alt="NVIDIA"
                   width={198}
                   height={79}
+                  className="h-auto w-24 sm:w-32 md:w-40 lg:w-48"
                 />
                 <Image
                   src="/images/companies/siemens-healthineers.svg"
                   alt="SIEMENS Healthineers"
                   width={198}
                   height={79}
+                  className="h-auto w-24 sm:w-32 md:w-40 lg:w-48"
                 />
               </div>
             </div>
@@ -339,9 +342,9 @@ export default function Home() {
               </span>
             </h2>
             <p className="text-gray mx-auto mb-8 max-w-2xl">
-              Whether you&apos;re a startup racing to understand your market or a
-              Fortune 500 making billion-dollar decisions, you need intelligence
-              you can trust—fast.
+              Whether you&apos;re a startup racing to understand your market or
+              a Fortune 500 making billion-dollar decisions, you need
+              intelligence you can trust—fast.
             </p>
           </div>
 
@@ -358,8 +361,8 @@ export default function Home() {
                 </p>
               </div>
               <p className="text-gray leading-relaxed">
-                &quot;We replaced 3 full-time analysts with PandoraLabs. Now we get
-                better data, faster—and our team focuses on insights, not
+                &quot;We replaced 3 full-time analysts with PandoraLabs. Now we
+                get better data, faster—and our team focuses on insights, not
                 spreadsheets.&quot;
               </p>
             </div>
@@ -373,8 +376,8 @@ export default function Home() {
                 <p className="text-gray/80 text-sm">Series B SaaS Company</p>
               </div>
               <p className="text-gray leading-relaxed">
-                &quot;Before PandoraLabs, competitive research took weeks. Now we
-                have real-time market intelligence that informs every product
+                &quot;Before PandoraLabs, competitive research took weeks. Now
+                we have real-time market intelligence that informs every product
                 decision.&quot;
               </p>
             </div>
@@ -388,8 +391,9 @@ export default function Home() {
                 <p className="text-gray/80 text-sm">$2B Investment Fund</p>
               </div>
               <p className="text-gray leading-relaxed">
-                &quot;PandoraLabs gives us market data our competitors don&apos;t have
-                access to. It&apos;s like having insider knowledge—legally.&quot;
+                &quot;PandoraLabs gives us market data our competitors
+                don&apos;t have access to. It&apos;s like having insider
+                knowledge—legally.&quot;
               </p>
             </div>
           </div>
