@@ -31,94 +31,12 @@ export const metadata: Metadata = {
 export default function LeadGenerationPage() {
   return (
     <>
-      {/* Hero Section */}
-      <div className="relative -mt-24 flex min-h-screen items-center bg-[url(/images/hero-section.png)] bg-cover bg-center bg-no-repeat pt-24">
-        <span className="from-primary to-primary/20 absolute inset-0 z-5 bg-linear-to-t"></span>
-        <div className="cursor-effect-section relative z-5 container w-full py-20">
-          <div className="mx-auto max-w-4xl text-center">
-            <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-2 backdrop-blur-sm">
-              <div className="h-2 w-2 animate-pulse rounded-full bg-emerald-500" />
-              <span className="text-sm text-white/70">Live API Access</span>
-            </div>
-
-            <h1 className="relative mb-6 text-[32px]/tight font-bold tracking-tight sm:text-5xl lg:text-7xl/tight">
-              Generate Qualified Leads <br />
-              <span className="to-green-light bg-linear-to-l from-green-100 bg-clip-text text-transparent drop-shadow-lg">
-                10x Faster
-              </span>
-            </h1>
-
-            <p className="text-gray mx-auto mb-10 max-w-2xl text-lg leading-relaxed sm:text-xl">
-              Access 321M+ verified B2B contacts with 95% email accuracy.
-              AI-powered lead enrichment and scoring that scales your sales
-              pipeline.
-            </p>
-
-            {/* CTA Buttons */}
-            <div className="mb-12 flex flex-col gap-4 sm:flex-row sm:justify-center">
-              <Link href="/request" className={buttonVariants({ size: 'lg' })}>
-                Start Free Trial →
-              </Link>
-              <Link
-                href="/demo"
-                className={buttonVariants({ variant: 'outline', size: 'lg' })}
-              >
-                View Documentation
-              </Link>
-            </div>
-
-            {/* Trust Indicators */}
-            <div className="flex flex-wrap items-center justify-center gap-8 border-t border-white/10 pt-8">
-              <div className="flex items-center gap-2">
-                <Zap className="h-5 w-5 text-emerald-500" />
-                <span className="text-white/60">99.9% Uptime</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <Shield className="h-5 w-5 text-emerald-500" />
-                <span className="text-white/60">GDPR Compliant</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <TrendingUp className="h-5 w-5 text-emerald-500" />
-                <span className="text-white/60">Real-time Verification</span>
-              </div>
-            </div>
-
-            {/* Trust Badges */}
-            <div className="mt-16">
-              <p className="mb-8 text-center text-lg font-semibold uppercase text-white/90">
-                Trusted by Industry Leaders
-              </p>
-              <div className="flex flex-wrap items-center justify-center gap-12 lg:gap-16">
-                <Image
-                  src="/images/companies/avian.svg"
-                  alt="SIEMENS"
-                  width={198}
-                  height={79}
-                />
-                <Image
-                  src="/images/companies/nvidia.svg"
-                  alt="NVIDIA"
-                  width={198}
-                  height={79}
-                />
-                <Image
-                  src="/images/companies/siemens-healthineers.svg"
-                  alt="SIEMENS Healthineers"
-                  width={198}
-                  height={79}
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
       {/* Vision Section */}
       <div className="from-primary via-primary/95 to-background relative overflow-hidden bg-gradient-to-b py-16 lg:py-20">
         <div className="container">
           <div className="flex gap-20">
             <div className="w-full lg:w-1/2">
-              <div className="mb-10 text-center">
+              <div className="mb-10 text-center lg:text-left">
                 <p className="text-gray mb-3 text-sm tracking-wider uppercase">
                   WHY LEAD GENERATION API
                 </p>
@@ -130,7 +48,7 @@ export default function LeadGenerationPage() {
                 </h2>
               </div>
 
-              <div className="text-gray mx-auto mb-12 max-w-4xl space-y-4 text-center">
+              <div className="text-gray mx-auto mb-12 max-w-4xl space-y-4 lg:mx-0">
                 <p>
                   Traditional lead generation is time-consuming, expensive, and
                   often delivers outdated contacts. Your sales team wastes hours
@@ -436,9 +354,9 @@ export default function LeadGenerationPage() {
                 <p className="text-gray/80 text-sm">SaaS Company, Series C</p>
               </div>
               <p className="text-gray leading-relaxed">
-                &quot;Reduced cost-per-lead by 60% and increased pipeline velocity by
-                40%. Our SDR team is now 3x more productive with verified
-                contacts.&quot;
+                &quot;Reduced cost-per-lead by 60% and increased pipeline
+                velocity by 40%. Our SDR team is now 3x more productive with
+                verified contacts.&quot;
               </p>
             </div>
 
@@ -448,13 +366,12 @@ export default function LeadGenerationPage() {
                 <h4 className="mb-1 font-semibold text-white">
                   Marketing Agency
                 </h4>
-                <p className="text-gray/80 text-sm">
-                  B2B Lead Generation Firm
-                </p>
+                <p className="text-gray/80 text-sm">B2B Lead Generation Firm</p>
               </div>
               <p className="text-gray leading-relaxed">
-                &quot;We replaced 3 data vendors with PandoraLabs. Better accuracy,
-                lower costs, and our clients see 25% higher email open rates.&quot;
+                &quot;We replaced 3 data vendors with PandoraLabs. Better
+                accuracy, lower costs, and our clients see 25% higher email open
+                rates.&quot;
               </p>
             </div>
 
@@ -467,8 +384,9 @@ export default function LeadGenerationPage() {
                 <p className="text-gray/80 text-sm">FinTech, Seed Stage</p>
               </div>
               <p className="text-gray leading-relaxed">
-                &quot;Built a 50K contact database in weeks instead of months. The AI
-                scoring helps us focus on leads that actually convert.&quot;
+                &quot;Built a 50K contact database in weeks instead of months.
+                The AI scoring helps us focus on leads that actually
+                convert.&quot;
               </p>
             </div>
           </div>

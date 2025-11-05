@@ -30,8 +30,8 @@ import TechFeatureCard from '@/components/custom/tech-feature-card'
 import TrustBadge from '@/components/custom/trust-badge'
 import { buttonVariants } from '@/components/ui/button'
 
-const accentColor = '#EC4899'
-const accentGlow = 'rgba(236, 72, 153, 0.15)'
+const accentColor = '#46e695'
+const accentGlow = 'rgba(70, 230, 149, 0.15)'
 
 export default function AIDataPage() {
   return (
@@ -57,15 +57,14 @@ export default function AIDataPage() {
           ]}
           accentColor={accentColor}
           accentGlow={accentGlow}
-          accentGradient="from-pink-500/20 via-transparent to-transparent"
           visualElement={
             <div className="relative aspect-square w-full">
               <div className="absolute inset-0 flex items-center justify-center">
                 <svg className="h-full w-full" viewBox="0 0 400 400">
                   <defs>
                     <radialGradient id="nodeGradient">
-                      <stop offset="0%" stopColor="rgba(236,72,153,0.6)" />
-                      <stop offset="100%" stopColor="rgba(236,72,153,0)" />
+                      <stop offset="0%" stopColor="rgba(70,230,149,0.6)" />
+                      <stop offset="100%" stopColor="rgba(70,230,149,0)" />
                     </radialGradient>
                   </defs>
                   {[
@@ -81,7 +80,7 @@ export default function AIDataPage() {
                       y1={line.y1}
                       x2={line.x2}
                       y2={line.y2}
-                      stroke="rgba(236,72,153,0.3)"
+                      stroke="rgba(70,230,149,0.3)"
                       strokeWidth="2"
                       className="animate-pulse"
                       style={{ animationDelay: `${i * 0.2}s` }}
@@ -108,7 +107,7 @@ export default function AIDataPage() {
                         cx={node.x}
                         cy={node.y}
                         r="4"
-                        fill="rgba(236,72,153,1)"
+                        fill="rgba(70,230,149,1)"
                       />
                     </g>
                   ))}
@@ -118,12 +117,12 @@ export default function AIDataPage() {
                 {['Images', 'Text', 'Audio'].map((type, i) => (
                   <div
                     key={i}
-                    className="rounded-lg border border-pink-500/30 bg-pink-500/20 px-4 py-2 backdrop-blur-sm"
+                    className="rounded-lg border border-green-light/30 bg-green-light/20 px-4 py-2 backdrop-blur-sm"
                     style={{
                       animation: `slideIn 1s ease-out ${i * 0.2}s both`,
                     }}
                   >
-                    <div className="text-sm font-medium text-pink-400">
+                    <div className="text-sm font-medium text-green-light">
                       {type}
                     </div>
                     <div className="text-xs text-white/60">
@@ -170,7 +169,7 @@ export default function AIDataPage() {
                 </p>
                 <h2 className="mb-6 text-[26px]/8 font-semibold sm:text-3xl lg:text-5xl/[60px]">
                   Your AI Training Data{' '}
-                  <span className="from-pink-100 to-pink-500 bg-linear-to-l bg-clip-text text-transparent">
+                  <span className="from-green-100 to-green-light bg-linear-to-l bg-clip-text text-transparent">
                     Advantage
                   </span>
                 </h2>
@@ -204,17 +203,17 @@ export default function AIDataPage() {
                 <StatsCard
                   value="100K+"
                   label="Curated Datasets"
-                  className="hover:border-pink-500/50 hover:shadow-pink-500/20"
+                  className="hover:border-green-light/50 hover:shadow-green-light/20"
                 />
                 <StatsCard
                   value="99%"
                   label="Annotation Accuracy"
-                  className="hover:border-pink-500/50 hover:shadow-pink-500/20"
+                  className="hover:border-green-light/50 hover:shadow-green-light/20"
                 />
                 <StatsCard
                   value="10x"
                   label="Faster Development"
-                  className="hover:border-pink-500/50 hover:shadow-pink-500/20"
+                  className="hover:border-green-light/50 hover:shadow-green-light/20"
                 />
               </div>
             </div>
@@ -222,19 +221,19 @@ export default function AIDataPage() {
             {/* Visualization */}
             <div className="hidden w-full items-center justify-center lg:flex lg:w-1/2">
               <div className="relative h-[400px] w-[400px]">
-                <div className="absolute inset-0 rounded-full bg-pink-500/10 blur-3xl"></div>
+                <div className="absolute inset-0 rounded-full bg-green-light/10 blur-3xl"></div>
                 <div className="relative flex h-full items-center justify-center">
                   <div className="grid grid-cols-3 gap-4">
                     {[ImageIcon, FileText, Mic, Database, Brain, Code2].map(
                       (Icon, i) => (
                         <div
                           key={i}
-                          className="flex h-20 w-20 items-center justify-center rounded-2xl border border-pink-500/30 bg-pink-500/10 backdrop-blur-sm transition-all duration-500 hover:scale-110 hover:border-pink-500/60 hover:bg-pink-500/20"
+                          className="flex h-20 w-20 items-center justify-center rounded-2xl border border-green-light/30 bg-green-light/10 backdrop-blur-sm transition-all duration-500 hover:scale-110 hover:border-green-light/60 hover:bg-green-light/20"
                           style={{
                             animation: `float 3s ease-in-out ${i * 0.2}s infinite`,
                           }}
                         >
-                          <Icon className="h-8 w-8 text-pink-400" />
+                          <Icon className="h-8 w-8 text-green-light" />
                         </div>
                       )
                     )}
@@ -248,7 +247,7 @@ export default function AIDataPage() {
 
       {/* How It Works Section */}
       <div className="from-background to-background relative overflow-hidden bg-gradient-to-b via-white/5 py-16 lg:py-20">
-        <div className="from-pink-500/5 to-pink-500/5 absolute inset-0 bg-gradient-to-r via-transparent opacity-30"></div>
+        <div className="from-green-light/5 to-green-light/5 absolute inset-0 bg-gradient-to-r via-transparent opacity-30"></div>
         <div className="relative z-10 container">
           <div className="mb-12 text-center">
             <p className="text-gray mb-3 text-sm tracking-wider uppercase">
@@ -256,7 +255,7 @@ export default function AIDataPage() {
             </p>
             <h2 className="mb-4 text-[26px]/8 font-semibold sm:text-3xl lg:text-5xl/[60px]">
               From Search to Training —{' '}
-              <span className="from-pink-100 to-pink-500 bg-linear-to-l bg-clip-text text-transparent">
+              <span className="from-green-100 to-green-light bg-linear-to-l bg-clip-text text-transparent">
                 in Minutes
               </span>
             </h2>
@@ -271,19 +270,16 @@ export default function AIDataPage() {
               number="01"
               title="Search & Discover"
               description="Browse 100,000+ datasets by domain (computer vision, NLP, audio), modality, or specific use case. Advanced filtering helps you find exactly what you need."
-              className="[&_div]:hover:border-pink-500/50 [&_div]:hover:shadow-pink-500/20 [&_.text-green-light]:text-pink-400 [&_.border-green-light\\/30]:border-pink-500/30 [&_.bg-green-light\\/10]:bg-pink-500/10 [&_.hover\\:border-green-light\\/60]:hover:border-pink-500/60 [&_.hover\\:bg-green-light\\/20]:hover:bg-pink-500/20 [&_.from-green-100]:from-pink-100 [&_.to-green-light]:to-pink-500 [&_.hover\\:text-green-light]:hover:text-pink-400"
             />
             <ProcessStep
               number="02"
               title="Quality Verification"
               description="Every dataset undergoes multi-stage quality control with human verification and AI validation. Review sample data, annotation quality, and metadata before commitment."
-              className="[&_div]:hover:border-pink-500/50 [&_div]:hover:shadow-pink-500/20 [&_.text-green-light]:text-pink-400 [&_.border-green-light\\/30]:border-pink-500/30 [&_.bg-green-light\\/10]:bg-pink-500/10 [&_.hover\\:border-green-light\\/60]:hover:border-pink-500/60 [&_.hover\\:bg-green-light\\/20]:hover:bg-pink-500/20 [&_.from-green-100]:from-pink-100 [&_.to-green-light]:to-pink-500 [&_.hover\\:text-green-light]:hover:text-pink-400"
             />
             <ProcessStep
               number="03"
               title="Integrate & Train"
               description="Stream datasets directly to your ML pipeline via API, download in your preferred format, or integrate with popular frameworks. Start training immediately."
-              className="[&_div]:hover:border-pink-500/50 [&_div]:hover:shadow-pink-500/20 [&_.text-green-light]:text-pink-400 [&_.border-green-light\\/30]:border-pink-500/30 [&_.bg-green-light\\/10]:bg-pink-500/10 [&_.hover\\:border-green-light\\/60]:hover:border-pink-500/60 [&_.hover\\:bg-green-light\\/20]:hover:bg-pink-500/20 [&_.from-green-100]:from-pink-100 [&_.to-green-light]:to-pink-500 [&_.hover\\:text-green-light]:hover:text-pink-400"
             />
           </div>
 
@@ -292,11 +288,11 @@ export default function AIDataPage() {
             <span className="rounded-full bg-white/5 px-4 py-2 font-medium transition-all duration-300 hover:bg-white/10">
               Start
             </span>
-            <div className="bg-pink-500/30 shadow-pink-500/20 h-1 w-20 rounded-full shadow-lg"></div>
-            <span className="from-pink-100 to-pink-500 bg-pink-500/10 animate-pulse rounded-full bg-linear-to-l bg-clip-text px-5 py-2.5 font-semibold text-transparent">
+            <div className="bg-green-light/30 shadow-green-light/20 h-1 w-20 rounded-full shadow-lg"></div>
+            <span className="from-green-100 to-green-light bg-green-light/10 animate-pulse rounded-full bg-linear-to-l bg-clip-text px-5 py-2.5 font-semibold text-transparent">
               Minutes to model training
             </span>
-            <div className="bg-pink-500/30 shadow-pink-500/20 h-1 w-20 rounded-full shadow-lg"></div>
+            <div className="bg-green-light/30 shadow-green-light/20 h-1 w-20 rounded-full shadow-lg"></div>
             <span className="rounded-full bg-white/5 px-4 py-2 font-medium transition-all duration-300 hover:bg-white/10">
               Data Ready
             </span>
@@ -306,7 +302,7 @@ export default function AIDataPage() {
 
       {/* Dataset Categories Section */}
       <div className="from-background to-primary/20 relative overflow-hidden bg-gradient-to-b py-16 lg:py-20">
-        <div className="from-pink-500/10 absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] via-transparent to-transparent"></div>
+        <div className="from-green-light/10 absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] via-transparent to-transparent"></div>
         <div className="relative z-10 container">
           <div className="mb-12 text-center">
             <p className="text-gray mb-3 text-sm tracking-wider uppercase">
@@ -314,7 +310,7 @@ export default function AIDataPage() {
             </p>
             <h2 className="mb-4 text-[26px]/8 font-semibold sm:text-3xl lg:text-5xl/[60px]">
               Every AI Modality.{' '}
-              <span className="from-pink-100 to-pink-500 bg-linear-to-l bg-clip-text text-transparent">
+              <span className="from-green-100 to-green-light bg-linear-to-l bg-clip-text text-transparent">
                 One Platform
               </span>
             </h2>
@@ -329,37 +325,31 @@ export default function AIDataPage() {
               icon={ImageIcon}
               title="Computer Vision Datasets"
               description="Object detection, semantic segmentation, facial recognition, pose estimation, and more. High-resolution images with pixel-perfect annotations for production vision models."
-              className="hover:border-pink-500/50 hover:shadow-pink-500/20 [&_.text-green-light]:text-pink-400 [&_.bg-green-light\\/10]:bg-pink-500/10 [&_.hover\\:bg-green-light\\/20]:hover:bg-pink-500/20 [&_.hover\\:text-green-light]:hover:text-pink-400"
             />
             <UseCaseCard
               icon={FileText}
               title="Natural Language Processing"
               description="Text classification, sentiment analysis, named entity recognition, question answering, and translation. Multi-language datasets with linguistic annotations for NLP excellence."
-              className="hover:border-pink-500/50 hover:shadow-pink-500/20 [&_.text-green-light]:text-pink-400 [&_.bg-green-light\\/10]:bg-pink-500/10 [&_.hover\\:bg-green-light\\/20]:hover:bg-pink-500/20 [&_.hover\\:text-green-light]:hover:text-pink-400"
             />
             <UseCaseCard
               icon={Mic}
               title="Speech & Audio"
               description="Speech recognition, speaker identification, audio classification, and voice synthesis. Professional-grade audio datasets with transcriptions and acoustic annotations."
-              className="hover:border-pink-500/50 hover:shadow-pink-500/20 [&_.text-green-light]:text-pink-400 [&_.bg-green-light\\/10]:bg-pink-500/10 [&_.hover\\:bg-green-light\\/20]:hover:bg-pink-500/20 [&_.hover\\:text-green-light]:hover:text-pink-400"
             />
             <UseCaseCard
               icon={Layers}
               title="Multimodal AI"
               description="Cross-modal learning, image captioning, visual question answering, and audio-visual fusion. Aligned datasets for building sophisticated multimodal models."
-              className="hover:border-pink-500/50 hover:shadow-pink-500/20 [&_.text-green-light]:text-pink-400 [&_.bg-green-light\\/10]:bg-pink-500/10 [&_.hover\\:bg-green-light\\/20]:hover:bg-pink-500/20 [&_.hover\\:text-green-light]:hover:text-pink-400"
             />
             <UseCaseCard
               icon={Sparkles}
               title="Synthetic Data Generation"
               description="AI-powered synthetic data creation for edge cases, rare events, and privacy-preserving scenarios. Balance datasets and augment training with high-fidelity synthetic samples."
-              className="hover:border-pink-500/50 hover:shadow-pink-500/20 [&_.text-green-light]:text-pink-400 [&_.bg-green-light\\/10]:bg-pink-500/10 [&_.hover\\:bg-green-light\\/20]:hover:bg-pink-500/20 [&_.hover\\:text-green-light]:hover:text-pink-400"
             />
             <UseCaseCard
               icon={Users}
               title="Custom Labeling Services"
               description="Professional annotation teams with industry-specific expertise. Custom dataset creation with quality guarantees and domain expert verification for your unique use cases."
-              className="hover:border-pink-500/50 hover:shadow-pink-500/20 [&_.text-green-light]:text-pink-400 [&_.bg-green-light\\/10]:bg-pink-500/10 [&_.hover\\:bg-green-light\\/20]:hover:bg-pink-500/20 [&_.hover\\:text-green-light]:hover:text-pink-400"
             />
           </div>
 
@@ -377,7 +367,7 @@ export default function AIDataPage() {
 
       {/* Quality & Technology Section */}
       <div className="from-primary/20 to-background relative overflow-hidden bg-gradient-to-b via-white/5 py-16 lg:py-20">
-        <div className="to-pink-500/5 absolute inset-0 bg-gradient-to-br from-pink-100/5 via-transparent"></div>
+        <div className="to-green-light/5 absolute inset-0 bg-gradient-to-br from-green-100/5 via-transparent"></div>
         <div className="relative z-10 container">
           <div className="mb-12 text-center">
             <p className="text-gray mb-3 text-sm tracking-wider uppercase">
@@ -385,7 +375,7 @@ export default function AIDataPage() {
             </p>
             <h2 className="mb-4 text-[26px]/8 font-semibold sm:text-3xl lg:text-5xl/[60px]">
               Built for{' '}
-              <span className="from-pink-100 to-pink-500 bg-linear-to-l bg-clip-text text-transparent">
+              <span className="from-green-100 to-green-light bg-linear-to-l bg-clip-text text-transparent">
                 Production AI Models
               </span>
             </h2>
@@ -401,19 +391,16 @@ export default function AIDataPage() {
               icon={Shield}
               title="Multi-Stage Quality Control"
               description="Human verification combined with AI validation ensures 99% annotation accuracy. Every dataset undergoes rigorous quality checks before release."
-              className="[&_.text-green-light]:text-pink-400 [&_.bg-green-light\\/10]:bg-pink-500/10 [&_.hover\\:bg-green-light\\/20]:hover:bg-pink-500/20 [&_.hover\\:shadow-green-light\\/30]:hover:shadow-pink-500/30 [&_.hover\\:text-green-light]:hover:text-pink-400"
             />
             <TechFeatureCard
               icon={Lock}
               title="Ethical Data Sourcing"
               description="Full provenance tracking and consent documentation for every dataset. GDPR and CCPA compliant with transparent data licensing and usage rights."
-              className="[&_.text-green-light]:text-pink-400 [&_.bg-green-light\\/10]:bg-pink-500/10 [&_.hover\\:bg-green-light\\/20]:hover:bg-pink-500/20 [&_.hover\\:shadow-green-light\\/30]:hover:shadow-pink-500/30 [&_.hover\\:text-green-light]:hover:text-pink-400"
             />
             <TechFeatureCard
               icon={Bot}
               title="Version Control & Updates"
               description="Incremental dataset updates with backward compatibility. Track data versions, maintain reproducibility, and evolve datasets as your models improve."
-              className="[&_.text-green-light]:text-pink-400 [&_.bg-green-light\\/10]:bg-pink-500/10 [&_.hover\\:bg-green-light\\/20]:hover:bg-pink-500/20 [&_.hover\\:shadow-green-light\\/30]:hover:shadow-pink-500/30 [&_.hover\\:text-green-light]:hover:text-pink-400"
             />
           </div>
 
@@ -422,22 +409,22 @@ export default function AIDataPage() {
             <StatsCard
               value="99%"
               label="Accuracy"
-              className="hover:border-pink-500/50 hover:shadow-pink-500/20"
+              className="hover:border-green-light/50 hover:shadow-green-light/20"
             />
             <StatsCard
               value="100K+"
               label="Datasets"
-              className="hover:border-pink-500/50 hover:shadow-pink-500/20"
+              className="hover:border-green-light/50 hover:shadow-green-light/20"
             />
             <StatsCard
               value="10M+"
               label="Samples"
-              className="hover:border-pink-500/50 hover:shadow-pink-500/20"
+              className="hover:border-green-light/50 hover:shadow-green-light/20"
             />
             <StatsCard
               value="50+"
               label="Domains"
-              className="hover:border-pink-500/50 hover:shadow-pink-500/20"
+              className="hover:border-green-light/50 hover:shadow-green-light/20"
             />
           </div>
         </div>
@@ -445,7 +432,7 @@ export default function AIDataPage() {
 
       {/* Enterprise & Trust Section */}
       <div className="from-background to-primary/10 relative overflow-hidden bg-gradient-to-b py-16 lg:py-20">
-        <div className="from-pink-500/10 absolute inset-0 bg-[radial-gradient(circle_at_top_right,_var(--tw-gradient-stops))] via-transparent to-transparent"></div>
+        <div className="from-green-light/10 absolute inset-0 bg-[radial-gradient(circle_at_top_right,_var(--tw-gradient-stops))] via-transparent to-transparent"></div>
         <div className="relative z-10 container">
           <div className="mb-12 text-center">
             <p className="text-gray mb-3 text-sm tracking-wider uppercase">
@@ -453,7 +440,7 @@ export default function AIDataPage() {
             </p>
             <h2 className="mb-4 text-[26px]/8 font-semibold sm:text-3xl lg:text-5xl/[60px]">
               Powering Models at{' '}
-              <span className="from-pink-100 to-pink-500 bg-linear-to-l bg-clip-text text-transparent">
+              <span className="from-green-100 to-green-light bg-linear-to-l bg-clip-text text-transparent">
                 Leading Organizations
               </span>
             </h2>
@@ -465,9 +452,9 @@ export default function AIDataPage() {
 
           {/* Testimonials */}
           <div className="mb-12 grid gap-6 md:grid-cols-3">
-            <div className="group hover:border-pink-500/50 hover:shadow-pink-500/20 rounded-2xl border border-white/10 bg-white/5 p-7 backdrop-blur-sm transition-all duration-500 hover:-translate-y-1 hover:bg-white/10 hover:shadow-2xl">
+            <div className="group hover:border-green-light/50 hover:shadow-green-light/20 rounded-2xl border border-white/10 bg-white/5 p-7 backdrop-blur-sm transition-all duration-500 hover:-translate-y-1 hover:bg-white/10 hover:shadow-2xl">
               <div className="mb-4">
-                <div className="text-pink-400 mb-2 text-2xl">🔬</div>
+                <div className="text-green-light mb-2 text-2xl">🔬</div>
                 <h4 className="mb-1 font-semibold text-white">
                   AI Research Lab
                 </h4>
@@ -480,9 +467,9 @@ export default function AIDataPage() {
               </p>
             </div>
 
-            <div className="group hover:border-pink-500/50 hover:shadow-pink-500/20 rounded-2xl border border-white/10 bg-white/5 p-7 backdrop-blur-sm transition-all duration-500 hover:-translate-y-1 hover:bg-white/10 hover:shadow-2xl">
+            <div className="group hover:border-green-light/50 hover:shadow-green-light/20 rounded-2xl border border-white/10 bg-white/5 p-7 backdrop-blur-sm transition-all duration-500 hover:-translate-y-1 hover:bg-white/10 hover:shadow-2xl">
               <div className="mb-4">
-                <div className="text-pink-400 mb-2 text-2xl">🚀</div>
+                <div className="text-green-light mb-2 text-2xl">🚀</div>
                 <h4 className="mb-1 font-semibold text-white">
                   Computer Vision Startup
                 </h4>
@@ -495,9 +482,9 @@ export default function AIDataPage() {
               </p>
             </div>
 
-            <div className="group hover:border-pink-500/50 hover:shadow-pink-500/20 rounded-2xl border border-white/10 bg-white/5 p-7 backdrop-blur-sm transition-all duration-500 hover:-translate-y-1 hover:bg-white/10 hover:shadow-2xl">
+            <div className="group hover:border-green-light/50 hover:shadow-green-light/20 rounded-2xl border border-white/10 bg-white/5 p-7 backdrop-blur-sm transition-all duration-500 hover:-translate-y-1 hover:bg-white/10 hover:shadow-2xl">
               <div className="mb-4">
-                <div className="text-pink-400 mb-2 text-2xl">🏢</div>
+                <div className="text-green-light mb-2 text-2xl">🏢</div>
                 <h4 className="mb-1 font-semibold text-white">
                   Enterprise ML Team
                 </h4>
@@ -514,12 +501,12 @@ export default function AIDataPage() {
           {/* Enterprise Features */}
           <div className="grid gap-10 lg:grid-cols-2">
             <div className="space-y-6">
-              <div className="group hover:border-pink-500/50 hover:shadow-pink-500/20 rounded-2xl border border-white/10 bg-white/5 p-7 backdrop-blur-sm transition-all duration-500 hover:-translate-y-1 hover:bg-white/10 hover:shadow-2xl">
+              <div className="group hover:border-green-light/50 hover:shadow-green-light/20 rounded-2xl border border-white/10 bg-white/5 p-7 backdrop-blur-sm transition-all duration-500 hover:-translate-y-1 hover:bg-white/10 hover:shadow-2xl">
                 <div className="mb-4 flex items-center gap-3">
-                  <div className="bg-pink-500/10 group-hover:bg-pink-500/20 flex h-12 w-12 items-center justify-center rounded-2xl transition-all duration-300 group-hover:scale-110">
-                    <Database className="text-pink-400 h-6 w-6 transition-transform duration-300 group-hover:scale-110" />
+                  <div className="bg-green-light/10 group-hover:bg-green-light/20 flex h-12 w-12 items-center justify-center rounded-2xl transition-all duration-300 group-hover:scale-110">
+                    <Database className="text-green-light h-6 w-6 transition-transform duration-300 group-hover:scale-110" />
                   </div>
-                  <h3 className="group-hover:text-pink-400 text-lg font-semibold text-white transition-colors duration-300">
+                  <h3 className="group-hover:text-green-light text-lg font-semibold text-white transition-colors duration-300">
                     Custom Dataset Creation
                   </h3>
                 </div>
@@ -530,12 +517,12 @@ export default function AIDataPage() {
                 </p>
               </div>
 
-              <div className="group hover:border-pink-500/50 hover:shadow-pink-500/20 rounded-2xl border border-white/10 bg-white/5 p-7 backdrop-blur-sm transition-all duration-500 hover:-translate-y-1 hover:bg-white/10 hover:shadow-2xl">
+              <div className="group hover:border-green-light/50 hover:shadow-green-light/20 rounded-2xl border border-white/10 bg-white/5 p-7 backdrop-blur-sm transition-all duration-500 hover:-translate-y-1 hover:bg-white/10 hover:shadow-2xl">
                 <div className="mb-4 flex items-center gap-3">
-                  <div className="bg-pink-500/10 group-hover:bg-pink-500/20 flex h-12 w-12 items-center justify-center rounded-2xl transition-all duration-300 group-hover:scale-110">
-                    <Activity className="text-pink-400 h-6 w-6 transition-transform duration-300 group-hover:scale-110" />
+                  <div className="bg-green-light/10 group-hover:bg-green-light/20 flex h-12 w-12 items-center justify-center rounded-2xl transition-all duration-300 group-hover:scale-110">
+                    <Activity className="text-green-light h-6 w-6 transition-transform duration-300 group-hover:scale-110" />
                   </div>
-                  <h3 className="group-hover:text-pink-400 text-lg font-semibold text-white transition-colors duration-300">
+                  <h3 className="group-hover:text-green-light text-lg font-semibold text-white transition-colors duration-300">
                     Dedicated Support & SLAs
                   </h3>
                 </div>
@@ -545,12 +532,12 @@ export default function AIDataPage() {
                 </p>
               </div>
 
-              <div className="group hover:border-pink-500/50 hover:shadow-pink-500/20 rounded-2xl border border-white/10 bg-white/5 p-7 backdrop-blur-sm transition-all duration-500 hover:-translate-y-1 hover:bg-white/10 hover:shadow-2xl">
+              <div className="group hover:border-green-light/50 hover:shadow-green-light/20 rounded-2xl border border-white/10 bg-white/5 p-7 backdrop-blur-sm transition-all duration-500 hover:-translate-y-1 hover:bg-white/10 hover:shadow-2xl">
                 <div className="mb-4 flex items-center gap-3">
-                  <div className="bg-pink-500/10 group-hover:bg-pink-500/20 flex h-12 w-12 items-center justify-center rounded-2xl transition-all duration-300 group-hover:scale-110">
-                    <CheckCircle2 className="text-pink-400 h-6 w-6 transition-transform duration-300 group-hover:scale-110" />
+                  <div className="bg-green-light/10 group-hover:bg-green-light/20 flex h-12 w-12 items-center justify-center rounded-2xl transition-all duration-300 group-hover:scale-110">
+                    <CheckCircle2 className="text-green-light h-6 w-6 transition-transform duration-300 group-hover:scale-110" />
                   </div>
-                  <h3 className="group-hover:text-pink-400 text-lg font-semibold text-white transition-colors duration-300">
+                  <h3 className="group-hover:text-green-light text-lg font-semibold text-white transition-colors duration-300">
                     On-Premise Deployment
                   </h3>
                 </div>
@@ -564,7 +551,7 @@ export default function AIDataPage() {
 
             {/* API Integration Preview */}
             <div className="flex items-center justify-center">
-              <div className="w-full max-w-md rounded-2xl border border-pink-500/30 bg-[#1a1a1a] p-6 shadow-2xl shadow-pink-500/20">
+              <div className="w-full max-w-md rounded-2xl border border-green-light/30 bg-[#1a1a1a] p-6 shadow-2xl shadow-green-light/20">
                 <div className="mb-4 flex items-center gap-2">
                   <div className="flex gap-1.5">
                     <div className="h-3 w-3 rounded-full bg-red-500"></div>
@@ -577,7 +564,7 @@ export default function AIDataPage() {
                 </div>
                 <div className="space-y-2 font-mono text-sm">
                   <div>
-                    <span className="text-pink-400">import</span>{' '}
+                    <span className="text-green-light">import</span>{' '}
                     <span className="text-white">pandora</span>
                   </div>
                   <div className="text-gray"># Initialize API</div>
@@ -605,9 +592,9 @@ export default function AIDataPage() {
                   </div>
                   <div className="mt-4 text-gray"># Stream to pipeline</div>
                   <div>
-                    <span className="text-pink-400">for</span>{' '}
+                    <span className="text-green-light">for</span>{' '}
                     <span className="text-white">batch</span>{' '}
-                    <span className="text-pink-400">in</span>{' '}
+                    <span className="text-green-light">in</span>{' '}
                     <span className="text-white">dataset:</span>
                   </div>
                   <div className="pl-4">
@@ -624,12 +611,12 @@ export default function AIDataPage() {
 
       {/* Final CTA Section */}
       <div className="from-primary/10 to-primary relative overflow-hidden bg-gradient-to-b via-white/5 py-16 lg:py-20">
-        <div className="from-pink-500/10 absolute inset-0 bg-gradient-to-t via-transparent to-transparent"></div>
+        <div className="from-green-light/10 absolute inset-0 bg-gradient-to-t via-transparent to-transparent"></div>
         <div className="relative z-10 container">
           <div className="mx-auto max-w-3xl text-center">
             <h2 className="mb-4 text-[26px]/8 font-semibold sm:text-3xl lg:text-5xl/[60px]">
               Start Building Better AI Models{' '}
-              <span className="from-pink-100 to-pink-500 bg-linear-to-l bg-clip-text text-transparent">
+              <span className="from-green-100 to-green-light bg-linear-to-l bg-clip-text text-transparent">
                 Today
               </span>
             </h2>
@@ -657,17 +644,14 @@ export default function AIDataPage() {
                 <TrustBadge
                   icon={Shield}
                   text="SOC 2 Type II Certified"
-                  className="hover:border-pink-500/50 hover:shadow-pink-500/20 [&_.text-green-light]:text-pink-400"
                 />
                 <TrustBadge
                   icon={CheckCircle2}
                   text="GDPR Compliant"
-                  className="hover:border-pink-500/50 hover:shadow-pink-500/20 [&_.text-green-light]:text-pink-400"
                 />
                 <TrustBadge
                   icon={Activity}
                   text="99.9% Uptime SLA"
-                  className="hover:border-pink-500/50 hover:shadow-pink-500/20 [&_.text-green-light]:text-pink-400"
                 />
               </div>
               <div className="text-gray space-y-1 text-sm">

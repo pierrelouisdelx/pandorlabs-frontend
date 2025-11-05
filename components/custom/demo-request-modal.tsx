@@ -11,6 +11,8 @@ import {
 import { Input } from '@/components/ui/input'
 import { buttonVariants } from '@/components/ui/button'
 import { Mail, Building2, User, MessageSquare } from 'lucide-react'
+import { joinWaitlist } from '@/app/actions/waitlist'
+import { toast } from 'sonner'
 
 interface DemoRequestModalProps {
   open: boolean
@@ -34,21 +36,28 @@ export default function DemoRequestModal({
     setIsSubmitting(true)
 
     try {
-      // TODO: Implement actual demo request submission logic
-      console.log('Demo request submitted:', formData)
+      const result = await joinWaitlist(formData)
 
-      // Simulate API call
-      await new Promise((resolve) => setTimeout(resolve, 1000))
-
-      // Reset form and close modal
-      setFormData({ name: '', email: '', company: '', message: '' })
-      onOpenChange(false)
-
-      // You can add a success notification here
-      alert('Demo request submitted successfully! We will contact you soon.')
+      if (result.success) {
+        // Success - show success toast and close modal
+        toast.success(result.message, {
+          description: "We're excited to have you on board!",
+        })
+        setFormData({ name: '', email: '', company: '', message: '' })
+        onOpenChange(false)
+      } else {
+        // Error - show error toast
+        if (result.isDuplicate) {
+          toast.info(result.message, {
+            description: "We'll be in touch soon!",
+          })
+        } else {
+          toast.error(result.message)
+        }
+      }
     } catch (error) {
-      console.error('Error submitting demo request:', error)
-      alert('Failed to submit demo request. Please try again.')
+      console.error('Error submitting waitlist request:', error)
+      toast.error('An unexpected error occurred. Please try again.')
     } finally {
       setIsSubmitting(false)
     }
@@ -157,7 +166,7 @@ export default function DemoRequestModal({
                   'flex-1 disabled:cursor-not-allowed disabled:opacity-50',
               })}
             >
-              {isSubmitting ? 'Submitting...' : 'Request Demo'}
+              {isSubmitting ? 'Submitting...' : 'Join the waitlist'}
             </button>
           </div>
         </form>

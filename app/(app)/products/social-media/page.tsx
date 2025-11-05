@@ -238,8 +238,6 @@ const features = [
 export default function SocialMediaPage() {
   return (
     <div className="min-h-screen bg-[#0A0A0A]">
-      <ProductHero {...heroData} />
-
       {/* Vision Section */}
       <div className="from-primary via-primary/95 to-background relative overflow-hidden bg-gradient-to-b py-16 lg:py-20">
         <div className="container">
@@ -259,9 +257,10 @@ export default function SocialMediaPage() {
 
               <div className="text-gray mx-auto mb-12 max-w-4xl space-y-4 lg:mx-0">
                 <p>
-                  Manual social monitoring can&apos;t scale. By the time you compile
-                  brand mentions, analyze sentiment, and track competitors,
-                  viral moments have passed and crises have escalated.
+                  Manual social monitoring can&apos;t scale. By the time you
+                  compile brand mentions, analyze sentiment, and track
+                  competitors, viral moments have passed and crises have
+                  escalated.
                 </p>
                 <p className="text-lg font-semibold text-white">
                   Get instant social intelligence across all platforms with
@@ -345,14 +344,6 @@ export default function SocialMediaPage() {
           </div>
         </div>
       </div>
-
-      <FeaturesGrid
-        title="Powerful Social Intelligence Features"
-        subtitle="Everything you need to build next-generation social media analytics applications"
-        features={features}
-        accentColor={accentColor}
-        accentGlow={accentGlow}
-      />
 
       {/* Use Cases Section */}
       <div className="from-background to-primary/20 relative overflow-hidden bg-gradient-to-b py-16 lg:py-20">
@@ -483,8 +474,8 @@ export default function SocialMediaPage() {
               </span>
             </h2>
             <p className="text-gray mx-auto mb-12 max-w-2xl">
-              Whether you&apos;re a social media agency or a global brand, we provide
-              the infrastructure and support for mission-critical social
+              Whether you&apos;re a social media agency or a global brand, we
+              provide the infrastructure and support for mission-critical social
               intelligence.
             </p>
           </div>
@@ -502,8 +493,8 @@ export default function SocialMediaPage() {
                 </p>
               </div>
               <p className="text-gray leading-relaxed">
-                &quot;We replaced 5 social listening tools with PandoraLabs. Now we
-                get better data, faster—and save $3K/month on tool
+                &quot;We replaced 5 social listening tools with PandoraLabs. Now
+                we get better data, faster—and save $3K/month on tool
                 subscriptions.&quot;
               </p>
             </div>
@@ -519,8 +510,8 @@ export default function SocialMediaPage() {
                 </p>
               </div>
               <p className="text-gray leading-relaxed">
-                &quot;Real-time crisis detection saved our brand reputation during a
-                viral moment. We responded in minutes, not hours.&quot;
+                &quot;Real-time crisis detection saved our brand reputation
+                during a viral moment. We responded in minutes, not hours.&quot;
               </p>
             </div>
 
@@ -533,8 +524,9 @@ export default function SocialMediaPage() {
                 <p className="text-gray/80 text-sm">Series B Marketing SaaS</p>
               </div>
               <p className="text-gray leading-relaxed">
-                &quot;PandoraLabs gives us social data our competitors don&apos;t have
-                access to. It&apos;s a competitive moat for our platform.&quot;
+                &quot;PandoraLabs gives us social data our competitors
+                don&apos;t have access to. It&apos;s a competitive moat for our
+                platform.&quot;
               </p>
             </div>
           </div>

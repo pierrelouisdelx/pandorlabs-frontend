@@ -1,15 +1,12 @@
 'use client'
 
 import { Bitcoin, Shield, TrendingUp, Zap, Lock, Activity } from 'lucide-react'
-import Image from 'next/image'
 
-import { FeaturesGrid } from '../_components/features-grid'
 import { FinalCTASection } from '../_components/final-cta-section'
 import { ProductHero } from '../_components/product-hero'
 import StatsCard from '@/components/custom/stats-card'
 import TechFeatureCard from '@/components/custom/tech-feature-card'
 import UseCaseCard from '@/components/custom/use-case-card'
-import TrustBadge from '@/components/custom/trust-badge'
 
 const accentColor = '#8B5CF6'
 const accentGlow = 'rgba(139, 92, 246, 0.15)'
@@ -118,19 +115,19 @@ export default function CryptoDataPage() {
 
               <div className="text-gray mx-auto mb-12 max-w-4xl space-y-4 text-center">
                 <p>
-                  Trading platforms and financial institutions need crypto market
-                  data they can trust. Delays, inaccuracies, or downtime can cost
-                  millions in missed opportunities and lost trades.
+                  Trading platforms and financial institutions need crypto
+                  market data they can trust. Delays, inaccuracies, or downtime
+                  can cost millions in missed opportunities and lost trades.
                 </p>
                 <p className="text-lg font-semibold text-white">
                   What if you could access institutional-grade crypto data with
                   the same reliability as traditional financial markets?
                 </p>
                 <p>
-                  Our Crypto Data API delivers real-time prices, order book depth,
-                  and historical data from 400+ exchanges with sub-50ms latency.
-                  SOC 2 certified infrastructure ensures your trading systems never
-                  miss a beat.
+                  Our Crypto Data API delivers real-time prices, order book
+                  depth, and historical data from 400+ exchanges with sub-50ms
+                  latency. SOC 2 certified infrastructure ensures your trading
+                  systems never miss a beat.
                 </p>
                 <p>
                   No custom integrations. No maintenance overhead. No downtime.
@@ -150,7 +147,7 @@ export default function CryptoDataPage() {
               <div className="relative h-[500px] w-[500px]">
                 <div className="absolute inset-0 animate-pulse rounded-full bg-violet-500/20 blur-3xl" />
                 <div className="relative flex h-full w-full items-center justify-center">
-                  <Bitcoin className="h-64 w-64 text-violet-500 animate-[spin_20s_linear_infinite]" />
+                  <Bitcoin className="h-64 w-64 animate-[spin_20s_linear_infinite] text-violet-500" />
                 </div>
               </div>
             </div>
@@ -160,7 +157,7 @@ export default function CryptoDataPage() {
 
       {/* Technology Section */}
       <div className="from-background to-background relative overflow-hidden bg-gradient-to-b via-white/5 py-16 lg:py-20">
-        <div className="from-violet-500/5 to-violet-500/5 absolute inset-0 bg-gradient-to-r via-transparent opacity-30" />
+        <div className="absolute inset-0 bg-gradient-to-r from-violet-500/5 via-transparent to-violet-500/5 opacity-30" />
         <div className="relative z-10 container">
           <div className="mb-12 text-center">
             <p className="text-gray mb-3 text-sm tracking-wider uppercase">
@@ -173,8 +170,8 @@ export default function CryptoDataPage() {
               </span>
             </h2>
             <p className="text-gray mx-auto max-w-2xl">
-              When milliseconds matter and downtime isn&apos;t an option, you need
-              infrastructure built to financial industry standards.
+              When milliseconds matter and downtime isn&apos;t an option, you
+              need infrastructure built to financial industry standards.
             </p>
           </div>
 
@@ -206,56 +203,9 @@ export default function CryptoDataPage() {
         </div>
       </div>
 
-      <FeaturesGrid
-        title="Institutional-Grade Crypto Market Data"
-        subtitle="Power trading platforms and analytics with enterprise reliability"
-        features={[
-          {
-            Icon: Bitcoin,
-            title: 'Comprehensive Coverage',
-            description:
-              '10,000+ cryptocurrencies from 400+ exchanges with tick-by-tick trade data and order book depth.',
-            metrics: '400+ Exchanges',
-          },
-          {
-            Icon: Zap,
-            title: 'Ultra-Low Latency',
-            description:
-              'Sub-50ms response times via global CDN and WebSocket connections for real-time price feeds.',
-            metrics: '<50ms Latency',
-          },
-          {
-            Icon: Shield,
-            title: 'Institutional Security',
-            description:
-              'SOC 2 Type II certified with 99.99% uptime SLA, DDoS protection, and encrypted data transmission.',
-          },
-          {
-            Icon: TrendingUp,
-            title: 'Multi-Chain Analytics',
-            description:
-              'Unified blockchain data across Bitcoin, Ethereum, Solana, and 50+ chains with transaction tracking.',
-          },
-          {
-            Icon: Bitcoin,
-            title: 'Historical Data',
-            description:
-              'Full historical trade data dating back to 2010 with minute-level granularity for backtesting.',
-          },
-          {
-            Icon: Shield,
-            title: 'Regulatory Compliance',
-            description:
-              'GDPR, MiFID II, and SEC compliance support with audit trails and data lineage documentation.',
-          },
-        ]}
-        accentColor={accentColor}
-        accentGlow={accentGlow}
-      />
-
       {/* Use Cases Section */}
       <div className="from-background to-primary/20 relative overflow-hidden bg-gradient-to-b py-16 lg:py-20">
-        <div className="from-violet-500/10 absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] via-transparent to-transparent" />
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-violet-500/10 via-transparent to-transparent" />
         <div className="relative z-10 container">
           <div className="mb-12 text-center">
             <p className="text-gray mb-3 text-sm tracking-wider uppercase">
@@ -310,7 +260,7 @@ export default function CryptoDataPage() {
 
       {/* Social Proof / Testimonials Section */}
       <div className="from-primary/20 to-background relative overflow-hidden bg-gradient-to-b via-white/5 py-16 lg:py-20">
-        <div className="to-violet-500/5 absolute inset-0 bg-gradient-to-br from-violet-600/5 via-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-br from-violet-600/5 via-transparent to-violet-500/5" />
         <div className="relative z-10 container">
           <div className="mb-12 text-center">
             <p className="text-gray mb-3 text-sm tracking-wider uppercase">
@@ -325,46 +275,46 @@ export default function CryptoDataPage() {
           </div>
 
           <div className="mb-12 grid gap-6 md:grid-cols-3">
-            <div className="group hover:border-violet-500/50 hover:shadow-violet-500/20 rounded-2xl border border-white/10 bg-white/5 p-7 backdrop-blur-sm transition-all duration-500 hover:-translate-y-1 hover:bg-white/10 hover:shadow-2xl">
+            <div className="group rounded-2xl border border-white/10 bg-white/5 p-7 backdrop-blur-sm transition-all duration-500 hover:-translate-y-1 hover:border-violet-500/50 hover:bg-white/10 hover:shadow-2xl hover:shadow-violet-500/20">
               <div className="mb-4">
-                <div className="text-violet-400 mb-2 text-2xl">🏢</div>
+                <div className="mb-2 text-2xl text-violet-400">🏢</div>
                 <h4 className="mb-1 font-semibold text-white">
                   Trading Platforms
                 </h4>
                 <p className="text-gray/80 text-sm">Major Crypto Exchange</p>
               </div>
               <p className="text-gray leading-relaxed">
-                &quot;The API reliability and data quality are unmatched. We&apos;ve built
-                our entire trading infrastructure on this data with zero
-                regrets.&quot;
+                &quot;The API reliability and data quality are unmatched.
+                We&apos;ve built our entire trading infrastructure on this data
+                with zero regrets.&quot;
               </p>
             </div>
 
-            <div className="group hover:border-violet-500/50 hover:shadow-violet-500/20 rounded-2xl border border-white/10 bg-white/5 p-7 backdrop-blur-sm transition-all duration-500 hover:-translate-y-1 hover:bg-white/10 hover:shadow-2xl">
+            <div className="group rounded-2xl border border-white/10 bg-white/5 p-7 backdrop-blur-sm transition-all duration-500 hover:-translate-y-1 hover:border-violet-500/50 hover:bg-white/10 hover:shadow-2xl hover:shadow-violet-500/20">
               <div className="mb-4">
-                <div className="text-violet-400 mb-2 text-2xl">📊</div>
+                <div className="mb-2 text-2xl text-violet-400">📊</div>
                 <h4 className="mb-1 font-semibold text-white">
                   Institutional Traders
                 </h4>
                 <p className="text-gray/80 text-sm">Hedge Fund</p>
               </div>
               <p className="text-gray leading-relaxed">
-                &quot;Sub-50ms latency is critical for our trading strategies. This
-                API delivers consistently and has become essential to our
+                &quot;Sub-50ms latency is critical for our trading strategies.
+                This API delivers consistently and has become essential to our
                 operations.&quot;
               </p>
             </div>
 
-            <div className="group hover:border-violet-500/50 hover:shadow-violet-500/20 rounded-2xl border border-white/10 bg-white/5 p-7 backdrop-blur-sm transition-all duration-500 hover:-translate-y-1 hover:bg-white/10 hover:shadow-2xl">
+            <div className="group rounded-2xl border border-white/10 bg-white/5 p-7 backdrop-blur-sm transition-all duration-500 hover:-translate-y-1 hover:border-violet-500/50 hover:bg-white/10 hover:shadow-2xl hover:shadow-violet-500/20">
               <div className="mb-4">
-                <div className="text-violet-400 mb-2 text-2xl">🚀</div>
+                <div className="mb-2 text-2xl text-violet-400">🚀</div>
                 <h4 className="mb-1 font-semibold text-white">DeFi Startups</h4>
                 <p className="text-gray/80 text-sm">Portfolio Analytics</p>
               </div>
               <p className="text-gray leading-relaxed">
-                &quot;We needed multi-chain data that just works. The comprehensive
-                coverage and reliability let us focus on building great
-                products.&quot;
+                &quot;We needed multi-chain data that just works. The
+                comprehensive coverage and reliability let us focus on building
+                great products.&quot;
               </p>
             </div>
           </div>

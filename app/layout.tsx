@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import '@/app/globals.css'
 import helper from '@/lib/helper'
 import { Funnel_Display } from 'next/font/google'
+import { Toaster } from '@/components/ui/sonner'
 
 const font = Funnel_Display({
   subsets: ['latin'],
@@ -41,6 +42,7 @@ export default function RootLayout({
         }
       >
         {children}
+        <Toaster />
       </body>
     </html>
   )

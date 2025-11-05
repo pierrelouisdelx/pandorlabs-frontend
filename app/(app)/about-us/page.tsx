@@ -5,12 +5,12 @@ import helper from '@/lib/helper'
 export const metadata: Metadata = {
   title: 'About Us | PandorLabs',
   description:
-    "PandorLabs pioneers AI-powered data extraction for the modern web. Built by researchers who push the boundaries of what's possible in web intelligence.",
+    "Built by former AI researchers from NVIDIA, Siemens, and Palantir. World-record AI inference. Expert AI agents. 10+ years of web scraping mastery and reverse engineering expertise.",
   openGraph: {
     ...helper.openGraphData,
     title: 'About Us | PandorLabs',
     description:
-      "PandorLabs pioneers AI-powered data extraction for the modern web. Built by researchers who push the boundaries of what's possible in web intelligence.",
+      "Built by former AI researchers from NVIDIA, Siemens, and Palantir. World-record AI inference. Expert AI agents. 10+ years of web scraping mastery and reverse engineering expertise.",
     url: process.env.NEXT_PUBLIC_APP_URL + '/about-us',
     type: 'website',
   },
@@ -37,16 +37,15 @@ export default function AboutUs() {
             </div>
 
             <h1 className="mb-6 text-[32px]/tight font-bold tracking-tight sm:text-5xl lg:text-7xl/tight">
-              Where Research Meets
+              Elite AI Researchers
               <br />
               <span className="to-green-light bg-linear-to-l from-green-100 bg-clip-text text-transparent drop-shadow-lg">
-                Real-World Intelligence
+                Building the Future
               </span>
             </h1>
 
             <p className="text-gray mx-auto mb-10 max-w-2xl text-lg leading-relaxed sm:text-xl">
-              Built by researchers who push the boundaries of what&apos;s
-              possible in web intelligence.
+              Former researchers from NVIDIA, Siemens, and Palantir. World-record AI inference. Expert AI agents. 10+ years mastering web scraping and reverse engineering.
             </p>
           </div>
         </div>
@@ -70,10 +69,7 @@ export default function AboutUs() {
             {/* Bio text */}
             <div className="space-y-8 text-lg leading-relaxed">
               <p className="text-gray text-center">
-                We emerged from the trenches of fintech, cybersecurity, and
-                intelligence—where traditional web scraping simply doesn&apos;t
-                cut it. Where milliseconds matter and failure isn&apos;t an
-                option.
+                We are former AI researchers and reverse engineering specialists from NVIDIA, Siemens, and Palantir—where cutting-edge innovation meets production-grade excellence. Our team has worked on systems where milliseconds define competitive advantage and failure simply isn&apos;t an option.
               </p>
 
               <div className="group hover:border-green-light/50 hover:shadow-green-light/20 relative overflow-hidden rounded-2xl border border-white/10 bg-white/5 p-10 backdrop-blur-sm transition-all duration-500 hover:-translate-y-1 hover:bg-white/10 hover:shadow-2xl">
@@ -83,26 +79,16 @@ export default function AboutUs() {
                   strokeWidth={1}
                 />
                 <p className="group-hover:text-green-light relative text-center text-xl font-medium text-white transition-colors duration-300 sm:text-2xl">
-                  &ldquo;The modern web is built to resist automation. We built
-                  the technology to overcome it.&rdquo;
+                  &ldquo;We achieved world records in AI inference and became experts at building AI agents that solve problems others consider impossible.&rdquo;
                 </p>
               </div>
 
               <p className="text-gray text-center">
-                What started in academic research labs—experimenting with LLM
-                agents, adversarial techniques, and intelligent
-                automation—evolved into battle-tested infrastructure powering
-                Fortune 500 operations. We don&apos;t just extract data; we
-                solve the problems that make extraction impossible.
+                Our breakthrough in AI inference optimization set world records for performance, proving that research excellence translates to real-world impact. We specialize in building intelligent AI agents that combine deep learning, reverse engineering, and adversarial techniques to overcome the most complex automation challenges.
               </p>
 
               <p className="text-gray text-center">
-                Our distributed team brings world-class expertise in machine
-                learning, distributed systems, and offensive security. We
-                specialize in the edge cases others avoid: dynamic applications,
-                anti-bot systems, and data sources considered
-                &ldquo;unscrappable.&rdquo; If it&apos;s on the web, we can
-                reach it.
+                With over 10 years dedicated to web scraping and data extraction, we've mastered every layer of the modern web stack. From dynamic JavaScript applications to sophisticated anti-bot systems, our expertise in reverse engineering and AI-powered automation allows us to extract intelligence from sources others deem &ldquo;unscrappable.&rdquo; If it&apos;s on the web, we can reach it.
               </p>
             </div>
           </div>
@@ -138,10 +124,10 @@ export default function AboutUs() {
                   />
                 </div>
                 <h3 className="group-hover:text-green-light mb-3 text-lg font-semibold text-white transition-colors duration-300">
-                  Industry-Leading Performance
+                  World-Record AI Inference
                 </h3>
                 <p className="text-gray group-hover:text-gray/90 text-sm leading-relaxed transition-colors duration-300">
-                  2x faster AI inference than competing solutions
+                  Achieved breakthrough performance in AI inference optimization
                 </p>
               </div>
 
@@ -155,10 +141,10 @@ export default function AboutUs() {
                   />
                 </div>
                 <h3 className="group-hover:text-green-light mb-3 text-lg font-semibold text-white transition-colors duration-300">
-                  Peer-Reviewed Innovation
+                  Elite Industry Background
                 </h3>
                 <p className="text-gray group-hover:text-gray/90 text-sm leading-relaxed transition-colors duration-300">
-                  Published research in AI and web security domains
+                  Former researchers from NVIDIA, Siemens, and Palantir
                 </p>
               </div>
 
@@ -172,10 +158,10 @@ export default function AboutUs() {
                   />
                 </div>
                 <h3 className="group-hover:text-green-light mb-3 text-lg font-semibold text-white transition-colors duration-300">
-                  Research-Driven Engineering
+                  10+ Years Web Scraping Mastery
                 </h3>
                 <p className="text-gray group-hover:text-gray/90 text-sm leading-relaxed transition-colors duration-300">
-                  Academic rigor meets production reliability
+                  Deep expertise in data extraction and reverse engineering
                 </p>
               </div>
             </div>
@@ -192,8 +178,7 @@ export default function AboutUs() {
             <div className="group hover:border-green-light/50 hover:shadow-green-light/30 relative overflow-hidden rounded-2xl border border-white/10 bg-white/5 p-12 text-center backdrop-blur-sm transition-all duration-500 hover:-translate-y-1 hover:bg-white/10 hover:shadow-2xl">
               <div className="from-green-light/10 absolute inset-0 -z-10 bg-gradient-to-br to-transparent opacity-0 transition-opacity duration-500 group-hover:opacity-100"></div>
               <p className="mb-6 text-xl text-white/80 italic transition-colors duration-300 group-hover:text-white sm:text-2xl">
-                &ldquo;We don&apos;t just extract data—we unlock the
-                intelligence hidden in the modern web.&rdquo;
+                &ldquo;Elite researchers from NVIDIA, Siemens, and Palantir. World-record AI inference. Expert AI agents. 10+ years of web scraping mastery. We solve the impossible.&rdquo;
               </p>
               <p className="to-green-light bg-linear-to-l from-green-100 bg-clip-text text-sm font-medium text-transparent">
                 — The PandorLabs Team
@@ -211,7 +196,7 @@ export default function AboutUs() {
                 "@type": "WebSite",
                 "name": "About Us | PandorLabs",
                 "url": "${process.env.NEXT_PUBLIC_APP_URL}",
-                "description": "PandorLabs pioneers AI-powered data extraction for the modern web. Built by researchers who push the boundaries of what's possible in web intelligence.",
+                "description": "Built by former AI researchers from NVIDIA, Siemens, and Palantir. World-record AI inference. Expert AI agents. 10+ years of web scraping mastery and reverse engineering expertise.",
                 "inLanguage": "en",
                 "image": "${process.env.NEXT_PUBLIC_APP_URL}/images/logo.svg",
                 "breadcrumb": {
