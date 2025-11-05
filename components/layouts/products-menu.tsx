@@ -14,7 +14,7 @@ import * as React from 'react'
 
 const products = [
   {
-    id: 'real-estate-data',
+    id: 'real-estate',
     title: 'Real Estate Data',
     description:
       'Comprehensive property listings, market trends, and investment analytics at your fingertips',

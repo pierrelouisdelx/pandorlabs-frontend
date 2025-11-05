@@ -23,13 +23,13 @@ export default function AboutUs() {
   return (
     <>
       {/* Hero Section */}
-      <section className="relative -mt-24 flex min-h-[70vh] items-center bg-[url(/images/hero-section.png)] bg-cover bg-center bg-no-repeat pt-24">
+      <section className="relative -mt-24 flex min-h-screen items-center bg-[url(/images/hero-section.png)] bg-cover bg-center bg-no-repeat pt-24">
         <span className="from-primary to-primary/20 absolute inset-0 z-5 bg-linear-to-t"></span>
 
         <div className="relative z-10 container mx-auto px-4">
           <div className="mx-auto max-w-4xl text-center">
             {/* Section badge */}
-            <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-2 backdrop-blur-sm transition-all duration-300 hover:border-green-light/30 hover:bg-white/10">
+            <div className="hover:border-green-light/30 mb-6 inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-2 backdrop-blur-sm transition-all duration-300 hover:bg-white/10">
               <Microscope className="text-green-light h-4 w-4" />
               <span className="text-sm font-medium tracking-wider text-white/60 uppercase">
                 About PandorLabs
@@ -45,7 +45,8 @@ export default function AboutUs() {
             </h1>
 
             <p className="text-gray mx-auto mb-10 max-w-2xl text-lg leading-relaxed sm:text-xl">
-              Built by researchers who push the boundaries of what&apos;s possible in web intelligence.
+              Built by researchers who push the boundaries of what&apos;s
+              possible in web intelligence.
             </p>
           </div>
         </div>
@@ -53,7 +54,10 @@ export default function AboutUs() {
         {/* Background effects */}
         <div className="pointer-events-none absolute inset-0 overflow-hidden">
           <div className="from-green-light/10 to-green-light/5 absolute top-1/2 left-1/4 h-96 w-96 animate-pulse rounded-full bg-linear-to-br blur-[120px]" />
-          <div className="from-green-light/10 to-green-light/5 absolute top-1/3 right-1/4 h-96 w-96 animate-pulse rounded-full bg-linear-to-br blur-[120px]" style={{ animationDelay: '1s' }} />
+          <div
+            className="from-green-light/10 to-green-light/5 absolute top-1/3 right-1/4 h-96 w-96 animate-pulse rounded-full bg-linear-to-br blur-[120px]"
+            style={{ animationDelay: '1s' }}
+          />
         </div>
       </section>
 
@@ -74,7 +78,10 @@ export default function AboutUs() {
 
               <div className="group hover:border-green-light/50 hover:shadow-green-light/20 relative overflow-hidden rounded-2xl border border-white/10 bg-white/5 p-10 backdrop-blur-sm transition-all duration-500 hover:-translate-y-1 hover:bg-white/10 hover:shadow-2xl">
                 <div className="from-green-light/5 absolute inset-0 -z-10 bg-gradient-to-br to-transparent opacity-0 transition-opacity duration-500 group-hover:opacity-100"></div>
-                <FlaskConical className="text-green-light/20 absolute top-4 right-4 h-20 w-20 transition-all duration-500 group-hover:scale-110 group-hover:text-green-light/30" strokeWidth={1} />
+                <FlaskConical
+                  className="text-green-light/20 group-hover:text-green-light/30 absolute top-4 right-4 h-20 w-20 transition-all duration-500 group-hover:scale-110"
+                  strokeWidth={1}
+                />
                 <p className="group-hover:text-green-light relative text-center text-xl font-medium text-white transition-colors duration-300 sm:text-2xl">
                   &ldquo;The modern web is built to resist automation. We built
                   the technology to overcome it.&rdquo;
@@ -83,10 +90,10 @@ export default function AboutUs() {
 
               <p className="text-gray text-center">
                 What started in academic research labs—experimenting with LLM
-                agents, adversarial techniques, and intelligent automation—evolved
-                into battle-tested infrastructure powering Fortune 500 operations.
-                We don&apos;t just extract data; we solve the problems that make
-                extraction impossible.
+                agents, adversarial techniques, and intelligent
+                automation—evolved into battle-tested infrastructure powering
+                Fortune 500 operations. We don&apos;t just extract data; we
+                solve the problems that make extraction impossible.
               </p>
 
               <p className="text-gray text-center">
@@ -94,8 +101,8 @@ export default function AboutUs() {
                 learning, distributed systems, and offensive security. We
                 specialize in the edge cases others avoid: dynamic applications,
                 anti-bot systems, and data sources considered
-                &ldquo;unscrappable.&rdquo; If it&apos;s on the web, we can reach
-                it.
+                &ldquo;unscrappable.&rdquo; If it&apos;s on the web, we can
+                reach it.
               </p>
             </div>
           </div>
@@ -184,9 +191,9 @@ export default function AboutUs() {
           <div className="mx-auto max-w-4xl">
             <div className="group hover:border-green-light/50 hover:shadow-green-light/30 relative overflow-hidden rounded-2xl border border-white/10 bg-white/5 p-12 text-center backdrop-blur-sm transition-all duration-500 hover:-translate-y-1 hover:bg-white/10 hover:shadow-2xl">
               <div className="from-green-light/10 absolute inset-0 -z-10 bg-gradient-to-br to-transparent opacity-0 transition-opacity duration-500 group-hover:opacity-100"></div>
-              <p className="mb-6 text-xl italic text-white/80 transition-colors duration-300 group-hover:text-white sm:text-2xl">
-                &ldquo;We don&apos;t just extract data—we unlock the intelligence
-                hidden in the modern web.&rdquo;
+              <p className="mb-6 text-xl text-white/80 italic transition-colors duration-300 group-hover:text-white sm:text-2xl">
+                &ldquo;We don&apos;t just extract data—we unlock the
+                intelligence hidden in the modern web.&rdquo;
               </p>
               <p className="to-green-light bg-linear-to-l from-green-100 bg-clip-text text-sm font-medium text-transparent">
                 — The PandorLabs Team
