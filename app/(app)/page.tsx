@@ -66,31 +66,28 @@ export default function Home() {
             <HeroSearchInput />
 
             {/* Trust Badges */}
-            <div className="mt-16">
-              <p className="mb-8 text-center text-lg font-semibold text-white/90">
+            <div className="mt-20">
+              <p className="mb-8 text-center text-lg font-semibold text-white/90 uppercase">
                 Trusted by Industry Leaders
               </p>
               <div className="flex flex-wrap items-center justify-center gap-12 lg:gap-16">
                 <Image
                   src="/images/companies/avian.svg"
                   alt="SIEMENS"
-                  width={180}
-                  height={72}
-                  className="opacity-80 transition-opacity hover:opacity-100"
+                  width={198}
+                  height={79}
                 />
                 <Image
                   src="/images/companies/nvidia.svg"
                   alt="NVIDIA"
-                  width={180}
-                  height={72}
-                  className="opacity-80 transition-opacity hover:opacity-100"
+                  width={198}
+                  height={79}
                 />
                 <Image
                   src="/images/companies/siemens-healthineers.svg"
                   alt="SIEMENS Healthineers"
-                  width={180}
-                  height={72}
-                  className="opacity-80 transition-opacity hover:opacity-100"
+                  width={198}
+                  height={79}
                 />
               </div>
             </div>
@@ -102,7 +99,7 @@ export default function Home() {
       <div className="from-primary via-primary/95 to-background relative overflow-hidden bg-gradient-to-b py-16 lg:py-20">
         <div className="container">
           <div className="flex gap-20">
-            <div className="w-1/2">
+            <div className="w-full lg:w-1/2">
               <div className="mb-10 text-center">
                 <p className="text-gray mb-3 text-sm tracking-wider uppercase">
                   OUR VISION
@@ -150,7 +147,7 @@ export default function Home() {
               alt="Radar"
               width={500}
               height={500}
-              className="w-1/2"
+              className="hidden w-1/2 lg:block"
             />
           </div>
         </div>
