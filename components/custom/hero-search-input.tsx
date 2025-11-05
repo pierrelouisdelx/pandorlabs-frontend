@@ -13,19 +13,19 @@ interface ExampleQuery {
 
 const exampleQueries: ExampleQuery[] = [
   {
-    text: 'Extract pricing data from Amazon electronics',
+    text: 'What are my competitors charging for similar products?',
     icon: '💰',
   },
   {
-    text: 'Monitor competitor product launches in real-time',
-    icon: '🎯',
+    text: 'Which companies in my industry are actively hiring?',
+    icon: '👥',
   },
   {
-    text: 'Track brand sentiment across social media',
+    text: 'How does my brand reputation compare to competitors?',
     icon: '📊',
   },
   {
-    text: 'Analyze SaaS pricing trends',
+    text: 'Show me what products are trending in my market',
     icon: '📈',
   },
 ]
@@ -61,7 +61,7 @@ export default function HeroSearchInput() {
           <div className="flex gap-3">
             <Input
               type="text"
-              placeholder="Describe data extraction requirements"
+              placeholder="What business question can we help you answer today?"
               className="flex-1"
               value={query}
               onChange={(e) => setQuery(e.target.value)}

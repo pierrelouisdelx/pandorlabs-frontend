@@ -18,7 +18,7 @@ const products = [
     title: 'Real Estate Data',
     description:
       'Comprehensive property listings, market trends, and investment analytics at your fingertips',
-    href: '/products/real-estate-data',
+    href: '/products/real-estate',
   },
   {
     id: 'lead-generation',
@@ -28,18 +28,18 @@ const products = [
     href: '/products/lead-generation',
   },
   {
-    id: 'shopping-monitoring',
+    id: 'shopping',
     title: 'Shopping Monitoring',
     description:
       'Track competitor prices, stock levels, and market trends across e-commerce platforms',
-    href: '/products/shopping-monitoring',
+    href: '/products/shopping',
   },
   {
-    id: 'crypto-data',
+    id: 'crypto',
     title: 'Crypto Data',
     description:
       'Real-time cryptocurrency prices, blockchain analytics, and market intelligence APIs',
-    href: '/products/crypto-data',
+    href: '/products/crypto',
   },
   {
     id: 'ai-datasets',
@@ -65,7 +65,7 @@ export default function ProductsMenu() {
           <NavigationMenuTrigger className="nav-links bg-transparent text-white">
             Products
           </NavigationMenuTrigger>
-          <NavigationMenuContent className="z-50 mt-10 bg-white/10 backdrop-blur-lg">
+          <NavigationMenuContent className="z-50 bg-white/20 backdrop-blur-lg">
             <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px]">
               {products.map((product) => (
                 <ListItem
@@ -86,13 +86,14 @@ export default function ProductsMenu() {
 
 const ListItem = React.forwardRef<
   React.ElementRef<'a'>,
-  React.ComponentPropsWithoutRef<'a'>
->(({ className, title, children, ...props }, ref) => {
+  React.ComponentPropsWithoutRef<'a'> & { href?: string }
+>(({ className, title, children, href, ...props }, ref) => {
   return (
     <li>
       <NavigationMenuLink asChild>
         <Link
           ref={ref}
+          href={href || '#'}
           className={cn(
             'block space-y-1 rounded-lg p-3 leading-none no-underline transition-colors outline-none select-none hover:bg-white/10 hover:text-white focus:bg-white/10 focus:text-white',
             className,

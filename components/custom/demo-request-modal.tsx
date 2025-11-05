@@ -56,14 +56,14 @@ export default function DemoRequestModal({
 
   return (
     <Dialog open={open} onOpenChange={onOpenChange}>
-      <DialogContent className="max-w-md border border-white/20 bg-gradient-to-br from-gray-900/95 via-primary/95 to-gray-900/95 p-6 shadow-2xl backdrop-blur-xl sm:max-w-lg">
+      <DialogContent className="via-primary/95 max-w-md border border-white/20 bg-gradient-to-br from-gray-900/95 to-gray-900/95 p-6 shadow-2xl backdrop-blur-xl sm:max-w-lg">
         <DialogHeader className="space-y-3">
-          <DialogTitle className="bg-gradient-to-r from-green-light via-green-100 to-green-light bg-clip-text text-2xl font-bold text-transparent">
-            Request a Demo
+          <DialogTitle className="from-green-light to-green-light bg-gradient-to-r via-green-100 bg-clip-text text-2xl font-bold text-transparent">
+            Join the waitlist
           </DialogTitle>
           <DialogDescription className="text-gray-300">
-            Fill out the form below and our team will get in touch with you to
-            schedule a personalized demo of our data extraction platform.
+            Fill out the form below and we will get in touch with you when we
+            launch.
           </DialogDescription>
         </DialogHeader>
 
@@ -135,9 +135,9 @@ export default function DemoRequestModal({
                 onChange={(e) =>
                   setFormData({ ...formData, message: e.target.value })
                 }
-                className="flex w-full rounded-2xl border border-gray/20 bg-white/5 px-6 py-3.5 pl-12 text-base text-white backdrop-blur-md transition-all duration-300 placeholder:text-gray focus:border-green-light/50 focus:shadow-lg focus:shadow-green-light/10 focus-visible:outline-hidden disabled:cursor-not-allowed disabled:opacity-50 hover:border-gray/30"
+                className="border-gray/20 placeholder:text-gray focus:border-green-light/50 focus:shadow-green-light/10 hover:border-gray/30 flex w-full rounded-2xl border bg-white/5 px-6 py-3.5 pl-12 text-base text-white backdrop-blur-md transition-all duration-300 focus:shadow-lg focus-visible:outline-hidden disabled:cursor-not-allowed disabled:opacity-50"
               />
-              <MessageSquare className="absolute left-4 top-4 size-5 text-white" />
+              <MessageSquare className="absolute top-4 left-4 size-5 text-white" />
             </div>
           </div>
 

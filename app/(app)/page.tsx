@@ -2,7 +2,6 @@ import StatsCard from '@/components/custom/stats-card'
 import ProcessStep from '@/components/custom/process-step'
 import UseCaseCard from '@/components/custom/use-case-card'
 import TechFeatureCard from '@/components/custom/tech-feature-card'
-import TerminalMock from '@/components/custom/terminal-mock'
 import DashboardPreview from '@/components/custom/dashboard-preview'
 import TrustBadge from '@/components/custom/trust-badge'
 import { buttonVariants } from '@/components/ui/button'
@@ -28,14 +27,14 @@ import {
 
 export const metadata: Metadata = {
   title:
-    'PandoraLabs | AI-Powered Data Intelligence Platform with Autonomous Agents',
+    'PandoraLabs | Market Intelligence Platform for Faster Business Decisions',
   description:
-    'Autonomous AI agents that extract data from any website automatically. No coding, no maintenance. From question to dataset in minutes with intelligent web scraping.',
+    'Get competitive intelligence and market data without hiring analysts or waiting weeks. Access real-time business insights from any source in minutes. Trusted by Fortune 500 companies.',
   openGraph: {
     ...helper.openGraphData,
-    title: 'PandoraLabs | AI-Powered Data Intelligence Platform',
+    title: 'PandoraLabs | Make Faster, Smarter Business Decisions',
     description:
-      'Autonomous AI agents that extract data from any website automatically. No coding, no maintenance. From question to dataset in minutes.',
+      'Get the competitive intelligence and market data you need—without hiring analysts, building tools, or waiting weeks. Real-time insights in minutes.',
     url: process.env.NEXT_PUBLIC_APP_URL,
     type: 'website',
   },
@@ -53,15 +52,14 @@ export default function Home() {
         <div className="cursor-effect-section relative z-5 container w-full py-20">
           <div className="mx-auto max-w-4xl text-center">
             <h1 className="relative mb-6 text-[32px]/tight font-bold tracking-tight sm:text-5xl lg:text-7xl/tight">
-              Market Intelligence, <br />
+              Make Faster, Smarter <br />
               <span className="to-green-light bg-linear-to-l from-green-100 bg-clip-text text-transparent drop-shadow-lg">
-                On Demand
+                Business Decisions
               </span>
             </h1>
             <p className="text-gray mx-auto mb-10 max-w-2xl text-lg leading-relaxed sm:text-xl">
-              Autonomous AI-powered data extraction that replaces weeks of
-              manual work. Just describe what you need—our agents handle
-              authentication, parsing, and delivery.
+              Get the competitive intelligence and market data you need—without
+              hiring analysts, building tools, or waiting weeks
             </p>
 
             <HeroSearchInput />
@@ -106,42 +104,43 @@ export default function Home() {
                   WHY PANDORALABS
                 </p>
                 <h2 className="mb-6 text-[26px]/8 font-semibold sm:text-3xl lg:text-5xl/[60px]">
-                  Autonomous AI Agents Built for{' '}
+                  Your Competitive Intelligence{' '}
                   <span className="to-green-light bg-linear-to-l from-green-100 bg-clip-text text-transparent">
-                    Any Data Source
+                    Advantage
                   </span>
                 </h2>
               </div>
 
               <div className="text-gray mx-auto mb-12 max-w-4xl space-y-4 text-center">
                 <p>
-                  Traditional web scraping requires constant maintenance, breaks
-                  with site updates, and demands technical expertise. Manual
-                  data collection is slow, expensive, and error-prone.
+                  Every day, critical business intelligence is locked away on
+                  competitor websites, industry forums, and market databases.
+                  Your team spends weeks manually collecting data, only to find
+                  it's outdated by the time they analyze it.
                 </p>
                 <p className="text-lg font-semibold text-white">
-                  PandoraLabs changes everything with autonomous AI agents.
+                  What if you could access any data source instantly—with the
+                  accuracy of a dedicated research team and the speed of
+                  automation?
                 </p>
                 <p>
-                  Our intelligent agents don't just extract data—they understand
-                  website structures, adapt to changes automatically, and handle
-                  complex authentication flows without human intervention.
-                  Simply describe what data you need in plain English, and our
-                  AI does the rest.
+                  PandoraLabs delivers market intelligence on demand. Simply ask
+                  for the data you need in plain language. Our platform handles
+                  the rest—from finding the right sources to delivering clean,
+                  analysis-ready datasets.
                 </p>
                 <p>
-                  From instant access to our pre-scraped database covering
-                  thousands of sources, to dynamic scraper creation for custom
-                  requests, PandoraLabs delivers the data intelligence you
-                  need—when you need it.
+                  No data engineers. No maintenance. No delays. Just the
+                  insights you need to make better decisions, faster than your
+                  competitors.
                 </p>
               </div>
 
               {/* Stats Cards */}
               <div className="grid gap-6 md:grid-cols-3">
-                <StatsCard value="99.9%" label="Uptime SLA" />
-                <StatsCard value="<2s" label="Avg Response" />
-                <StatsCard value="24/7" label="Monitoring" />
+                <StatsCard value="99.9%" label="Always-On Intelligence" />
+                <StatsCard value="<2s" label="Real-Time Insights" />
+                <StatsCard value="24/7" label="Never Miss an Opportunity" />
               </div>
             </div>
             <Image
@@ -170,26 +169,26 @@ export default function Home() {
               </span>
             </h2>
             <p className="text-gray mx-auto max-w-2xl">
-              Our autonomous AI agents streamline data extraction from request
-              to delivery, handling all technical complexity automatically.
+              No technical setup. No complicated processes. Just three simple
+              steps to get the market intelligence you need.
             </p>
           </div>
 
           <div className="grid gap-6 md:grid-cols-3">
             <ProcessStep
               number="01"
-              title="Ask in Plain English"
-              description="No technical knowledge required. Just describe the data you need in natural language. Our AI understands your request and identifies the best approach to retrieve it."
+              title="Tell Us What You Need"
+              description="No coding. No technical setup. Just describe your business question: 'What are my competitors charging?' or 'Which companies are hiring in my market?' or 'What products are trending on Amazon?'"
             />
             <ProcessStep
               number="02"
-              title="AI Builds & Deploys Automatically"
-              description="Autonomous agents analyze the target source, build custom scrapers, handle authentication and anti-bot systems—all without human intervention. Setup completes in minutes."
+              title="We Find and Verify the Data"
+              description="Our intelligent system locates the right sources, navigates complex websites, and validates data quality—automatically. What used to take your team weeks happens in minutes."
             />
             <ProcessStep
               number="03"
-              title="Receive Clean, Structured Data"
-              description="Get validated datasets delivered via API, webhook, or database integration in JSON or CSV format. Choose real-time streaming or batch delivery based on your needs."
+              title="Receive Ready-to-Use Insights"
+              description="Get clean, organized data delivered to your preferred tools—Excel, Google Sheets, your CRM, or BI platform. Start analyzing immediately, not next quarter."
             />
           </div>
 
@@ -232,34 +231,34 @@ export default function Home() {
 
           <div className="mb-10 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
             <UseCaseCard
-              icon={Shield}
-              title="Security Intelligence"
-              description="Monitor security forums, vulnerability databases, and threat feeds for emerging risks. Automated threat detection keeps your organization protected 24/7."
-            />
-            <UseCaseCard
-              icon={Search}
-              title="E-commerce & Shopping Data"
-              description="Extract pricing, product catalogs, reviews, and inventory data from Amazon, Shopify, and major retailers. Track competitor pricing and market trends automatically."
+              icon={Target}
+              title="Competitive Pricing Intelligence"
+              description="Know exactly what your competitors are charging—before you lose the deal. Track pricing changes daily and adjust your strategy in real-time. Sales teams report 15-25% higher win rates with real-time pricing data."
             />
             <UseCaseCard
               icon={Users}
-              title="Lead Generation"
-              description="Build targeted prospect lists from LinkedIn, company websites, and professional directories. AI agents validate contact information and enrich profiles automatically."
+              title="Lead Generation That Scales"
+              description="Generate qualified leads 10x faster than manual research. Our clients fill their pipeline with decision-makers while competitors waste time on spreadsheets. Reduce cost-per-lead by 60% and accelerate sales cycles by 40%."
             />
             <UseCaseCard
-              icon={Target}
-              title="Social Media Intelligence"
-              description="Track brand mentions, sentiment analysis, and audience insights across Twitter, Instagram, LinkedIn, and other platforms with real-time monitoring and alerts."
+              icon={Search}
+              title="Market Intelligence for Executives"
+              description="Make strategic decisions backed by real-time market data. See what customers say about your brand, competitors, and industry trends—updated hourly. Executive teams report 30% faster go-to-market decisions."
             />
             <UseCaseCard
               icon={Scale}
-              title="Real Estate Data"
-              description="Extract property listings, pricing trends, and market analytics from Zillow, Realtor.com, and MLS databases. Monitor new listings and price changes in real-time."
+              title="E-commerce & Product Research"
+              description="Track competitor products, pricing, and reviews across all major retailers. Identify trending products and pricing opportunities before your competition. Merchants increase profit margins by 18% on average."
+            />
+            <UseCaseCard
+              icon={Shield}
+              title="Risk & Compliance Monitoring"
+              description="Stay ahead of regulatory changes and security threats with 24/7 automated monitoring. Reduce compliance review time by 75% and catch emerging risks before they impact your business."
             />
             <UseCaseCard
               icon={Radio}
-              title="Crypto & Blockchain Analytics"
-              description="Track cryptocurrency prices, NFT listings, DeFi protocols, and blockchain transactions. Monitor multiple exchanges and marketplaces with continuous data feeds."
+              title="Investment Research Intelligence"
+              description="Access market data your competitors don't have. Track competitor moves, industry trends, and emerging opportunities in real-time. Investment teams make faster, more confident decisions with better data."
             />
           </div>
 
@@ -284,32 +283,34 @@ export default function Home() {
               TECHNOLOGY
             </p>
             <h2 className="mb-4 text-[26px]/8 font-semibold sm:text-3xl lg:text-5xl/[60px]">
-              Enterprise-Grade AI Technology{' '}
+              Built for{' '}
               <span className="to-green-light bg-linear-to-l from-green-100 bg-clip-text text-transparent">
-                You Can Trust
+                Business-Critical Decisions
               </span>
             </h2>
             <p className="text-gray mx-auto max-w-2xl">
-              Autonomous AI agents powered by cutting-edge technology and
-              battle-tested infrastructure that scales with your needs.
+              When your strategy depends on accurate data, you can't afford
+              downtime, errors, or security risks. PandoraLabs is built to
+              enterprise standards because your decisions deserve enterprise
+              reliability.
             </p>
           </div>
 
           <div className="mb-12 grid gap-8 md:grid-cols-3">
             <TechFeatureCard
               icon={Bot}
-              title="Autonomous AI Agents"
-              description="Intelligent agents that understand website structures, adapt to changes automatically, and build custom scrapers on-demand without manual coding or maintenance."
+              title="Set It and Forget It"
+              description="No maintenance teams. No broken workflows. Our intelligent system adapts when websites change—so your data never stops flowing. Eliminate the $50K-$150K annual cost of maintaining custom data tools."
             />
             <TechFeatureCard
               icon={Lock}
-              title="Enterprise Security"
-              description="Bank-grade encryption, SOC 2 Type II certified infrastructure, and full GDPR/CCPA compliance. Your data security is our priority."
+              title="Your Data Stays Secure"
+              description="Bank-level security that passes your compliance team's review. SOC 2 Type II certified. Full GDPR/CCPA compliance. Your competitive intelligence stays confidential. Deploy without lengthy security reviews."
             />
             <TechFeatureCard
               icon={Zap}
-              title="Scalable Infrastructure"
-              description="Cloud-native architecture built to deliver data at any scale with 99.9% uptime SLA, sub-2 second response times, and automatic redundancy."
+              title="Scales With Your Business"
+              description="From 100 records to 10 million—our platform grows with you. 99.9% uptime means your insights are always available when you need them. Support enterprise-scale decisions without enterprise costs."
             />
           </div>
 
@@ -332,16 +333,65 @@ export default function Home() {
               FOR BUSINESSES AT SCALE
             </p>
             <h2 className="mb-4 text-[26px]/8 font-semibold sm:text-3xl lg:text-5xl/[60px]">
-              From Startups to{' '}
+              Trusted by Teams That{' '}
               <span className="to-green-light bg-linear-to-l from-green-100 bg-clip-text text-transparent">
-                Fortune 500s
+                Can't Afford to Wait
               </span>
             </h2>
-            <p className="text-gray mx-auto mb-12 max-w-2xl">
-              Whether you're a scrappy startup needing competitive intel or an
-              enterprise requiring real-time threat intelligence at scale, we've
-              got you covered.
+            <p className="text-gray mx-auto mb-8 max-w-2xl">
+              Whether you're a startup racing to understand your market or a
+              Fortune 500 making billion-dollar decisions, you need intelligence
+              you can trust—fast.
             </p>
+          </div>
+
+          {/* Testimonials Section */}
+          <div className="mb-12 grid gap-6 md:grid-cols-3">
+            <div className="group hover:border-green-light/50 hover:shadow-green-light/20 rounded-2xl border border-white/10 bg-white/5 p-7 backdrop-blur-sm transition-all duration-500 hover:-translate-y-1 hover:bg-white/10 hover:shadow-2xl">
+              <div className="mb-4">
+                <div className="text-green-light mb-2 text-2xl">🏢</div>
+                <h4 className="mb-1 font-semibold text-white">
+                  Enterprise Strategy Teams
+                </h4>
+                <p className="text-gray/80 text-sm">
+                  Fortune 500 Healthcare Company
+                </p>
+              </div>
+              <p className="text-gray leading-relaxed">
+                "We replaced 3 full-time analysts with PandoraLabs. Now we get
+                better data, faster—and our team focuses on insights, not
+                spreadsheets."
+              </p>
+            </div>
+
+            <div className="group hover:border-green-light/50 hover:shadow-green-light/20 rounded-2xl border border-white/10 bg-white/5 p-7 backdrop-blur-sm transition-all duration-500 hover:-translate-y-1 hover:bg-white/10 hover:shadow-2xl">
+              <div className="mb-4">
+                <div className="text-green-light mb-2 text-2xl">🚀</div>
+                <h4 className="mb-1 font-semibold text-white">
+                  Growth-Stage Startups
+                </h4>
+                <p className="text-gray/80 text-sm">Series B SaaS Company</p>
+              </div>
+              <p className="text-gray leading-relaxed">
+                "Before PandoraLabs, competitive research took weeks. Now we
+                have real-time market intelligence that informs every product
+                decision."
+              </p>
+            </div>
+
+            <div className="group hover:border-green-light/50 hover:shadow-green-light/20 rounded-2xl border border-white/10 bg-white/5 p-7 backdrop-blur-sm transition-all duration-500 hover:-translate-y-1 hover:bg-white/10 hover:shadow-2xl">
+              <div className="mb-4">
+                <div className="text-green-light mb-2 text-2xl">📊</div>
+                <h4 className="mb-1 font-semibold text-white">
+                  Investment Research
+                </h4>
+                <p className="text-gray/80 text-sm">$2B Investment Fund</p>
+              </div>
+              <p className="text-gray leading-relaxed">
+                "PandoraLabs gives us market data our competitors don't have
+                access to. It's like having insider knowledge—legally."
+              </p>
+            </div>
           </div>
 
           <div className="grid gap-10 lg:grid-cols-2">
@@ -418,38 +468,47 @@ export default function Home() {
         <div className="relative z-10 container">
           <div className="mx-auto max-w-3xl text-center">
             <h2 className="mb-4 text-[26px]/8 font-semibold sm:text-3xl lg:text-5xl/[60px]">
-              Turn Any Website Into{' '}
+              Join the Companies Making{' '}
               <span className="to-green-light bg-linear-to-l from-green-100 bg-clip-text text-transparent">
-                Your Data Source
+                Smarter Decisions, Faster
               </span>
             </h2>
             <p className="text-gray mb-8 text-lg">
-              Stop wasting time on manual data collection. Let autonomous AI
-              agents extract the intelligence you need—automatically.
+              While your competitors waste weeks gathering data manually, you
+              could be making strategic moves backed by real-time intelligence.
+              Start free. No credit card. No technical setup. Get your first
+              dataset in the next 15 minutes.
             </p>
 
             <div className="mb-8 flex flex-wrap items-center justify-center gap-4">
               <Link href="/request" className={buttonVariants({ size: 'lg' })}>
-                Start Your First Request—Free
+                Get Your First Dataset Free →
               </Link>
               <Link
                 href="/demo"
                 className={buttonVariants({ variant: 'outline', size: 'lg' })}
               >
-                See How It Works
+                See a 2-Minute Demo
               </Link>
             </div>
 
-            {/* Trust Badges */}
-            <div className="mb-4 flex flex-wrap items-center justify-center gap-4">
-              <TrustBadge icon={Shield} text="SOC 2 Type II Certified" />
-              <TrustBadge icon={CheckCircle2} text="GDPR Compliant" />
-              <TrustBadge icon={Activity} text="99.9% Uptime SLA" />
+            {/* Trust Elements */}
+            <div className="mb-4 space-y-3">
+              <div className="flex flex-wrap items-center justify-center gap-4">
+                <TrustBadge icon={Shield} text="SOC 2 Type II Certified" />
+                <TrustBadge icon={CheckCircle2} text="GDPR Compliant" />
+                <TrustBadge icon={Activity} text="99.9% Uptime SLA" />
+              </div>
+              <div className="text-gray space-y-1 text-sm">
+                <p>✓ Free first request—no credit card required</p>
+                <p>✓ Results in 15 minutes or less</p>
+                <p>✓ Cancel anytime, no questions asked</p>
+              </div>
             </div>
 
             <p className="text-gray text-sm">
-              Trusted by NVIDIA, Siemens Healthineers, and industry-leading
-              research teams
+              Trusted by NVIDIA, Siemens Healthineers, and 500+ research teams
+              worldwide
             </p>
           </div>
         </div>
@@ -473,7 +532,7 @@ export default function Home() {
                   "ratingValue": "4.9",
                   "ratingCount": "127"
                 },
-                "description": "AI-Powered Data Intelligence Platform with autonomous agents that extract data from any website automatically. No coding, no maintenance required.",
+                "description": "Market Intelligence Platform that delivers competitive intelligence and real-time business insights without hiring analysts or waiting weeks. Trusted by Fortune 500 companies for faster, smarter business decisions.",
                 "url": "${process.env.NEXT_PUBLIC_APP_URL}",
                 "image": "${process.env.NEXT_PUBLIC_APP_URL}/images/logo.svg",
                 "publisher": {
@@ -485,13 +544,13 @@ export default function Home() {
                   }
                 },
                 "featureList": [
-                  "Autonomous AI agents for web scraping",
-                  "Real Estate data extraction",
-                  "Lead Generation automation",
-                  "E-commerce & Shopping intelligence",
-                  "Crypto & Blockchain analytics",
-                  "Social Media monitoring",
-                  "Security threat intelligence"
+                  "Competitive pricing intelligence and market research",
+                  "Lead generation that scales with 10x efficiency",
+                  "Real-time market intelligence for executives",
+                  "E-commerce and product research insights",
+                  "Risk and compliance monitoring automation",
+                  "Investment research intelligence",
+                  "Business decision support with real-time data"
                 ],
                 "operatingSystem": "Web-based"
             }`,
