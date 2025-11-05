@@ -25,15 +25,15 @@ export default function Header() {
 
   return (
     <header className="sticky top-5 z-50 container flex items-center justify-center">
-      <div className="grid w-full grid-cols-[auto_1fr_auto] items-center gap-5 rounded-full bg-white/10 px-5 py-2 shadow-[0_0_10px_0_rgba(255,255,255,0.1)] backdrop-blur-lg">
+      <div className="grid w-full grid-cols-2 lg:grid-cols-[auto_1fr_auto] items-center gap-5 rounded-full bg-white/10 px-5 py-2 shadow-[0_0_10px_0_rgba(255,255,255,0.1)] backdrop-blur-lg">
         <Logo />
-        <div className="flex justify-center">
-          <NavLinks className="hidden lg:flex" />
+        <div className="hidden lg:flex justify-center">
+          <NavLinks className="flex" />
         </div>
-        <div className="flex gap-3.5">
+        <div className="flex justify-end gap-3.5">
           <Link
             href="/contact-us"
-            className={`${buttonVariants()} hidden rounded-full lg:inline-flex`}
+            className={`${buttonVariants()} rounded-full max-lg:!hidden`}
           >
             Book a demo
           </Link>
