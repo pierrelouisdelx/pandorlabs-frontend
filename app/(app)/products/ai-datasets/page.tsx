@@ -32,6 +32,7 @@ import { buttonVariants } from '@/components/ui/button'
 
 const accentColor = '#46e695'
 const accentGlow = 'rgba(70, 230, 149, 0.15)'
+const accentGradient = 'linear-gradient(135deg, #46e695 0%, #46e695 100%)'
 
 export default function AIDataPage() {
   return (
@@ -57,6 +58,7 @@ export default function AIDataPage() {
           ]}
           accentColor={accentColor}
           accentGlow={accentGlow}
+          accentGradient={accentGradient}
           visualElement={
             <div className="relative aspect-square w-full">
               <div className="absolute inset-0 flex items-center justify-center">
