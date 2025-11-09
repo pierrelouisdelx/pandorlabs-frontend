@@ -3,7 +3,8 @@ import type { MetadataRoute } from 'next'
 export const dynamic = 'force-dynamic'
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
-  const baseUrl = process.env.NEXT_PUBLIC_APP_URL || 'https://yourdomain.com'
+  const baseUrl =
+    process.env.NEXT_PUBLIC_APP_URL || 'https://www.pandorlabs.com'
   const now = new Date()
 
   // Static pages with appropriate priorities
