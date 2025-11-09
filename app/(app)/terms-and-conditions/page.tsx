@@ -11,11 +11,11 @@ export const metadata: Metadata = {
     title: 'Terms & Conditions | PandorLabs',
     description:
       'Enhance your service offerings and streamline processes with our intuitive AI SaaS template.',
-    url: process.env.NEXT_PUBLIC_APP_URL + '/terms-conditions',
+    url: process.env.NEXT_PUBLIC_APP_URL + '/terms-and-conditions',
     type: 'website',
   },
   alternates: {
-    canonical: `${process.env.NEXT_PUBLIC_APP_URL}/terms-conditions`,
+    canonical: `${process.env.NEXT_PUBLIC_APP_URL}/terms-and-conditions`,
   },
 }
 
@@ -215,7 +215,7 @@ export default function TermsConditions() {
                         "@type": "ListItem",
                         "position": 2,
                         "name": "Terms & Conditions | PandorLabs",
-                        "item": "${process.env.NEXT_PUBLIC_APP_URL}/terms-conditions"
+                        "item": "${process.env.NEXT_PUBLIC_APP_URL}/terms-and-conditions"
                     }]
                 }
             }`,

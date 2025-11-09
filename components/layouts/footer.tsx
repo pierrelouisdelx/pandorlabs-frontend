@@ -34,7 +34,7 @@ export default function Footer() {
               </Link>
             </li>
             <li>
-              <Link href="/terms-conditions" className="hover:text-green">
+              <Link href="/terms-and-conditions" className="hover:text-green">
                 Terms & Conditions
               </Link>
             </li>
