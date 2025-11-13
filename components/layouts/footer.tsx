@@ -1,6 +1,8 @@
 import Logo from './logo'
 import Image from 'next/image'
 import Link from 'next/link'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faTelegram, faDiscord } from '@fortawesome/free-brands-svg-icons'
 
 export default function Footer() {
   return (
@@ -46,33 +48,19 @@ export default function Footer() {
             reserved.
           </p>
           <div className="order-1 flex items-center gap-5 sm:order-0">
-            <Link
-              href="https://www.facebook.com/sharer/sharer.php?u=https://ai-saas-theme-html.vercel.app/"
-              target="_blank"
-              className="hover:text-green"
-            >
-              <span className="sr-only">Facebook</span>
+            <Link href="#" target="_blank">
+              <span className="sr-only">Telegram</span>
+              <FontAwesomeIcon
+                icon={faTelegram}
+                className="h-8 w-8 hover:scale-110"
+              />
             </Link>
-            <Link
-              href="https://twitter.com/intent/tweet?url=https://ai-saas-theme-html.vercel.app/&amp;text="
-              target="_blank"
-              className="hover:text-green"
-            >
-              <span className="sr-only">Twitter</span>
-            </Link>
-            <Link
-              href="https://www.instagram.com/?url=https%3A%2F%2Fai-saas-theme-html.vercel.app%2F"
-              target="_blank"
-              className="hover:text-green"
-            >
-              <span className="sr-only">Instagram</span>
-            </Link>
-            <Link
-              href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https://ai-saas-theme-html.vercel.app/"
-              target="_blank"
-              className="hover:text-green"
-            >
-              <span className="sr-only">LinkedIn</span>
+            <Link href="#" target="_blank">
+              <span className="sr-only">Discord</span>
+              <FontAwesomeIcon
+                icon={faDiscord}
+                className="h-6 w-6 hover:scale-110"
+              />
             </Link>
           </div>
         </div>
