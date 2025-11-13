@@ -23,7 +23,7 @@ import {
 } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: 'Lead Generation Data API | PandoraLabs',
+  title: 'Lead Generation Data API | PandorLabs',
   description:
     'Access 321M+ verified B2B contacts with 95% email accuracy and GDPR compliance. Scale your sales pipeline with real-time lead enrichment and AI-powered scoring.',
 }
@@ -369,7 +369,7 @@ export default function LeadGenerationPage() {
                 <p className="text-gray/80 text-sm">B2B Lead Generation Firm</p>
               </div>
               <p className="text-gray leading-relaxed">
-                &quot;We replaced 3 data vendors with PandoraLabs. Better
+                &quot;We replaced 3 data vendors with PandorLabs. Better
                 accuracy, lower costs, and our clients see 25% higher email open
                 rates.&quot;
               </p>
@@ -449,7 +449,7 @@ export default function LeadGenerationPage() {
             </div>
 
             <p className="text-gray text-sm">
-              Join 500+ sales teams using PandoraLabs to accelerate their
+              Join 500+ sales teams using PandorLabs to accelerate their
               pipeline
             </p>
           </div>

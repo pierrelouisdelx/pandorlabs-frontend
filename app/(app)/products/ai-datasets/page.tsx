@@ -119,12 +119,12 @@ export default function AIDataPage() {
                 {['Images', 'Text', 'Audio'].map((type, i) => (
                   <div
                     key={i}
-                    className="rounded-lg border border-green-light/30 bg-green-light/20 px-4 py-2 backdrop-blur-sm"
+                    className="border-green-light/30 bg-green-light/20 rounded-lg border px-4 py-2 backdrop-blur-sm"
                     style={{
                       animation: `slideIn 1s ease-out ${i * 0.2}s both`,
                     }}
                   >
-                    <div className="text-sm font-medium text-green-light">
+                    <div className="text-green-light text-sm font-medium">
                       {type}
                     </div>
                     <div className="text-xs text-white/60">
@@ -138,7 +138,7 @@ export default function AIDataPage() {
         />
 
         {/* Trust Badges */}
-        <div className="absolute bottom-10 left-0 right-0 z-20">
+        <div className="absolute right-0 bottom-10 left-0 z-20">
           <div className="container">
             <div className="flex flex-wrap items-center justify-center gap-8 lg:gap-12">
               <Image
@@ -171,7 +171,7 @@ export default function AIDataPage() {
                 </p>
                 <h2 className="mb-6 text-[26px]/8 font-semibold sm:text-3xl lg:text-5xl/[60px]">
                   Your AI Training Data{' '}
-                  <span className="from-green-100 to-green-light bg-linear-to-l bg-clip-text text-transparent">
+                  <span className="to-green-light bg-linear-to-l from-green-100 bg-clip-text text-transparent">
                     Advantage
                   </span>
                 </h2>
@@ -188,10 +188,10 @@ export default function AIDataPage() {
                   verified quality—instantly?
                 </p>
                 <p>
-                  PandoraLabs AI Datasets delivers 100,000+ curated datasets
-                  with 99% annotation accuracy. From computer vision to NLP to
-                  audio, get the training data you need to accelerate model
-                  development by 10x.
+                  PandorLabs AI Datasets delivers 100,000+ curated datasets with
+                  99% annotation accuracy. From computer vision to NLP to audio,
+                  get the training data you need to accelerate model development
+                  by 10x.
                 </p>
                 <p>
                   No manual labeling. No quality concerns. No legal risks. Just
@@ -223,21 +223,21 @@ export default function AIDataPage() {
             {/* Visualization */}
             <div className="hidden w-full items-center justify-center lg:flex lg:w-1/2">
               <div className="relative h-[400px] w-[400px]">
-                <div className="absolute inset-0 rounded-full bg-green-light/10 blur-3xl"></div>
+                <div className="bg-green-light/10 absolute inset-0 rounded-full blur-3xl"></div>
                 <div className="relative flex h-full items-center justify-center">
                   <div className="grid grid-cols-3 gap-4">
                     {[ImageIcon, FileText, Mic, Database, Brain, Code2].map(
                       (Icon, i) => (
                         <div
                           key={i}
-                          className="flex h-20 w-20 items-center justify-center rounded-2xl border border-green-light/30 bg-green-light/10 backdrop-blur-sm transition-all duration-500 hover:scale-110 hover:border-green-light/60 hover:bg-green-light/20"
+                          className="border-green-light/30 bg-green-light/10 hover:border-green-light/60 hover:bg-green-light/20 flex h-20 w-20 items-center justify-center rounded-2xl border backdrop-blur-sm transition-all duration-500 hover:scale-110"
                           style={{
                             animation: `float 3s ease-in-out ${i * 0.2}s infinite`,
                           }}
                         >
-                          <Icon className="h-8 w-8 text-green-light" />
+                          <Icon className="text-green-light h-8 w-8" />
                         </div>
-                      )
+                      ),
                     )}
                   </div>
                 </div>
@@ -257,7 +257,7 @@ export default function AIDataPage() {
             </p>
             <h2 className="mb-4 text-[26px]/8 font-semibold sm:text-3xl lg:text-5xl/[60px]">
               From Search to Training —{' '}
-              <span className="from-green-100 to-green-light bg-linear-to-l bg-clip-text text-transparent">
+              <span className="to-green-light bg-linear-to-l from-green-100 bg-clip-text text-transparent">
                 in Minutes
               </span>
             </h2>
@@ -291,7 +291,7 @@ export default function AIDataPage() {
               Start
             </span>
             <div className="bg-green-light/30 shadow-green-light/20 h-1 w-20 rounded-full shadow-lg"></div>
-            <span className="from-green-100 to-green-light bg-green-light/10 animate-pulse rounded-full bg-linear-to-l bg-clip-text px-5 py-2.5 font-semibold text-transparent">
+            <span className="to-green-light bg-green-light/10 animate-pulse rounded-full bg-linear-to-l from-green-100 bg-clip-text px-5 py-2.5 font-semibold text-transparent">
               Minutes to model training
             </span>
             <div className="bg-green-light/30 shadow-green-light/20 h-1 w-20 rounded-full shadow-lg"></div>
@@ -312,7 +312,7 @@ export default function AIDataPage() {
             </p>
             <h2 className="mb-4 text-[26px]/8 font-semibold sm:text-3xl lg:text-5xl/[60px]">
               Every AI Modality.{' '}
-              <span className="from-green-100 to-green-light bg-linear-to-l bg-clip-text text-transparent">
+              <span className="to-green-light bg-linear-to-l from-green-100 bg-clip-text text-transparent">
                 One Platform
               </span>
             </h2>
@@ -357,8 +357,8 @@ export default function AIDataPage() {
 
           <div className="text-center">
             <p className="text-gray mb-4">
-              Need a specific dataset type? Our team can source or create
-              custom datasets for your requirements.
+              Need a specific dataset type? Our team can source or create custom
+              datasets for your requirements.
             </p>
             <Link href="/contact" className={buttonVariants()}>
               Request Custom Dataset →
@@ -377,14 +377,14 @@ export default function AIDataPage() {
             </p>
             <h2 className="mb-4 text-[26px]/8 font-semibold sm:text-3xl lg:text-5xl/[60px]">
               Built for{' '}
-              <span className="from-green-100 to-green-light bg-linear-to-l bg-clip-text text-transparent">
+              <span className="to-green-light bg-linear-to-l from-green-100 bg-clip-text text-transparent">
                 Production AI Models
               </span>
             </h2>
             <p className="text-gray mx-auto max-w-2xl">
-              When your AI models depend on training data quality, you can&apos;t
-              afford errors, bias, or legal risks. PandoraLabs datasets are
-              built to production standards.
+              When your AI models depend on training data quality, you
+              can&apos;t afford errors, bias, or legal risks. PandorLabs
+              datasets are built to production standards.
             </p>
           </div>
 
@@ -442,13 +442,13 @@ export default function AIDataPage() {
             </p>
             <h2 className="mb-4 text-[26px]/8 font-semibold sm:text-3xl lg:text-5xl/[60px]">
               Powering Models at{' '}
-              <span className="from-green-100 to-green-light bg-linear-to-l bg-clip-text text-transparent">
+              <span className="to-green-light bg-linear-to-l from-green-100 bg-clip-text text-transparent">
                 Leading Organizations
               </span>
             </h2>
             <p className="text-gray mx-auto mb-8 max-w-2xl">
               From research labs to production AI teams, organizations trust
-              PandoraLabs datasets for model development.
+              PandorLabs datasets for model development.
             </p>
           </div>
 
@@ -460,12 +460,14 @@ export default function AIDataPage() {
                 <h4 className="mb-1 font-semibold text-white">
                   AI Research Lab
                 </h4>
-                <p className="text-gray/80 text-sm">University Medical Center</p>
+                <p className="text-gray/80 text-sm">
+                  University Medical Center
+                </p>
               </div>
               <p className="text-gray leading-relaxed">
-                &quot;PandoraLabs datasets reduced our model training time by 60%.
-                The annotation quality is exceptional—better than our in-house
-                labeling.&quot;
+                &quot;PandorLabs datasets reduced our model training time by
+                60%. The annotation quality is exceptional—better than our
+                in-house labeling.&quot;
               </p>
             </div>
 
@@ -478,9 +480,9 @@ export default function AIDataPage() {
                 <p className="text-gray/80 text-sm">Series A Company</p>
               </div>
               <p className="text-gray leading-relaxed">
-                &quot;We achieved production-ready models in 3 months instead of 12.
-                Access to diverse, high-quality datasets was a game changer for
-                our launch.&quot;
+                &quot;We achieved production-ready models in 3 months instead of
+                12. Access to diverse, high-quality datasets was a game changer
+                for our launch.&quot;
               </p>
             </div>
 
@@ -493,9 +495,9 @@ export default function AIDataPage() {
                 <p className="text-gray/80 text-sm">Fortune 500 Tech Company</p>
               </div>
               <p className="text-gray leading-relaxed">
-                &quot;The custom labeling service delivered exactly what we needed.
-                Domain experts annotated our specialized dataset with 99.5%
-                accuracy.&quot;
+                &quot;The custom labeling service delivered exactly what we
+                needed. Domain experts annotated our specialized dataset with
+                99.5% accuracy.&quot;
               </p>
             </div>
           </div>
@@ -553,36 +555,38 @@ export default function AIDataPage() {
 
             {/* API Integration Preview */}
             <div className="flex items-center justify-center">
-              <div className="w-full max-w-md rounded-2xl border border-green-light/30 bg-[#1a1a1a] p-6 shadow-2xl shadow-green-light/20">
+              <div className="border-green-light/30 shadow-green-light/20 w-full max-w-md rounded-2xl border bg-[#1a1a1a] p-6 shadow-2xl">
                 <div className="mb-4 flex items-center gap-2">
                   <div className="flex gap-1.5">
                     <div className="h-3 w-3 rounded-full bg-red-500"></div>
                     <div className="h-3 w-3 rounded-full bg-yellow-500"></div>
                     <div className="h-3 w-3 rounded-full bg-green-500"></div>
                   </div>
-                  <span className="ml-auto text-xs text-gray">
+                  <span className="text-gray ml-auto text-xs">
                     API Integration
                   </span>
                 </div>
                 <div className="space-y-2 font-mono text-sm">
                   <div>
                     <span className="text-green-light">import</span>{' '}
-                    <span className="text-white">pandora</span>
+                    <span className="text-white">pandor</span>
                   </div>
                   <div className="text-gray"># Initialize API</div>
                   <div>
                     <span className="text-white">client = </span>
-                    <span className="text-blue-400">pandora</span>
+                    <span className="text-blue-400">pandor</span>
                     <span className="text-white">.Client()</span>
                   </div>
-                  <div className="mt-4 text-gray"># Load dataset</div>
+                  <div className="text-gray mt-4"># Load dataset</div>
                   <div>
                     <span className="text-white">dataset = client.</span>
                     <span className="text-yellow-400">load</span>
                     <span className="text-white">(</span>
                   </div>
                   <div className="pl-4">
-                    <span className="text-green-400">&quot;coco-detection&quot;</span>
+                    <span className="text-green-400">
+                      &quot;coco-detection&quot;
+                    </span>
                     <span className="text-white">,</span>
                   </div>
                   <div className="pl-4">
@@ -592,7 +596,7 @@ export default function AIDataPage() {
                   <div>
                     <span className="text-white">)</span>
                   </div>
-                  <div className="mt-4 text-gray"># Stream to pipeline</div>
+                  <div className="text-gray mt-4"># Stream to pipeline</div>
                   <div>
                     <span className="text-green-light">for</span>{' '}
                     <span className="text-white">batch</span>{' '}
@@ -618,7 +622,7 @@ export default function AIDataPage() {
           <div className="mx-auto max-w-3xl text-center">
             <h2 className="mb-4 text-[26px]/8 font-semibold sm:text-3xl lg:text-5xl/[60px]">
               Start Building Better AI Models{' '}
-              <span className="from-green-100 to-green-light bg-linear-to-l bg-clip-text text-transparent">
+              <span className="to-green-light bg-linear-to-l from-green-100 bg-clip-text text-transparent">
                 Today
               </span>
             </h2>
@@ -643,18 +647,9 @@ export default function AIDataPage() {
             {/* Trust Elements */}
             <div className="mb-4 space-y-3">
               <div className="flex flex-wrap items-center justify-center gap-4">
-                <TrustBadge
-                  icon={Shield}
-                  text="SOC 2 Type II Certified"
-                />
-                <TrustBadge
-                  icon={CheckCircle2}
-                  text="GDPR Compliant"
-                />
-                <TrustBadge
-                  icon={Activity}
-                  text="99.9% Uptime SLA"
-                />
+                <TrustBadge icon={Shield} text="SOC 2 Type II Certified" />
+                <TrustBadge icon={CheckCircle2} text="GDPR Compliant" />
+                <TrustBadge icon={Activity} text="99.9% Uptime SLA" />
               </div>
               <div className="text-gray space-y-1 text-sm">
                 <p>✓ Free tier with 10GB sample datasets</p>

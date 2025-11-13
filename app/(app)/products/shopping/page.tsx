@@ -90,7 +90,7 @@ export default function ShoppingMonitoringPage() {
 
             {/* Trust Badges */}
             <div className="mt-20">
-              <p className="mb-8 text-center text-lg font-semibold uppercase text-white/90">
+              <p className="mb-8 text-center text-lg font-semibold text-white/90 uppercase">
                 Trusted by Leading E-commerce Brands
               </p>
               <div className="flex flex-wrap items-center justify-center gap-12 lg:gap-16">
@@ -118,7 +118,7 @@ export default function ShoppingMonitoringPage() {
           <div className="flex gap-20">
             <div className="w-full">
               <div className="mb-10 text-center">
-                <p className="text-gray mb-3 text-sm uppercase tracking-wider">
+                <p className="text-gray mb-3 text-sm tracking-wider uppercase">
                   WHY PRICE MONITORING
                 </p>
                 <h2 className="mb-6 text-[26px]/8 font-semibold sm:text-3xl lg:text-5xl/[60px]">
@@ -142,7 +142,7 @@ export default function ShoppingMonitoringPage() {
                   of automation?
                 </p>
                 <p>
-                  PandoraLabs delivers e-commerce intelligence on demand. Our AI
+                  PandorLabs delivers e-commerce intelligence on demand. Our AI
                   continuously monitors 30.7M+ stores across all major
                   marketplaces, matching products with 98% accuracy and alerting
                   you to critical changes within minutes.
@@ -170,7 +170,7 @@ export default function ShoppingMonitoringPage() {
         <div className="absolute inset-0 bg-gradient-to-r from-amber-500/5 via-transparent to-amber-500/5 opacity-30"></div>
         <div className="relative z-10 container">
           <div className="mb-12 text-center">
-            <p className="text-gray mb-3 text-sm uppercase tracking-wider">
+            <p className="text-gray mb-3 text-sm tracking-wider uppercase">
               HOW IT WORKS
             </p>
             <h2 className="mb-4 text-[26px]/8 font-semibold sm:text-3xl lg:text-5xl/[60px]">
@@ -225,7 +225,7 @@ export default function ShoppingMonitoringPage() {
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-amber-500/10 via-transparent to-transparent"></div>
         <div className="relative z-10 container">
           <div className="mb-12 text-center">
-            <p className="text-gray mb-3 text-sm uppercase tracking-wider">
+            <p className="text-gray mb-3 text-sm tracking-wider uppercase">
               PRICING INTELLIGENCE APPLICATIONS
             </p>
             <h2 className="mb-4 text-[26px]/8 font-semibold sm:text-3xl lg:text-5xl/[60px]">
@@ -290,7 +290,7 @@ export default function ShoppingMonitoringPage() {
         <div className="absolute inset-0 bg-gradient-to-br from-amber-200/5 via-transparent to-amber-500/5"></div>
         <div className="relative z-10 container">
           <div className="mb-12 text-center">
-            <p className="text-gray mb-3 text-sm uppercase tracking-wider">
+            <p className="text-gray mb-3 text-sm tracking-wider uppercase">
               TECHNOLOGY
             </p>
             <h2 className="mb-4 text-[26px]/8 font-semibold sm:text-3xl lg:text-5xl/[60px]">
@@ -339,7 +339,7 @@ export default function ShoppingMonitoringPage() {
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,_var(--tw-gradient-stops))] from-amber-500/10 via-transparent to-transparent"></div>
         <div className="relative z-10 container">
           <div className="mb-12 text-center">
-            <p className="text-gray mb-3 text-sm uppercase tracking-wider">
+            <p className="text-gray mb-3 text-sm tracking-wider uppercase">
               FOR BUSINESSES AT SCALE
             </p>
             <h2 className="mb-4 text-[26px]/8 font-semibold sm:text-3xl lg:text-5xl/[60px]">
@@ -349,9 +349,9 @@ export default function ShoppingMonitoringPage() {
               </span>
             </h2>
             <p className="text-gray mx-auto mb-8 max-w-2xl">
-              Whether you&apos;re a fast-growing brand or an enterprise retailer,
-              competitive pricing intelligence is mission-critical—and it needs
-              to be instant.
+              Whether you&apos;re a fast-growing brand or an enterprise
+              retailer, competitive pricing intelligence is mission-critical—and
+              it needs to be instant.
             </p>
           </div>
 
@@ -366,7 +366,7 @@ export default function ShoppingMonitoringPage() {
                     Enterprise Solutions
                   </h3>
                 </div>
-                <p className="text-gray leading-relaxed transition-colors duration-300 group-hover:text-gray/90">
+                <p className="text-gray group-hover:text-gray/90 leading-relaxed transition-colors duration-300">
                   Dedicated infrastructure, custom SLAs, and white-glove
                   onboarding for enterprise e-commerce teams. Priority support
                   and guaranteed uptime.
@@ -382,7 +382,7 @@ export default function ShoppingMonitoringPage() {
                     Custom Webhooks & Integrations
                   </h3>
                 </div>
-                <p className="text-gray leading-relaxed transition-colors duration-300 group-hover:text-gray/90">
+                <p className="text-gray group-hover:text-gray/90 leading-relaxed transition-colors duration-300">
                   Real-time webhooks push price changes directly to your
                   systems. Integrate with Shopify, BigCommerce, your ERP, or
                   custom BI tools.
@@ -398,7 +398,7 @@ export default function ShoppingMonitoringPage() {
                     24/7 Monitoring & Support
                   </h3>
                 </div>
-                <p className="text-gray leading-relaxed transition-colors duration-300 group-hover:text-gray/90">
+                <p className="text-gray group-hover:text-gray/90 leading-relaxed transition-colors duration-300">
                   Never miss a critical price change. 24/7 monitoring with
                   sub-second alerting. Direct access to engineering team via
                   Slack/Teams.
@@ -424,7 +424,9 @@ export default function ShoppingMonitoringPage() {
                 <div className="mb-6 flex items-center justify-between">
                   <div className="flex items-center gap-2">
                     <TrendingDown className="h-5 w-5 text-amber-400" />
-                    <span className="font-semibold">Competitor Price Tracking</span>
+                    <span className="font-semibold">
+                      Competitor Price Tracking
+                    </span>
                   </div>
                   <div className="font-bold text-amber-400">-23%</div>
                 </div>
@@ -474,7 +476,7 @@ export default function ShoppingMonitoringPage() {
         <div className="absolute inset-0 bg-gradient-to-t from-amber-500/5 via-transparent to-transparent"></div>
         <div className="relative z-10 container">
           <div className="mb-12 text-center">
-            <p className="text-gray mb-3 text-sm uppercase tracking-wider">
+            <p className="text-gray mb-3 text-sm tracking-wider uppercase">
               CUSTOMER SUCCESS
             </p>
             <h2 className="mb-4 text-[26px]/8 font-semibold sm:text-3xl lg:text-5xl/[60px]">
@@ -497,9 +499,9 @@ export default function ShoppingMonitoringPage() {
                 </p>
               </div>
               <p className="text-gray leading-relaxed">
-                &quot;We increased our profit margins by 18% in the first quarter
-                using PandoraLabs. Real-time competitor tracking lets us price
-                optimally while protecting our brand positioning.&quot;
+                &quot;We increased our profit margins by 18% in the first
+                quarter using PandorLabs. Real-time competitor tracking lets us
+                price optimally while protecting our brand positioning.&quot;
               </p>
             </div>
 
@@ -512,9 +514,9 @@ export default function ShoppingMonitoringPage() {
                 <p className="text-gray/80 text-sm">Fortune 500 Retailer</p>
               </div>
               <p className="text-gray leading-relaxed">
-                &quot;Before PandoraLabs, we had 5 analysts manually tracking prices.
-                Now we monitor 50K+ SKUs in real-time and our team focuses on
-                strategy, not spreadsheets.&quot;
+                &quot;Before PandorLabs, we had 5 analysts manually tracking
+                prices. Now we monitor 50K+ SKUs in real-time and our team
+                focuses on strategy, not spreadsheets.&quot;
               </p>
             </div>
 

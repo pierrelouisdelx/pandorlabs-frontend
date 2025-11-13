@@ -27,12 +27,12 @@ import {
 
 export const metadata: Metadata = {
   title:
-    'PandoraLabs | Market Intelligence Platform for Faster Business Decisions',
+    'PandorLabs | Market Intelligence Platform for Faster Business Decisions',
   description:
     'Get competitive intelligence and market data without hiring analysts or waiting weeks. Access real-time business insights from any source in minutes. Trusted by Fortune 500 companies.',
   openGraph: {
     ...helper.openGraphData,
-    title: 'PandoraLabs | Make Faster, Smarter Business Decisions',
+    title: 'PandorLabs | Make Faster, Smarter Business Decisions',
     description:
       'Get the competitive intelligence and market data you need—without hiring analysts, building tools, or waiting weeks. Real-time insights in minutes.',
     url: process.env.NEXT_PUBLIC_APP_URL,
@@ -127,7 +127,7 @@ export default function Home() {
                   automation?
                 </p>
                 <p>
-                  PandoraLabs delivers market intelligence on demand. Simply ask
+                  PandorLabs delivers market intelligence on demand. Simply ask
                   for the data you need in plain language. Our platform handles
                   the rest—from finding the right sources to delivering clean,
                   analysis-ready datasets.
@@ -293,7 +293,7 @@ export default function Home() {
             </h2>
             <p className="text-gray mx-auto max-w-2xl">
               When your strategy depends on accurate data, you can&apos;t afford
-              downtime, errors, or security risks. PandoraLabs is built to
+              downtime, errors, or security risks. PandorLabs is built to
               enterprise standards because your decisions deserve enterprise
               reliability.
             </p>
@@ -361,7 +361,7 @@ export default function Home() {
                 </p>
               </div>
               <p className="text-gray leading-relaxed">
-                &quot;We replaced 3 full-time analysts with PandoraLabs. Now we
+                &quot;We replaced 3 full-time analysts with PandorLabs. Now we
                 get better data, faster—and our team focuses on insights, not
                 spreadsheets.&quot;
               </p>
@@ -376,8 +376,8 @@ export default function Home() {
                 <p className="text-gray/80 text-sm">Series B SaaS Company</p>
               </div>
               <p className="text-gray leading-relaxed">
-                &quot;Before PandoraLabs, competitive research took weeks. Now
-                we have real-time market intelligence that informs every product
+                &quot;Before PandorLabs, competitive research took weeks. Now we
+                have real-time market intelligence that informs every product
                 decision.&quot;
               </p>
             </div>
@@ -391,8 +391,8 @@ export default function Home() {
                 <p className="text-gray/80 text-sm">$2B Investment Fund</p>
               </div>
               <p className="text-gray leading-relaxed">
-                &quot;PandoraLabs gives us market data our competitors
-                don&apos;t have access to. It&apos;s like having insider
+                &quot;PandorLabs gives us market data our competitors don&apos;t
+                have access to. It&apos;s like having insider
                 knowledge—legally.&quot;
               </p>
             </div>
@@ -524,7 +524,7 @@ export default function Home() {
           __html: `{
                 "@context": "https://schema.org",
                 "@type": "SoftwareApplication",
-                "name": "PandoraLabs",
+                "name": "PandorLabs",
                 "applicationCategory": "BusinessApplication",
                 "offers": {
                   "@type": "Offer",
@@ -541,7 +541,7 @@ export default function Home() {
                 "image": "${process.env.NEXT_PUBLIC_APP_URL}/images/logo.svg",
                 "publisher": {
                   "@type": "Organization",
-                  "name": "PandoraLabs",
+                  "name": "PandorLabs",
                   "logo": {
                     "@type": "ImageObject",
                     "url": "${process.env.NEXT_PUBLIC_APP_URL}/images/logo.svg"

@@ -493,7 +493,7 @@ export default function SocialMediaPage() {
                 </p>
               </div>
               <p className="text-gray leading-relaxed">
-                &quot;We replaced 5 social listening tools with PandoraLabs. Now
+                &quot;We replaced 5 social listening tools with PandorLabs. Now
                 we get better data, faster—and save $3K/month on tool
                 subscriptions.&quot;
               </p>
@@ -524,8 +524,8 @@ export default function SocialMediaPage() {
                 <p className="text-gray/80 text-sm">Series B Marketing SaaS</p>
               </div>
               <p className="text-gray leading-relaxed">
-                &quot;PandoraLabs gives us social data our competitors
-                don&apos;t have access to. It&apos;s a competitive moat for our
+                &quot;PandorLabs gives us social data our competitors don&apos;t
+                have access to. It&apos;s a competitive moat for our
                 platform.&quot;
               </p>
             </div>
