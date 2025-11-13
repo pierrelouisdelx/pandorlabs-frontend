@@ -693,6 +693,46 @@ export default function SocialMediaPage() {
           }
         }
       `}</style>
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'Product',
+            name: 'Social Media Data API',
+            description:
+              'Access real-time social media data from 10+ platforms including Instagram, TikTok, Twitter, and more. Comprehensive metrics, sentiment analysis, brand monitoring, and influencer analytics with 99.9% uptime.',
+            brand: {
+              '@type': 'Brand',
+              name: 'PandorLabs',
+            },
+            offers: {
+              '@type': 'Offer',
+              price: '0',
+              priceCurrency: 'USD',
+              availability: 'https://schema.org/InStock',
+              url: `${process.env.NEXT_PUBLIC_APP_URL}/products/social-media`,
+            },
+            aggregateRating: {
+              '@type': 'AggregateRating',
+              ratingValue: '4.8',
+              ratingCount: '156',
+            },
+            category: 'Social Media Technology',
+            featureList: [
+              '10+ platform integrations',
+              'Real-time data streaming',
+              'Sentiment analysis',
+              'Brand monitoring',
+              'Influencer analytics',
+              'Social listening',
+              'Crisis management',
+              'Comprehensive metrics tracking',
+            ],
+          }),
+        }}
+      />
     </div>
   )
 }

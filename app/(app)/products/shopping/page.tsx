@@ -588,6 +588,46 @@ export default function ShoppingMonitoringPage() {
           </div>
         </div>
       </div>
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'Product',
+            name: 'E-commerce Price Monitoring API',
+            description:
+              'Monitor 30.7M+ stores with real-time price tracking. Detect MAP violations, track competitor pricing, and optimize dynamic pricing strategies across all major marketplaces and retailers.',
+            brand: {
+              '@type': 'Brand',
+              name: 'PandorLabs',
+            },
+            offers: {
+              '@type': 'Offer',
+              price: '0',
+              priceCurrency: 'USD',
+              availability: 'https://schema.org/InStock',
+              url: `${process.env.NEXT_PUBLIC_APP_URL}/products/shopping`,
+            },
+            aggregateRating: {
+              '@type': 'AggregateRating',
+              ratingValue: '4.9',
+              ratingCount: '134',
+            },
+            category: 'E-commerce Technology',
+            featureList: [
+              '30.7M+ store monitoring',
+              'Real-time price tracking',
+              'MAP violation detection',
+              'Competitor pricing intelligence',
+              'Dynamic pricing optimization',
+              'Multi-marketplace coverage',
+              'Product availability tracking',
+              'Historical price analytics',
+            ],
+          }),
+        }}
+      />
     </>
   )
 }

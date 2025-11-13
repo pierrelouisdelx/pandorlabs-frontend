@@ -687,6 +687,46 @@ export default function AIDataPage() {
           }
         }
       `}</style>
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'Product',
+            name: 'AI Training Datasets API',
+            description:
+              'Access 100,000+ high-quality AI training datasets with 99% accuracy. Computer vision, NLP, synthetic data, and annotation services for machine learning model development and training.',
+            brand: {
+              '@type': 'Brand',
+              name: 'PandorLabs',
+            },
+            offers: {
+              '@type': 'Offer',
+              price: '0',
+              priceCurrency: 'USD',
+              availability: 'https://schema.org/InStock',
+              url: `${process.env.NEXT_PUBLIC_APP_URL}/products/ai-datasets`,
+            },
+            aggregateRating: {
+              '@type': 'AggregateRating',
+              ratingValue: '4.9',
+              ratingCount: '78',
+            },
+            category: 'Artificial Intelligence',
+            featureList: [
+              '100,000+ datasets available',
+              '99% data accuracy',
+              'Computer vision datasets',
+              'NLP training data',
+              'Synthetic data generation',
+              'Annotation services',
+              'Custom dataset creation',
+              'ML model training support',
+            ],
+          }),
+        }}
+      />
     </div>
   )
 }

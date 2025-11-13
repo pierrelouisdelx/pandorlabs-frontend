@@ -5,14 +5,34 @@ import helper from '@/lib/helper'
 export const metadata: Metadata = {
   title: 'About Us | PandorLabs',
   description:
-    'Built by former AI researchers from NVIDIA, Siemens, and Palantir. World-record AI inference. Expert AI agents. 10+ years of web scraping mastery and reverse engineering expertise.',
+    'Former AI researchers from NVIDIA, Siemens & Palantir. World-record AI inference. Expert AI agents with 10+ years web scraping mastery.',
+  keywords: [
+    'AI researchers',
+    'NVIDIA',
+    'Siemens',
+    'Palantir',
+    'web scraping',
+    'reverse engineering',
+    'AI inference',
+    'data extraction',
+    'machine learning',
+    'automation',
+  ],
   openGraph: {
     ...helper.openGraphData,
     title: 'About Us | PandorLabs',
     description:
-      'Built by former AI researchers from NVIDIA, Siemens, and Palantir. World-record AI inference. Expert AI agents. 10+ years of web scraping mastery and reverse engineering expertise.',
+      'Former AI researchers from NVIDIA, Siemens & Palantir. World-record AI inference. Expert AI agents with 10+ years web scraping mastery.',
     url: process.env.NEXT_PUBLIC_APP_URL + '/about-us',
     type: 'website',
+    siteName: 'PandorLabs',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'About Us | PandorLabs',
+    description:
+      'Former AI researchers from NVIDIA, Siemens & Palantir. World-record AI inference. Expert AI agents with 10+ years web scraping mastery.',
+    images: [`${process.env.NEXT_PUBLIC_APP_URL}/images/og-image.jpg`],
   },
   alternates: {
     canonical: `${process.env.NEXT_PUBLIC_APP_URL}/about-us`,
@@ -210,10 +230,10 @@ export default function AboutUs() {
         dangerouslySetInnerHTML={{
           __html: `{
                 "@context": "https://schema.org",
-                "@type": "WebSite",
+                "@type": "AboutPage",
                 "name": "About Us | PandorLabs",
-                "url": "${process.env.NEXT_PUBLIC_APP_URL}",
-                "description": "Built by former AI researchers from NVIDIA, Siemens, and Palantir. World-record AI inference. Expert AI agents. 10+ years of web scraping mastery and reverse engineering expertise.",
+                "url": "${process.env.NEXT_PUBLIC_APP_URL}/about-us",
+                "description": "Former AI researchers from NVIDIA, Siemens & Palantir. World-record AI inference. Expert AI agents with 10+ years web scraping mastery.",
                 "inLanguage": "en",
                 "image": "${process.env.NEXT_PUBLIC_APP_URL}/images/logo.svg",
                 "breadcrumb": {
@@ -226,8 +246,24 @@ export default function AboutUs() {
                     },{
                         "@type": "ListItem",
                         "position": 2,
-                        "name": "About Us | PandorLabs",
+                        "name": "About Us",
                         "item": "${process.env.NEXT_PUBLIC_APP_URL}/about-us"
+                    }]
+                },
+                "mainEntity": {
+                    "@type": "Organization",
+                    "name": "PandorLabs",
+                    "url": "${process.env.NEXT_PUBLIC_APP_URL}",
+                    "logo": "${process.env.NEXT_PUBLIC_APP_URL}/images/logo.svg",
+                    "description": "Elite AI research team building intelligent data extraction systems. Former researchers from NVIDIA, Siemens, and Palantir with world-record AI inference and 10+ years web scraping expertise.",
+                    "foundingDate": "2023",
+                    "knowsAbout": ["Artificial Intelligence", "Machine Learning", "Web Scraping", "Data Extraction", "Reverse Engineering", "AI Inference Optimization"],
+                    "areaServed": "Worldwide",
+                    "award": ["World-Record AI Inference Performance"],
+                    "employee": [{
+                        "@type": "OrganizationRole",
+                        "roleName": "AI Research Team",
+                        "description": "Former researchers from NVIDIA, Siemens, and Palantir specializing in AI inference, web scraping, and reverse engineering"
                     }]
                 }
             }`,

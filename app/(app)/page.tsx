@@ -26,17 +26,36 @@ import {
 } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title:
-    'PandorLabs | Market Intelligence Platform for Faster Business Decisions',
+  title: 'PandorLabs | Market Intelligence Platform',
   description:
     'Get competitive intelligence and market data without hiring analysts or waiting weeks. Access real-time business insights from any source in minutes. Trusted by Fortune 500 companies.',
+  keywords: [
+    'market intelligence',
+    'competitive intelligence',
+    'business data',
+    'real-time insights',
+    'market research',
+    'data extraction',
+    'web scraping',
+    'business decisions',
+    'Fortune 500',
+    'competitive analysis',
+  ],
   openGraph: {
     ...helper.openGraphData,
-    title: 'PandorLabs | Make Faster, Smarter Business Decisions',
+    title: 'PandorLabs | Market Intelligence Platform',
     description:
       'Get the competitive intelligence and market data you need—without hiring analysts, building tools, or waiting weeks. Real-time insights in minutes.',
     url: process.env.NEXT_PUBLIC_APP_URL,
     type: 'website',
+    siteName: 'PandorLabs',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'PandorLabs | Market Intelligence Platform',
+    description:
+      'Get competitive intelligence and market data without hiring analysts or waiting weeks. Real-time insights in minutes.',
+    images: [`${process.env.NEXT_PUBLIC_APP_URL}/images/og-image.jpg`],
   },
   alternates: {
     canonical: process.env.NEXT_PUBLIC_APP_URL,
@@ -557,6 +576,34 @@ export default function Home() {
                   "Business decision support with real-time data"
                 ],
                 "operatingSystem": "Web-based"
+            }`,
+        }}
+      />
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: `{
+                "@context": "https://schema.org",
+                "@type": "Organization",
+                "name": "PandorLabs",
+                "url": "${process.env.NEXT_PUBLIC_APP_URL}",
+                "logo": "${process.env.NEXT_PUBLIC_APP_URL}/images/logo.svg",
+                "description": "Built by former AI researchers from NVIDIA, Siemens, and Palantir. World-record AI inference team with 10+ years of web scraping and reverse engineering mastery.",
+                "foundingDate": "2023",
+                "founder": {
+                  "@type": "Person",
+                  "name": "PandorLabs Team"
+                },
+                "sameAs": [
+                  "https://twitter.com/pandorlabs",
+                  "https://linkedin.com/company/pandorlabs"
+                ],
+                "contactPoint": {
+                  "@type": "ContactPoint",
+                  "contactType": "Sales",
+                  "email": "contact@pandorlabs.com"
+                }
             }`,
         }}
       />

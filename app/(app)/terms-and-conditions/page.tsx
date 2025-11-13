@@ -5,14 +5,32 @@ import Link from 'next/link'
 export const metadata: Metadata = {
   title: 'Terms & Conditions | PandorLabs',
   description:
-    'Enhance your service offerings and streamline processes with our intuitive AI SaaS template.',
+    'PandorLabs Terms & Conditions: User responsibilities, service terms, and legal agreements for using our data intelligence platform. Read our usage policies.',
+  keywords: [
+    'terms and conditions',
+    'terms of service',
+    'user agreement',
+    'service terms',
+    'legal terms',
+    'usage policy',
+    'service agreement',
+    'user responsibilities',
+  ],
   openGraph: {
     ...helper.openGraphData,
     title: 'Terms & Conditions | PandorLabs',
     description:
-      'Enhance your service offerings and streamline processes with our intuitive AI SaaS template.',
+      'PandorLabs Terms & Conditions: User responsibilities, service terms, and legal agreements for using our data intelligence platform.',
     url: process.env.NEXT_PUBLIC_APP_URL + '/terms-and-conditions',
     type: 'website',
+    siteName: 'PandorLabs',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Terms & Conditions | PandorLabs',
+    description:
+      'PandorLabs Terms & Conditions: User responsibilities, service terms, and legal agreements for using our data intelligence platform.',
+    images: [`${process.env.NEXT_PUBLIC_APP_URL}/images/og-image.jpg`],
   },
   alternates: {
     canonical: `${process.env.NEXT_PUBLIC_APP_URL}/terms-and-conditions`,
@@ -198,12 +216,17 @@ export default function TermsConditions() {
         dangerouslySetInnerHTML={{
           __html: `{
                 "@context": "https://schema.org",
-                "@type": "WebSite",
+                "@type": "WebPage",
                 "name": "Terms & Conditions | PandorLabs",
-                "url": "${process.env.NEXT_PUBLIC_APP_URL}",
-                "description": "Enhance your service offerings and streamline processes with our intuitive AI SaaS template.",
+                "url": "${process.env.NEXT_PUBLIC_APP_URL}/terms-and-conditions",
+                "description": "PandorLabs Terms & Conditions: User responsibilities, service terms, and legal agreements for using our data intelligence platform. Read our usage policies.",
                 "inLanguage": "en",
                 "image": "${process.env.NEXT_PUBLIC_APP_URL}/images/logo.svg",
+                "isPartOf": {
+                    "@type": "WebSite",
+                    "name": "PandorLabs",
+                    "url": "${process.env.NEXT_PUBLIC_APP_URL}"
+                },
                 "breadcrumb": {
                     "@type": "BreadcrumbList",
                     "itemListElement": [{
@@ -214,7 +237,7 @@ export default function TermsConditions() {
                     },{
                         "@type": "ListItem",
                         "position": 2,
-                        "name": "Terms & Conditions | PandorLabs",
+                        "name": "Terms & Conditions",
                         "item": "${process.env.NEXT_PUBLIC_APP_URL}/terms-and-conditions"
                     }]
                 }

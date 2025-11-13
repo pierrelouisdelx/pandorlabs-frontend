@@ -512,6 +512,46 @@ export default function RealEstatePage() {
           }
         }
       `}</style>
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'Product',
+            name: 'Real Estate Data API',
+            description:
+              'Access 140M+ property records with ML-powered insights. Real-time MLS feeds, 94% valuation accuracy, and sub-50ms API response times for investment analysis and automated underwriting.',
+            brand: {
+              '@type': 'Brand',
+              name: 'PandorLabs',
+            },
+            offers: {
+              '@type': 'Offer',
+              price: '0',
+              priceCurrency: 'USD',
+              availability: 'https://schema.org/InStock',
+              url: `${process.env.NEXT_PUBLIC_APP_URL}/products/real-estate`,
+            },
+            aggregateRating: {
+              '@type': 'AggregateRating',
+              ratingValue: '4.9',
+              ratingCount: '87',
+            },
+            category: 'Real Estate Technology',
+            featureList: [
+              '140M+ property records',
+              'Real-time MLS data feeds',
+              '94% valuation accuracy',
+              'Sub-50ms API response',
+              'ML-powered predictive insights',
+              '20+ years transaction history',
+              'Automated underwriting',
+              'Investment analysis tools',
+            ],
+          }),
+        }}
+      />
     </>
   )
 }

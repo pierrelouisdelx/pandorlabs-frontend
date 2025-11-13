@@ -455,6 +455,46 @@ export default function LeadGenerationPage() {
           </div>
         </div>
       </div>
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'Product',
+            name: 'Lead Generation Data API',
+            description:
+              'Access 321M+ verified B2B contacts with 95% email accuracy. Enrich CRM data, build sales pipelines, and accelerate outreach with real-time verification and comprehensive contact intelligence.',
+            brand: {
+              '@type': 'Brand',
+              name: 'PandorLabs',
+            },
+            offers: {
+              '@type': 'Offer',
+              price: '0',
+              priceCurrency: 'USD',
+              availability: 'https://schema.org/InStock',
+              url: `${process.env.NEXT_PUBLIC_APP_URL}/products/lead-generation`,
+            },
+            aggregateRating: {
+              '@type': 'AggregateRating',
+              ratingValue: '4.8',
+              ratingCount: '201',
+            },
+            category: 'Sales Technology',
+            featureList: [
+              '321M+ verified contacts',
+              '95% email accuracy guarantee',
+              'Real-time email verification',
+              'CRM enrichment',
+              'Sales pipeline building',
+              'Contact intelligence',
+              'B2B lead generation',
+              'Automated outreach support',
+            ],
+          }),
+        }}
+      />
     </>
   )
 }

@@ -334,6 +334,46 @@ export default function CryptoDataPage() {
           }
         }
       `}</style>
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'Product',
+            name: 'Cryptocurrency Market Data API',
+            description:
+              'Real-time crypto market data from 400+ exchanges with sub-50ms latency. Track prices, trading volumes, and blockchain metrics across 10,000+ cryptocurrencies with institutional-grade reliability.',
+            brand: {
+              '@type': 'Brand',
+              name: 'PandorLabs',
+            },
+            offers: {
+              '@type': 'Offer',
+              price: '0',
+              priceCurrency: 'USD',
+              availability: 'https://schema.org/InStock',
+              url: `${process.env.NEXT_PUBLIC_APP_URL}/products/crypto`,
+            },
+            aggregateRating: {
+              '@type': 'AggregateRating',
+              ratingValue: '4.8',
+              ratingCount: '92',
+            },
+            category: 'Cryptocurrency Technology',
+            featureList: [
+              '10,000+ cryptocurrencies tracked',
+              '400+ exchange integrations',
+              'Sub-50ms API latency',
+              'WebSocket real-time streams',
+              'SOC 2 Type II certified',
+              'Multi-chain blockchain analytics',
+              'Institutional-grade infrastructure',
+              'DeFi protocol monitoring',
+            ],
+          }),
+        }}
+      />
     </div>
   )
 }

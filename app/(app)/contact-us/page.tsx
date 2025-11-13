@@ -11,6 +11,16 @@ export const metadata: Metadata = {
   title: 'Contact Us | PandorLabs',
   description:
     'Get in touch with PandorLabs to discuss your web intelligence and data extraction challenges. Our team specializes in solving complex automation problems.',
+  keywords: [
+    'contact PandorLabs',
+    'web intelligence',
+    'data extraction',
+    'automation',
+    'web scraping support',
+    'contact sales',
+    'technical support',
+    'data challenges',
+  ],
   openGraph: {
     ...helper.openGraphData,
     title: 'Contact Us | PandorLabs',
@@ -18,6 +28,14 @@ export const metadata: Metadata = {
       'Get in touch with PandorLabs to discuss your web intelligence and data extraction challenges. Our team specializes in solving complex automation problems.',
     url: process.env.NEXT_PUBLIC_APP_URL + '/contact-us',
     type: 'website',
+    siteName: 'PandorLabs',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Contact Us | PandorLabs',
+    description:
+      'Get in touch with PandorLabs to discuss your web intelligence and data extraction challenges.',
+    images: [`${process.env.NEXT_PUBLIC_APP_URL}/images/og-image.jpg`],
   },
   alternates: {
     canonical: `${process.env.NEXT_PUBLIC_APP_URL}/contact-us`,
@@ -89,12 +107,25 @@ export default function ContactUs() {
         dangerouslySetInnerHTML={{
           __html: `{
                 "@context": "https://schema.org",
-                "@type": "WebSite",
+                "@type": "ContactPage",
                 "name": "Contact Us | PandorLabs",
-                "url": "${process.env.NEXT_PUBLIC_APP_URL}",
+                "url": "${process.env.NEXT_PUBLIC_APP_URL}/contact-us",
                 "description": "Get in touch with PandorLabs to discuss your web intelligence and data extraction challenges. Our team specializes in solving complex automation problems.",
                 "inLanguage": "en",
                 "image": "${process.env.NEXT_PUBLIC_APP_URL}/images/logo.svg",
+                "mainEntity": {
+                    "@type": "Organization",
+                    "name": "PandorLabs",
+                    "url": "${process.env.NEXT_PUBLIC_APP_URL}",
+                    "logo": "${process.env.NEXT_PUBLIC_APP_URL}/images/logo.svg",
+                    "contactPoint": {
+                        "@type": "ContactPoint",
+                        "contactType": "Sales",
+                        "email": "info@pandorlabs.com",
+                        "availableLanguage": ["English"],
+                        "areaServed": "Worldwide"
+                    }
+                },
                 "breadcrumb": {
                     "@type": "BreadcrumbList",
                     "itemListElement": [{
@@ -105,7 +136,7 @@ export default function ContactUs() {
                     },{
                         "@type": "ListItem",
                         "position": 2,
-                        "name": "Contact Us | PandorLabs",
+                        "name": "Contact Us",
                         "item": "${process.env.NEXT_PUBLIC_APP_URL}/contact-us"
                     }]
                 }
